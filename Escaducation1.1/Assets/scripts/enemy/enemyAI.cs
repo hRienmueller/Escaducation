@@ -20,8 +20,13 @@ public class enemyAI : MonoBehaviour {
     private bool WP02Reached;  // is waypoint 02 reached?
 
     private bool IsChasing;
+    private EnemySight enemySight;
+    
 
-    void Awake() {
+    void Awake()
+    {
+        enemySight = GetComponent<EnemySight>();
+       
         nav = GetComponent<NavMeshAgent>();
         WP01Reached = false;
         WP02Reached = true;
@@ -37,7 +42,8 @@ public class enemyAI : MonoBehaviour {
 
         if (chaseDistance > giveUpDistance)
         {
-            if(IsChasing == true) { 
+            if(IsChasing == true)
+            { 
                 nav.destination = WayPoint01.position;
                 WP01Reached = false;
                 WP02Reached = true;
@@ -48,33 +54,39 @@ public class enemyAI : MonoBehaviour {
 
             Patrol();
             //Debug.Log(transform.position + "/" + WayPoint01.position);
-           // Debug.Log("patrolling");
+            //Debug.Log("patrolling");
         }
-        else {
+        else
+        {
             //Debug.Log("chasing");
 
             IsChasing = true;
-
-            Chase();
-            if(chaseDistance > giveUpDistance)  {
-               
+            if(enemySight.playerInSight == true)
+            {
+                Chase();
             }
+           
+           
         }
     }
 
-    void Chase() {
+    void Chase()
+    {
         nav.destination = target.position;
     }
 
-    void Patrol() {
-        if (WP02Reached == true && enemy.position.x == WayPoint01.position.x && enemy.position.z == WayPoint01.position.z) {
+    void Patrol()
+    {
+        if (WP02Reached == true && enemy.position.x == WayPoint01.position.x && enemy.position.z == WayPoint01.position.z)
+        {
           nav.destination = WayPoint02.position;
             WP01Reached = true;
             WP02Reached = false;  
             Debug.Log("changing to destination wp02... ");
         }
 
-        else if (WP01Reached == true && enemy.position.x == WayPoint02.position.x && enemy.position.z == WayPoint02.position.z) {
+        else if (WP01Reached == true && enemy.position.x == WayPoint02.position.x && enemy.position.z == WayPoint02.position.z)
+        {
             nav.destination = WayPoint01.position;
             WP01Reached = false;
             WP02Reached = true;
@@ -84,10 +96,12 @@ public class enemyAI : MonoBehaviour {
        
     }
 
-    void OnTriggerEnter(Collider other) {
-        if (other.gameObject.tag == "Player") {
+   /* void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
             other.transform.position = Startpoint.position;
         }
-    }
+    }*/
  
 }
