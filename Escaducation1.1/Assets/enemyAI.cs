@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EnemyAI : MonoBehaviour
+public class enemyAI : MonoBehaviour
 {
     public float patrolSpeed = 2f;
     public float chaseSpeed = 5f;
@@ -20,9 +20,11 @@ public class EnemyAI : MonoBehaviour
     void Awake()
     {
         enemySight = GetComponent<EnemySight>();
+        Debug.Log("Got enemy sighting script");
         nav = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         lastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
+        Debug.Log("got lastPlayerSighting script");
     }
 
 
@@ -30,7 +32,8 @@ public class EnemyAI : MonoBehaviour
     {
         if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition)
         {
-            Chasing();
+            Chasing01();
+            Debug.Log("araf");
         }
         else
         {
@@ -45,7 +48,8 @@ public class EnemyAI : MonoBehaviour
 
         if (sightingDeltaPos.sqrMagnitude > 4f)
         {
-            nav.destination = enemySight.personalLastSighting;
+            //nav.destination = enemySight.personalLastSighting;
+            nav.destination = player.position;
         }
 
         nav.speed = chaseSpeed;
@@ -65,6 +69,12 @@ public class EnemyAI : MonoBehaviour
         {
             chaseTimer = 0f;
         }
+    }
+
+    void Chasing01()
+    {
+        nav.destination = player.position;
+        
     }
 
 

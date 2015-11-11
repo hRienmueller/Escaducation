@@ -45,8 +45,13 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\enemyAI.cs" />
+     <Compile Include="Assets\jh.cs" />
+     <Compile Include="Assets\scripts\AnimatorSetup.cs" />
      <Compile Include="Assets\scripts\Game Controller\HashIDs.cs" />
+     <Compile Include="Assets\scripts\Game Controller\LastPlayerSighting.cs" />
      <Compile Include="Assets\scripts\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\scripts\enemy\EnemyAnimation.cs" />
      <Compile Include="Assets\scripts\enemy\EnemySight.cs" />
      <Compile Include="Assets\scripts\enemy\enemyAI.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
