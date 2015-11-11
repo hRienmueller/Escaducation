@@ -11,6 +11,7 @@ public class EnemyAnimation : MonoBehaviour
     private Animator anim;
     private HashIDs hash;
     private AnimatorSetup animSetup;
+    private enemyAI EnemyAI;
 
     void Awake()
     {
@@ -19,6 +20,7 @@ public class EnemyAnimation : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
+        EnemyAI = GetComponent<enemyAI>();
 
         nav.updateRotation = false;
         animSetup = new AnimatorSetup(anim, hash);
@@ -46,7 +48,7 @@ public class EnemyAnimation : MonoBehaviour
 
         if (enemySight.playerInSight)
         {
-            speed = 0f;
+            speed = EnemyAI.chaseSpeed;
             angle = FindAngle(transform.forward, player.position - transform.position, transform.up);
         }
         else
