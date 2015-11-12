@@ -6,6 +6,7 @@ public class EnemySight : MonoBehaviour
     public float fieldOfViewAngle = 110f;   // enemies field of view in degree
     public bool playerInSight;              //check if the player is in sight
     public Vector3 personalLastSighting;     // position of the last sighting of the player
+    public bool canHear;
 
     private NavMeshAgent nav;
     private SphereCollider col;
@@ -66,13 +67,16 @@ public class EnemySight : MonoBehaviour
                 }
             }
 
-            int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
-            if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking
-            {
-                Debug.Log("WalkingState detected");
-                if (CalculatePathLenght(player.transform.position)<= col.radius)  //if player is not behind a wall
+            if (canHear == true) {
+                int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
+                //Debug.Log("got current state");
+                if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking
                 {
-                    personalLastSighting = player.transform.position;  //go find player without setting the playerInSight boolean to true
+                    Debug.Log("WalkingState detected");
+                    if (CalculatePathLenght(player.transform.position) <= col.radius)  //if player is not behind a wall
+                    {
+                        personalLastSighting = player.transform.position;  //go find player without setting the playerInSight boolean to true
+                    }
                 }
             }
         }

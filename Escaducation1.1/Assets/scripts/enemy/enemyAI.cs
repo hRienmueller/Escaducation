@@ -22,11 +22,11 @@ public class enemyAI : MonoBehaviour
     void Awake()
     {
         enemySight = GetComponent<EnemySight>();
-        Debug.Log("Got enemy sighting script");
+        //Debug.Log("Got enemy sighting script");
         nav = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
         lastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
-        Debug.Log("got lastPlayerSighting script");
+       //Debug.Log("got lastPlayerSighting script");
     }
 
 

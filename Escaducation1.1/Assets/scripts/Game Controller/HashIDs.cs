@@ -25,6 +25,6 @@ public class HashIDs : MonoBehaviour
         angularSpeedFloat = Animator.StringToHash("AngularSpeed");
         locomotionState = Animator.StringToHash("Base Layer.Locomotion");
         aimweightFloat = Animator.StringToHash("Aimweight");
-        walkState = Animator.StringToHash("Base Layer.");
+        walkState = Animator.StringToHash("Base Layer.Walk");
     }
 }
