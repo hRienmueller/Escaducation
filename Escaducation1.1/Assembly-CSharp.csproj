@@ -54,6 +54,7 @@
      <Compile Include="Assets\scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\scripts\Player\PlayerScore.cs" />
      <Compile Include="Assets\scripts\enemy\AnimatorSetup.cs" />
+     <Compile Include="Assets\scripts\enemy\DogScript.cs" />
      <Compile Include="Assets\scripts\enemy\EnemyAnimation.cs" />
      <Compile Include="Assets\scripts\enemy\EnemySight.cs" />
      <Compile Include="Assets\scripts\enemy\enemyAI.cs" />

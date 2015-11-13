@@ -7,20 +7,28 @@ public class enemyAI : MonoBehaviour
     public float chaseSpeed = 5f;     //speed of the enemy in the chasing state
     public float chaseWaitTime = 2f;   //time the enemy will wait at the last sighting position of the player
     public float patrolWaitTime = 1f;   //time the enemy will wait on each wayPoint
+    public float attentionZone = 10f;
     public Transform[] patrolWayPoints;   //array to store the waypoints
     public float killDistance = 0.5f;     //Distance in which the player is considered as catched
     public Transform startPoint;
+    public float generalWaitTime = 1.5f;       //Timer for extra stunned time
+    public bool ExtraDurationOn;            //checks if duration of an extra is true at the current time
 
+    private InventoryScript inventory;
     private EnemySight enemySight;
     private NavMeshAgent nav;
     public Transform player;
+    public GameObject enemy;
     private LastPlayerSighting lastPlayerSighting;
     private float chaseTimer;      //timer to check the time the enemy is already waiting at the players last sighting position
     private float patrolTimer;     //timer to check the time the enemy is already waiting at the current waypoint
     private int wayPointIndex;
+    public float stunTimer;      //timer to check the time the enemy is stunned
 
     void Awake()
     {
+        ExtraDurationOn = false;
+        inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
         enemySight = GetComponent<EnemySight>();
         //Debug.Log("Got enemy sighting script");
         nav = GetComponent<NavMeshAgent>();
@@ -32,14 +40,30 @@ public class enemyAI : MonoBehaviour
 
     void Update()
     {
+        float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
+
+        if (Input.GetButtonDown("Action"))  //if you press the button which use an item
+        {
+            if(distance < attentionZone) //if player uses item near enough to enemy
+            {
+                ExtraDurationOn = true;  //activate extra
+            }
+        }
+
+        if (ExtraDurationOn == true )   //if extra ist activated
+        {
+            CheckExtra();   //check which one it is and trigger its special abilities
+            
+        }
+
         if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition)  //when the players last sighting pos is not default
         {
-            Chasing();
-
+            Chasing();   //hunt the player
         }
-        else
+
+        else             
         {
-            Patrolling();
+            Patrolling();      //patrol between certain points
         }
     }
 
@@ -77,7 +101,7 @@ public class enemyAI : MonoBehaviour
         }
         else
         {
-            chaseTimer = 0f;
+            chaseTimer = 0f;    //reset timer
         }
     }
 
@@ -109,6 +133,30 @@ public class enemyAI : MonoBehaviour
             patrolTimer = 0f; //reset timer
         }
         nav.destination = patrolWayPoints[wayPointIndex].position;  // set destination to the Waypoint that is indicated by the current index
+    }
+
+    void CheckExtra()
+    {
+        if (inventory.InventoryContains("sponge")) //if inventory at the current time contains a sponge
+        {
+           //Debug.Log("stunned");
+           stunTimer += Time.deltaTime;     //increase timer
+           enemy.SetActive(false);
+            
+           if (stunTimer >= generalWaitTime)   //if timer equals or is higher as the generalWaittime
+           {
+                ExtraDurationOn = false;        //set extra duration to false, 
+                stunTimer = 0f;                  // reset the timer
+           }
+        }
+        if (inventory.InventoryContains("chalk"))
+        {
+            for(int i=0; i< 100; i++)
+            {
+                enemy.transform.position = startPoint.position;
+            }
+            ExtraDurationOn = false;
+        }
     }
 }
 

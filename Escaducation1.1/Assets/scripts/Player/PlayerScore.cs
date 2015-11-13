@@ -20,7 +20,7 @@ public class PlayerScore : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)  
     {
-        Debug.Log("decrease score");
+        //Debug.Log("decrease score");
         if (other.gameObject.tag == "Enemy")     //if player gets in seeing or hearing range of an enemy
         {
             score = score - 1;    //decrease score
@@ -29,9 +29,9 @@ public class PlayerScore : MonoBehaviour {
 
         if (other.gameObject.tag == "extra")  //if player walks through an item
         {
-            Debug.Log("extra found");
+            //Debug.Log("extra found");
             currentExtra = other.name;
-            Debug.Log(currentExtra);
+            //Debug.Log(currentExtra);
             score = score + 2;               //increase score
             scoreScript.UpdateScore01();       //update score
 

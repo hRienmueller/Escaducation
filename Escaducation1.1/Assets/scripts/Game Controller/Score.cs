@@ -59,7 +59,7 @@ public class Score : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)   //if player gets in seeing or hearing range of an enemy
     {
-        Debug.Log("decrease score");
+        //Debug.Log("decrease score");
         if (other.gameObject.tag == "Enemy")
         {
             
@@ -76,7 +76,7 @@ public class Score : MonoBehaviour {
 
     void OnTriggerExit(Collider other)    //if player exits seeing or hearing range of an enemy
     {
-        Debug.Log("Increase Score");
+        //Debug.Log("Increase Score");
         if (other.gameObject.tag == "Enemy")
         {
             
