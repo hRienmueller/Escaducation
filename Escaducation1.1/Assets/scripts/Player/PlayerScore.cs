@@ -25,6 +25,7 @@ public class PlayerScore : MonoBehaviour {
         {
             score = score - 1;    //decrease score
             scoreScript.UpdateScore01();        // update score
+            PlayerPrefs.SetInt("IntScore", score);
         }
 
         if (other.gameObject.tag == "extra")  //if player walks through an item
@@ -34,8 +35,9 @@ public class PlayerScore : MonoBehaviour {
             //Debug.Log(currentExtra);
             score = score + 2;               //increase score
             scoreScript.UpdateScore01();       //update score
+            PlayerPrefs.SetInt("IntScore", score);
 
-           
+
             other.gameObject.SetActive(false);   //remove exra from the scene
             inventory.OnGUI();
         }
@@ -48,6 +50,7 @@ public class PlayerScore : MonoBehaviour {
         {
 
             score = score + 2;                 //increase score
+            PlayerPrefs.SetInt("IntScore", score);
             scoreScript.UpdateScore01();       // update score
         }
     }

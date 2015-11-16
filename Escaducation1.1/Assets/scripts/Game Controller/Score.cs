@@ -4,9 +4,10 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-    public int score;         //this shows your score
+    public static int score;         //this shows your score
     private GameObject scoreCounter;  //for the reference of the scoreCounter
     private Text scoreText;       // for the reference of the text component we want to access
+    public string NameOfScene;
 
     //Test
     private EnemySight enemySight;  //for the reference of the enemySight script
@@ -18,12 +19,16 @@ public class Score : MonoBehaviour {
         enemySight = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemySight>(); //only works, if there is just one player
         scoreCounter = GameObject.FindGameObjectWithTag("scoreCounter");   //find the scoreCounter gameObject
         scoreText = scoreCounter.GetComponent<Text>();                     //get the Text compnent of that gameobject
-        Reset();                                                           //reset it at the start of the game
+        if (NameOfScene != "StartScreen")
+        {
+            //Reset();
+        }//reset it at the start of the level
     }
 
     void FixedUpdate()
     {
         UpdateScore01();
+        Debug.Log(PlayerPrefs.GetInt("IntScore"));
     }
 
    /* void UpdateScore()  //this only works if there is just one lonely enemy... :(
@@ -49,6 +54,7 @@ public class Score : MonoBehaviour {
        public void UpdateScore01()
     {
         scoreText.text = "Score: " + PlayerScore.score;
+        PlayerPrefs.SetInt("ScoreInt", PlayerScore.score);
     }
 
     void Reset()

@@ -19,7 +19,11 @@ public class enemyAI : MonoBehaviour
     private NavMeshAgent nav;
     public Transform player;
     public GameObject enemy;
+    public int IntScore;
+
+    private PlayerScore playerScore;
     private LastPlayerSighting lastPlayerSighting;
+    private onButtonClick changeScenes;
     private float chaseTimer;      //timer to check the time the enemy is already waiting at the players last sighting position
     private float patrolTimer;     //timer to check the time the enemy is already waiting at the current waypoint
     private int wayPointIndex;
@@ -28,11 +32,14 @@ public class enemyAI : MonoBehaviour
     void Awake()
     {
         ExtraDurationOn = false;
+        changeScenes = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
         enemySight = GetComponent<EnemySight>();
         //Debug.Log("Got enemy sighting script");
         nav = GetComponent<NavMeshAgent>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerScore = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScore>();
+        IntScore = playerScore.score;
         lastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
        //Debug.Log("got lastPlayerSighting script");
     }
@@ -82,7 +89,9 @@ public class enemyAI : MonoBehaviour
             if(distance < killDistance)                      // if player is in killDistance
             {
                 //Debug.Log("Gotcha!");
-                player.position = startPoint.position;
+                //player.position = startPoint.position;   // maybe for the prototype
+                PlayerPrefs.SetInt("ScoreInt", IntScore);
+                changeScenes.changeScenes("StartScreen");
             }
         }
 
