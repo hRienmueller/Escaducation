@@ -48,6 +48,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 targetDirection = new Vector3(horizontal, 0f, vertical); //Creat a new Vector of the orizontal and vertical inputs
         Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);  // create a rotation based on theis Vector assuming that up is the global y axis
         Quaternion newRotation = Quaternion.Lerp(rigidbody.rotation, targetRotation, turnSmoothing*Time.deltaTime);    // Create a rotation that is an increment closer to the target rotation from the player's rotation.
-        rigidbody.MoveRotation(newRotation); //change te players rotation to this new rotation
+        rigidbody.MoveRotation(newRotation); //change te players rotation to this new rotation vector
     }
 }
