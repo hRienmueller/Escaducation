@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
 
-    public static int score;         //this shows your score
+    public  int score;         //this shows your score
     private GameObject scoreCounter;  //for the reference of the scoreCounter
     private Text scoreText;       // for the reference of the text component we want to access
     public string NameOfScene;
@@ -19,37 +19,18 @@ public class Score : MonoBehaviour {
         enemySight = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemySight>(); //only works, if there is just one player
         scoreCounter = GameObject.FindGameObjectWithTag("scoreCounter");   //find the scoreCounter gameObject
         scoreText = scoreCounter.GetComponent<Text>();                     //get the Text compnent of that gameobject
-        if (NameOfScene != "StartScreen")
+        if (NameOfScene != "StartScreen") //this does not work as I want it to.
         {
-            //Reset();
+            Reset();
         }//reset it at the start of the level
     }
 
     void FixedUpdate()
     {
         UpdateScore01();
-        Debug.Log(PlayerPrefs.GetInt("IntScore"));
+        //Debug.Log(PlayerPrefs.GetInt("IntScore"));
     }
 
-   /* void UpdateScore()  //this only works if there is just one lonely enemy... :(
-    {
-        if (enemySight.playerInSight ==true)    // if player is seen by the enemy...
-        {
-            Debug.Log("in sight true for score");
-            if(score > 0)                     // ...and score is not null...
-            {
-                Debug.Log("score -1");
-                score = score - 1;    // ...decrease score
-                scoreText.text = "Score: " + score;
-            }
-        }
-        if (enemySight.playerInSight == false)   //if player is not seen by the enemy
-        {
-            score = score + 1;                   // increas score
-            Debug.Log("score +1");
-            scoreText.text = "Score: " + score;
-        }
-    }*/
 
        public void UpdateScore01()
     {
@@ -63,20 +44,20 @@ public class Score : MonoBehaviour {
         scoreText.text = "Score: " + PlayerScore.score;   // resets the score Text
     }
 
-    void OnTriggerEnter(Collider other)   //if player gets in seeing or hearing range of an enemy
+    void OnTriggerEnter(Collider other)  
     {
         //Debug.Log("decrease score");
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Enemy")   //if player gets in seeing or hearing range of an enemy
         {
             
             score = score - 1;    //decrease score
             UpdateScore01();        // update score
         }
 
-        if (other.gameObject.tag == "extra")
+        if (other.gameObject.tag == "extra") // if the player walks through an extra
         {
-            score = score + 2;
-            UpdateScore01();
+            score = score + 2;   //increase the score by 2
+            UpdateScore01();   //update the score
         }
     }
 

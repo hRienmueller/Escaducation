@@ -31,7 +31,7 @@ public class PlayerScore : MonoBehaviour {
         if (other.gameObject.tag == "extra")  //if player walks through an item
         {
             //Debug.Log("extra found");
-            currentExtra = other.name;
+            currentExtra = other.name;   //set a string name for the other scripts to work with
             //Debug.Log(currentExtra);
             score = score + 2;               //increase score
             scoreScript.UpdateScore01();       //update score
@@ -39,18 +39,18 @@ public class PlayerScore : MonoBehaviour {
 
 
             other.gameObject.SetActive(false);   //remove exra from the scene
-            inventory.OnGUI();
+            inventory.OnGUI();        //clear inventory field
         }
     }
 
     public void OnTriggerExit(Collider other)    
     {
-        Debug.Log("Increase Score");
+       // Debug.Log("Increase Score");
         if (other.gameObject.tag == "Enemy")      //if player exits seeing or hearing range of an enemy
         {
 
             score = score + 2;                 //increase score
-            PlayerPrefs.SetInt("IntScore", score);
+            PlayerPrefs.SetInt("IntScore", score); //set playerPrefs value, to not be deleted by scene changing...
             scoreScript.UpdateScore01();       // update score
         }
     }

@@ -37,11 +37,13 @@ public class enemyAI : MonoBehaviour
         enemySight = GetComponent<EnemySight>();
         //Debug.Log("Got enemy sighting script");
         nav = GetComponent<NavMeshAgent>();
+       // Debug.Log("got navmeshagnet"+ transform.name);
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerScore = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScore>();
         IntScore = playerScore.score;
         lastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
-       //Debug.Log("got lastPlayerSighting script");
+        //Debug.Log("got lastPlayerSighting script");
+        Debug.Log(patrolWayPoints[0]);
     }
 
 
@@ -89,13 +91,13 @@ public class enemyAI : MonoBehaviour
             if(distance < killDistance)                      // if player is in killDistance
             {
                 //Debug.Log("Gotcha!");
-                //player.position = startPoint.position;   // maybe for the prototype
-                PlayerPrefs.SetInt("ScoreInt", IntScore);
-                changeScenes.changeScenes("StartScreen");
+                //player.position = startPoint.position;   // maybe for the prototype; teleports the enmy to the players startposition
+                PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
+                changeScenes.changeScenes("StartScreen");  //change the scene to startscene
             }
         }
 
-        nav.speed = chaseSpeed;
+        nav.speed = chaseSpeed;   //set speed to chaseSpeed
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position
         {
@@ -118,6 +120,7 @@ public class enemyAI : MonoBehaviour
     void Patrolling()
     {
         nav.speed = patrolSpeed;    //set speed
+       // Debug.Log(nav.destination);
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
         {
@@ -152,19 +155,19 @@ public class enemyAI : MonoBehaviour
            stunTimer += Time.deltaTime;     //increase timer
            enemy.SetActive(false);
             
-           if (stunTimer >= generalWaitTime)   //if timer equals or is higher as the generalWaittime
+           if (stunTimer >= generalWaitTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
            {
                 ExtraDurationOn = false;        //set extra duration to false, 
                 stunTimer = 0f;                  // reset the timer
            }
         }
-        if (inventory.InventoryContains("chalk"))
+        if (inventory.InventoryContains("chalk")) //if inventory at the current time contains the chalk
         {
             for(int i=0; i< 100; i++)
             {
-                enemy.transform.position = startPoint.position;
+                enemy.transform.position = startPoint.position;  //teleport enemy to startpositionGameObject
             }
-            ExtraDurationOn = false;
+            ExtraDurationOn = false; //set extra duration to false
         }
     }
 }

@@ -24,7 +24,7 @@ public class InventoryScript : MonoBehaviour {
         //y = EmptySlot.transform.position.y;   // y-position of the emptyslot image in screen
         //x = 70;
         //y = 265;
-        slotRect = new Rect(x, y, 80, 80);
+        slotRect = new Rect(x, y, 80, 80);  //the position of the ItemIcon in screen
     }
 
     /*void Update()
@@ -34,22 +34,22 @@ public class InventoryScript : MonoBehaviour {
   
 	public void OnGUI()
     {
-        if (scoreScript.currentExtra == "sponge")
+        if (scoreScript.currentExtra == "sponge")  //if the extra the player just walked throug was the sponge
         {
             //ResetInventory();
-            GUI.DrawTexture(slotRect, spongeIcon);
+            GUI.DrawTexture(slotRect, spongeIcon);   //draw the sponge Icon
             //Debug.Log("Drawed icon sponge...");
         }
 
-        if (scoreScript.currentExtra == "chalk")
+        if (scoreScript.currentExtra == "chalk")  //if it was the chalk...
         {
             //ResetInventory();
-            GUI.DrawTexture(slotRect, chalkIcon);
+            GUI.DrawTexture(slotRect, chalkIcon);   //...draw the chalk Icon
             //Debug.Log("Drawed icon chalk...");
         }
-        if (Input.GetButtonUp("Action"))
+        if (Input.GetButtonUp("Action"))   //if player uses the item
         {
-            GUI.DrawTexture(slotRect, emptySlot);  // resets the iventory to not hold any extra
+            GUI.DrawTexture(slotRect, emptySlot);  // clear the iventory to not hold any extra
             scoreScript.currentExtra = "";         // set current extra to nothing
             //Debug.Log(scoreScript.currentExtra);
         }
@@ -64,8 +64,7 @@ public class InventoryScript : MonoBehaviour {
             Debug.Log("Extra found in inventory");
             result = true;            //the result of InventoryContains is true
         }
-
-        return result;
-        Debug.Log("result");
+       // Debug.Log("result");
+        return result; //return the result
     }
 }
