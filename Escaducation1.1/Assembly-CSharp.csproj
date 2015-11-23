@@ -53,6 +53,7 @@
      <Compile Include="Assets\scripts\Game Controller\Restart.cs" />
      <Compile Include="Assets\scripts\Game Controller\Score.cs" />
      <Compile Include="Assets\scripts\Game Controller\ScoreProof.cs" />
+     <Compile Include="Assets\scripts\Game Controller\ToiletScript.cs" />
      <Compile Include="Assets\scripts\Item\InventoryScript.cs" />
      <Compile Include="Assets\scripts\Item\Item.cs" />
      <Compile Include="Assets\scripts\Player\PlayerMovement.cs" />
