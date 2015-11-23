@@ -5,12 +5,15 @@ public class DogScript : MonoBehaviour {
     public float distance;   //distance between the player and the dog
     public Vector3 globalLastSighting;   //reference to the place, where the player was seen the last time. Every enemy knows
     public float SniffDistance;   //alarm distance of the dog
+    public float barkWaitTime;    //Time the dog waits till he barks
 
     private GameObject player;   //the player gameobject
     private NavMeshAgent nav;    //the navMeshAgent component of the dog
     private Animator playerAnim;  //the player Animator
     private HashIDs hash;   //reference to the HashIDs script
     private LastPlayerSighting LastPlayerSighting;   //reference to the lastPlayerSightingScript
+    private float barkTimer;  //Just a timer 
+
 
     void Awake()
     {
@@ -34,8 +37,16 @@ public class DogScript : MonoBehaviour {
         {
             if (distance <= SniffDistance)         //if the dog is near enough
             {
-                LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
-               // Debug.Log("BARK!");
+                barkTimer += Time.deltaTime;
+                //Debug.Log(barkTimer);
+
+                if (barkTimer >= barkWaitTime)
+                {
+                    LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
+                    //Debug.Log(LastPlayerSighting.position);
+                    Debug.Log("BARK!");
+                    barkTimer = 0f;
+                }
             }
         }
     }

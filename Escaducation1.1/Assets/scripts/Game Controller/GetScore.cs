@@ -17,7 +17,7 @@ public class GetScore : MonoBehaviour {
     void Update()
     {
         Debug.Log(PlayerPrefs.GetInt("ScoreInt"));  //get scoreValue from the PlayerPrefs
-        Number = playerScore.score;   //Set scoreValue to be the variable Number
+        Number = playerScore.score;                 //Set scoreValue to be the variable Number
         //Debug.Log(Number);
         //scoreText.text = "Score: " + Number;
     }

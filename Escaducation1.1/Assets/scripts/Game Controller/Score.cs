@@ -36,6 +36,7 @@ public class Score : MonoBehaviour {
     {
         scoreText.text = "Score: " + PlayerScore.score;
         PlayerPrefs.SetInt("ScoreInt", PlayerScore.score);
+        PlayerPrefs.Save();
     }
 
     void Reset()
@@ -44,7 +45,7 @@ public class Score : MonoBehaviour {
         scoreText.text = "Score: " + PlayerScore.score;   // resets the score Text
     }
 
-    void OnTriggerEnter(Collider other)  
+   /* void OnTriggerEnter(Collider other)  
     {
         //Debug.Log("decrease score");
         if (other.gameObject.tag == "Enemy")   //if player gets in seeing or hearing range of an enemy
@@ -70,6 +71,6 @@ public class Score : MonoBehaviour {
             score = score + 2;   //increase score
             UpdateScore01();       // update score
         }
-    }
+    }*/
 
 }

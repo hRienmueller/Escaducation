@@ -6,16 +6,29 @@ public class PlayerScore : MonoBehaviour {
 
     public int score;
     public string currentExtra;
+    public float countMaxTime;
 
     private Score scoreScript;
     private InventoryScript inventory;
+    private float countTimer;
 
 
     void Awake()
     {
-        currentExtra = "";
+        currentExtra = "   ";
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
         scoreScript = GameObject.FindGameObjectWithTag("gameController").GetComponent<Score>();
+    }
+
+    public void Update()
+    {
+        countTimer += Time.deltaTime;
+        if (countTimer >= countMaxTime)
+        {
+            score = score + 20;
+            countTimer = 0f;
+            PlayerPrefs.SetInt("IntScore", score);
+        }
     }
 
     public void OnTriggerEnter(Collider other)  
