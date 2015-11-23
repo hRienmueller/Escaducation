@@ -36,6 +36,7 @@ public class Score : MonoBehaviour {
     {
         scoreText.text = "Score: " + PlayerScore.score;
         PlayerPrefs.SetInt("ScoreInt", PlayerScore.score);
+        PlayerPrefs.SetInt(NameOfScene, PlayerScore.score);
         PlayerPrefs.Save();
     }
 
