@@ -54,6 +54,8 @@ public class enemyAI : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
+
         float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
 
         if (Input.GetButtonDown("Action"))  //if you press the button which uses an item
