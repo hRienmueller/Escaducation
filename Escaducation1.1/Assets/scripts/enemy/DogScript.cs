@@ -9,14 +9,16 @@ public class DogScript : MonoBehaviour {
 
     private GameObject player;   //the player gameobject
     private NavMeshAgent nav;    //the navMeshAgent component of the dog
-    private Animator playerAnim;  //the player Animator
-    private HashIDs hash;   //reference to the HashIDs script
+    private Animator playerAnim;    //the player Animator
+    private HashIDs hash;        //reference to the HashIDs script
     private LastPlayerSighting LastPlayerSighting;   //reference to the lastPlayerSightingScript
-    private float barkTimer;  //Just a timer 
+    private float barkTimer;          //Just a timer 
+    private PlayerScore playerscore;  //to check the item the player is carrying
 
 
     void Awake()
     {
+        playerscore = player.GetComponent<PlayerScore>();
         LastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
         globalLastSighting = LastPlayerSighting.position;                //default position
         player = GameObject.FindGameObjectWithTag("Player");
@@ -37,16 +39,19 @@ public class DogScript : MonoBehaviour {
         {
             if (distance <= SniffDistance)         //if the dog is near enough
             {
+                
+               
                 barkTimer += Time.deltaTime;
-                //Debug.Log(barkTimer);
+                    //Debug.Log(barkTimer);
 
-                if (barkTimer >= barkWaitTime)
-                {
-                    LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
-                    //Debug.Log(LastPlayerSighting.position);
-                    Debug.Log("BARK!");
-                    barkTimer = 0f;
-                }
+                    if (barkTimer >= barkWaitTime)
+                    {
+                        LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
+                                                                                  //Debug.Log(LastPlayerSighting.position);
+                        Debug.Log("BARK!");
+                        barkTimer = 0f;
+                    }
+                
             }
         }
     }
