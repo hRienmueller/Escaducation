@@ -7,7 +7,7 @@ public class DogScript : MonoBehaviour {
     public float SniffDistance;   //alarm distance of the dog
     public float barkWaitTime;    //Time the dog waits till he barks
 
-    private GameObject player;   //the player gameobject
+    public GameObject player;   //the player gameobject
     private NavMeshAgent nav;    //the navMeshAgent component of the dog
     private Animator playerAnim;    //the player Animator
     private HashIDs hash;        //reference to the HashIDs script
@@ -18,10 +18,10 @@ public class DogScript : MonoBehaviour {
 
     void Awake()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         playerscore = player.GetComponent<PlayerScore>();
         LastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
         globalLastSighting = LastPlayerSighting.position;                //default position
-        player = GameObject.FindGameObjectWithTag("Player");
         nav = GetComponent<NavMeshAgent>();
         playerAnim = player.GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();

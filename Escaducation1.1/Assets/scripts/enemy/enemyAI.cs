@@ -35,11 +35,12 @@ public class enemyAI : MonoBehaviour
     void Awake()
     {
         //test
-        patrolWayPoints = new Transform[4];
-        patrolWayPoints[0] = GameObject.FindGameObjectWithTag("WP01").transform;
-        patrolWayPoints[1] = GameObject.FindGameObjectWithTag("WP02").transform;
-        patrolWayPoints[2] = GameObject.FindGameObjectWithTag("WP05").transform;
-        patrolWayPoints[3] = GameObject.FindGameObjectWithTag("WP06").transform;
+        /* patrolWayPoints = new Transform[4];
+         patrolWayPoints[0] = GameObject.FindGameObjectWithTag("WP01").transform;
+         patrolWayPoints[1] = GameObject.FindGameObjectWithTag("WP02").transform;
+         patrolWayPoints[2] = GameObject.FindGameObjectWithTag("WP05").transform;
+         patrolWayPoints[3] = GameObject.FindGameObjectWithTag("WP06").transform;*/
+        //nav.SetDestination(patrolWayPoints[0].position);
 
         ExtraDurationOn = false;
         changeScenes = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
@@ -53,15 +54,19 @@ public class enemyAI : MonoBehaviour
         IntScore = playerScore.score;
         lastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
         //Debug.Log("got lastPlayerSighting script");
-        Debug.Log(patrolWayPoints[0]);
+        //Debug.Log(patrolWayPoints[0]);
         IsSponge = false;
         IsChalk = false;
+    }
+    void Start()
+    {
+        nav.destination = patrolWayPoints[0].position;
     }
 
 
     void Update()
     {
-       // Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
+        //Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
 
         float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
 
@@ -196,6 +201,7 @@ public class enemyAI : MonoBehaviour
                     wayPointIndex++;  //increase waypoint index
                 }
                 patrolTimer = 0f;  //reset timer
+                nav.SetDestination(patrolWayPoints[wayPointIndex].position);
             }
             //Debug.Log("Waypoint" + wayPointIndex);
         }
@@ -206,7 +212,7 @@ public class enemyAI : MonoBehaviour
         }
         //nav.destination = patrolWayPoints[wayPointIndex].position;  // set destination to the Waypoint that is indicated by the current index
         Debug.Log("position patrolpoint: " + patrolWayPoints[wayPointIndex].position);
-        nav.ResetPath();
+        //nav.ResetPath();
         Debug.Log("set destination: =" + nav.SetDestination(patrolWayPoints[wayPointIndex].position));
         Debug.Log("navmeshAgent destination: " + nav.destination);
         

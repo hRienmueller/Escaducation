@@ -38,7 +38,7 @@ public class EnemySight : MonoBehaviour
     {
         if (globalLastSighting != lastPlayerSighting.resetPosition)   //if the dog had barked
         {
-            nav.destination = globalLastSighting;   //go checking the position the noise came from
+          //  nav.destination = globalLastSighting;   //go checking the position the noise came from
         }
 
         if (lastPlayerSighting.position != previousSighting)   //if lastSightingPosition is ot default
