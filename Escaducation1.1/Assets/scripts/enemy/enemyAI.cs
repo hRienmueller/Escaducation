@@ -34,13 +34,6 @@ public class enemyAI : MonoBehaviour
 
     void Awake()
     {
-        //test
-        /* patrolWayPoints = new Transform[4];
-         patrolWayPoints[0] = GameObject.FindGameObjectWithTag("WP01").transform;
-         patrolWayPoints[1] = GameObject.FindGameObjectWithTag("WP02").transform;
-         patrolWayPoints[2] = GameObject.FindGameObjectWithTag("WP05").transform;
-         patrolWayPoints[3] = GameObject.FindGameObjectWithTag("WP06").transform;*/
-        //nav.SetDestination(patrolWayPoints[0].position);
 
         ExtraDurationOn = false;
         changeScenes = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
@@ -102,18 +95,15 @@ public class enemyAI : MonoBehaviour
         if (IsChalk == true)
         {
             stunTimer += Time.deltaTime;
-            if (stunTimer <= generalWaitTime)
+            nav.destination = startPoint.position;
+            Debug.Log("destination Startpoint");
+
+            if (stunTimer >= generalWaitTime)
             {
-                //enemy.transform.position = startPoint.position;
-                nav.destination = startPoint.position;
-                Debug.Log("destination: Startpoint" + nav.destination);
-            }
-            else
-            {
-                Chasing();
-                stunTimer = 0;
                 IsChalk = false;
+                stunTimer = 0;
                 ExtraDurationOn = false;
+                Chasing();
             }
         }
 
@@ -122,16 +112,17 @@ public class enemyAI : MonoBehaviour
             CheckExtra();   //check which one it is and trigger its special abilities
         }
 
-        if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition)  //when the players last sighting pos is not default
+        if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition && ExtraDurationOn == false)  //when the players last sighting pos is not default
         {
             Chasing();   //hunt the player
         }
 
         else             
         {
-            Patrolling();      //patrol between certain points
-            //isOnNavmesh
-
+            if (ExtraDurationOn == false)
+            {
+                Patrolling();      //patrol between certain points
+            }
         }
     }
 
@@ -142,18 +133,14 @@ public class enemyAI : MonoBehaviour
         float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
         if(enemySight.playerInSight == false)  //if player is not in sight
         {
-            //set destination to last sighting point
-            //nav.destination = enemySight.personalLastSighting;
             nav.SetDestination(enemySight.personalLastSighting);
         }
         else if(enemySight.playerInSight == true) //if player is near
         {
-            //nav.destination = player.transform.position;     // set destination to players position
+            // set destination to players position
             nav.SetDestination(player.transform.position);
             if(distance < killDistance)                      // if player is in killDistance
             {
-                //Debug.Log("Gotcha!");
-                //player.position = startPoint.position;   // maybe for the prototype; teleports the enmy to the players startposition
                 PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
             }
@@ -181,12 +168,9 @@ public class enemyAI : MonoBehaviour
 
     void Patrolling()
     {
-        //Debug.Log("Patrolling");
         nav.speed = patrolSpeed;    //set speed
-        //Debug.Log(nav.destination);
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
-      // if(nav.SetDestination(lastPlayerSighting.resetPosition) || nav.remainingDistance < nav.stoppingDistance)
         {
             patrolTimer += Time.deltaTime;    //start timer
 
@@ -203,18 +187,15 @@ public class enemyAI : MonoBehaviour
                 patrolTimer = 0f;  //reset timer
                 nav.SetDestination(patrolWayPoints[wayPointIndex].position);
             }
-            //Debug.Log("Waypoint" + wayPointIndex);
         }
 
         else
         {
             patrolTimer = 0f; //reset timer
         }
-        //nav.destination = patrolWayPoints[wayPointIndex].position;  // set destination to the Waypoint that is indicated by the current index
-        Debug.Log("position patrolpoint: " + patrolWayPoints[wayPointIndex].position);
-        //nav.ResetPath();
-        Debug.Log("set destination: =" + nav.SetDestination(patrolWayPoints[wayPointIndex].position));
-        Debug.Log("navmeshAgent destination: " + nav.destination);
+        //Debug.Log("position patrolpoint: " + patrolWayPoints[wayPointIndex].position);
+       // Debug.Log("set destination: =" + nav.SetDestination(patrolWayPoints[wayPointIndex].position));
+       // Debug.Log("navmeshAgent destination: " + nav.destination);
         
     }
 
@@ -230,6 +211,4 @@ public class enemyAI : MonoBehaviour
         }
     }
 }
-
-//try to instantiate the teacher prefab!!
 

@@ -38,7 +38,6 @@ public class EnemySight : MonoBehaviour
     {
         if (globalLastSighting != lastPlayerSighting.resetPosition)   //if the dog had barked
         {
-          //  nav.destination = globalLastSighting;   //go checking the position the noise came from
         }
 
         if (lastPlayerSighting.position != previousSighting)   //if lastSightingPosition is ot default
@@ -56,7 +55,6 @@ public class EnemySight : MonoBehaviour
 
             Vector3 direction = other.transform.position - transform.position; //Vector between the player and the enemy
             float angle = Vector3.Angle(direction, transform.forward); //angle between the direction vector and the forward vector of the enemy
-            //Debug.Log(angle);
             if (angle < fieldOfViewAngle*0.5)       //check if player is inside of fieldofview
             {
                 RaycastHit hit;
