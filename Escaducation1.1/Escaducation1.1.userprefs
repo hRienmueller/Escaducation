@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\..\Documents\lorena\loWe2015\unity4\Assets\DraculaScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\..\..\..\..\Documents\Geschenke\lorena\loWe2015\unity4\Assets\script\pickUpAndDoSomething.cs">
     <Files>
-      <File FileName="..\..\..\..\..\..\Documents\lorena\loWe2015\unity4\Assets\DraculaScript.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\..\..\..\Documents\Geschenke\lorena\loWe2015\unity4\Assets\script\healthbar.cs" Line="1" Column="1" />
+      <File FileName="..\..\..\..\..\..\Documents\Geschenke\lorena\loWe2015\unity4\Assets\script\pickUpAndDoSomething.cs" Line="59" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
