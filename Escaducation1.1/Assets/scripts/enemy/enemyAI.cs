@@ -24,6 +24,8 @@ public class enemyAI : MonoBehaviour
     public bool IsSponge;
     public bool IsChalk;
 
+    public GameObject Attention;  //the attentionMark above the enemies head
+
     private PlayerScore playerScore;
     private LastPlayerSighting lastPlayerSighting;
     private onButtonClick changeScenes;
@@ -34,7 +36,7 @@ public class enemyAI : MonoBehaviour
 
     void Awake()
     {
-
+        Attention.SetActive(false);
         ExtraDurationOn = false;
         changeScenes = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
@@ -129,6 +131,7 @@ public class enemyAI : MonoBehaviour
 
     void Chasing()
     {
+        Attention.SetActive(true);
         //Debug.Log("chasing");
         float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
         if(enemySight.playerInSight == false)  //if player is not in sight
@@ -168,6 +171,7 @@ public class enemyAI : MonoBehaviour
 
     void Patrolling()
     {
+        Attention.SetActive(false);
         nav.speed = patrolSpeed;    //set speed
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
