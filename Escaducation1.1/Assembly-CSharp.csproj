@@ -65,6 +65,7 @@
      <Compile Include="Assets\scripts\enemy\EnemySight.cs" />
      <Compile Include="Assets\scripts\enemy\enemyAI.cs" />
      <Compile Include="Assets\scripts\onButtonClick.cs" />
+     <Compile Include="Assets\scripts\roofScript.cs" />
      <Compile Include="Assets\scripts\test\testScoreNewBehaviourScript.cs" />
      <Compile Include="Assets\scripts\wetFloorScript.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
