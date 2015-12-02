@@ -145,7 +145,9 @@ public class enemyAI : MonoBehaviour
             if(distance < killDistance)                      // if player is in killDistance
             {
                 PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
+
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
+                Debug.Log("Scene changed");
             }
         }
 
