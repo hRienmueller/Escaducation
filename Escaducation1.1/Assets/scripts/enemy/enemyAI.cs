@@ -131,6 +131,7 @@ public class enemyAI : MonoBehaviour
 
     void Chasing()
     {
+        Debug.Log("Chasing");
         Attention.SetActive(true);
         //Debug.Log("chasing");
         float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
@@ -144,6 +145,7 @@ public class enemyAI : MonoBehaviour
             nav.SetDestination(player.transform.position);
             if(distance < killDistance)                      // if player is in killDistance
             {
+                Debug.Log("player as good as dead");
                 PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
 
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
