@@ -7,4 +7,9 @@ public class onButtonClick : MonoBehaviour {
     {
         Application.LoadLevel(NameOfScene);
     }
+
+    public void quitScene()
+    {
+        Application.Quit();
+    }
 }
