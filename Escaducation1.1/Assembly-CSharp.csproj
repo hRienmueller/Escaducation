@@ -59,6 +59,7 @@
      <Compile Include="Assets\scripts\Item\Item.cs" />
      <Compile Include="Assets\scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\scripts\Player\PlayerScore.cs" />
+     <Compile Include="Assets\scripts\PointScript.cs" />
      <Compile Include="Assets\scripts\enemy\AnimatorSetup.cs" />
      <Compile Include="Assets\scripts\enemy\DogScript.cs" />
      <Compile Include="Assets\scripts\enemy\EnemyAnimation.cs" />
@@ -68,21 +69,16 @@
      <Compile Include="Assets\scripts\roofScript.cs" />
      <Compile Include="Assets\scripts\test\testScoreNewBehaviourScript.cs" />
      <Compile Include="Assets\scripts\wetFloorScript.cs" />
+     <None Include="Assets\Standard Assets\Skins &amp; Misc\Help.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
- <Reference Include="UnityEngine.Advertisements">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
- </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Analytics">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

@@ -45,33 +45,4 @@ public class Score : MonoBehaviour {
         score = 0;                            // resets the score
         scoreText.text = "Score: " + PlayerScore.score;   // resets the score Text
     }
-
-   /* void OnTriggerEnter(Collider other)  
-    {
-        //Debug.Log("decrease score");
-        if (other.gameObject.tag == "Enemy")   //if player gets in seeing or hearing range of an enemy
-        {
-            
-            score = score - 1;    //decrease score
-            UpdateScore01();        // update score
-        }
-
-        if (other.gameObject.tag == "extra") // if the player walks through an extra
-        {
-            score = score + 2;   //increase the score by 2
-            UpdateScore01();   //update the score
-        }
-    }
-
-    void OnTriggerExit(Collider other)    //if player exits seeing or hearing range of an enemy
-    {
-        //Debug.Log("Increase Score");
-        if (other.gameObject.tag == "Enemy")
-        {
-            
-            score = score + 2;   //increase score
-            UpdateScore01();       // update score
-        }
-    }*/
-
 }
