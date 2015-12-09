@@ -34,8 +34,12 @@ public class enemyAI : MonoBehaviour
     private int wayPointIndex;     //to identify a certain waypoint in the waypointsArray
     public float stunTimer;      //timer to check the time the enemy is stunned
 
+    public AudioSource AlarmSound;
+    public bool SoundPlay;
+
     void Awake()
     {
+        SoundPlay = false;
         Attention.SetActive(false);
         ExtraDurationOn = false;
         changeScenes = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
@@ -116,6 +120,13 @@ public class enemyAI : MonoBehaviour
 
         if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition && ExtraDurationOn == false)  //when the players last sighting pos is not default
         {
+            if(AlarmSound.isPlaying == false && SoundPlay == false)
+            {
+                AlarmSound.Play();
+                SoundPlay = true;
+            }
+
+            //Debug.Log("AttentionSoundPlayed");
             Chasing();   //hunt the player
         }
 
@@ -133,6 +144,7 @@ public class enemyAI : MonoBehaviour
     {
         Debug.Log("Chasing");
         Attention.SetActive(true);
+       
         //Debug.Log("chasing");
         float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
         if(enemySight.playerInSight == false)  //if player is not in sight
@@ -175,6 +187,7 @@ public class enemyAI : MonoBehaviour
 
     void Patrolling()
     {
+        SoundPlay = false;
         Attention.SetActive(false);
         nav.speed = patrolSpeed;    //set speed
 

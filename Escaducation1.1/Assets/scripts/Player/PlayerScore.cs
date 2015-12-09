@@ -6,6 +6,9 @@ public class PlayerScore : MonoBehaviour {
 
     public int score;
 
+    public bool GetScoreBoost;         //this indicates if the player had already had his fancy ToiletScoreBoost
+    public int ToiletScoreBoost;     
+
     public int ScoreIncreasePerTime;
     public int ScoreDecreaseBySight;
     public int ScoreIncreaseExtra;
@@ -33,8 +36,12 @@ public class PlayerScore : MonoBehaviour {
     private GameObject player;
     public float PlayerPosX;
 
+    public AudioSource ToiletSound;
+
     void Awake()
     {
+        GetScoreBoost = false;
+
         ScoreEffect = false;
         effectTimer = 0;
         player = GameObject.FindGameObjectWithTag("Player");
@@ -53,6 +60,7 @@ public class PlayerScore : MonoBehaviour {
         if (countTimer >= countMaxTime)
         {
             ScoreBoost = 20;
+            Debug.Log("ScoreBost set to 20...");
             ScoreEffect = true;
 
             score = score + ScoreIncreasePerTime;
@@ -78,6 +86,19 @@ public class PlayerScore : MonoBehaviour {
 
     public void OnTriggerEnter(Collider other)  
     {
+        if(other.gameObject.tag == "toilet"  && GetScoreBoost == false)
+        {
+            ScoreBoost = 100;
+            ScoreEffect = true;
+
+            ToiletSound.Play();
+
+            score = score + ToiletScoreBoost;
+            scoreScript.UpdateScore01();
+            PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
+            GetScoreBoost = true;
+        }
+
         //Debug.Log("decrease score");
         if (other.gameObject.tag == "Enemy")     //if player gets in seeing or hearing range of an enemy
         {
