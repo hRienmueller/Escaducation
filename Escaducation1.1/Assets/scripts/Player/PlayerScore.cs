@@ -18,6 +18,7 @@ public class PlayerScore : MonoBehaviour {
     private float countTimer;
 
     public float ScoreBoost;
+    //test
     public float GetHitEffect;
     private float targY;
     private Vector3 PointPosition;
@@ -25,24 +26,53 @@ public class PlayerScore : MonoBehaviour {
 
     public GUIStyle Font;
     GUISkin PointSkin;
+    public bool ScoreEffect;    //should the score effect be played?
+    float effectTimer;
 
+    private PointScript pointScript;
+    private GameObject player;
+    public float PlayerPosX;
 
     void Awake()
     {
+        ScoreEffect = false;
+        effectTimer = 0;
+        player = GameObject.FindGameObjectWithTag("Player");
+
         currentExtra = "   ";
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
         scoreScript = GameObject.FindGameObjectWithTag("gameController").GetComponent<Score>();
+        pointScript = GameObject.FindGameObjectWithTag("Player").GetComponent<PointScript>();
     }
 
     public void Update()
     {
-        targY -= Time.deltaTime * 200;    // changes the y-position of the score text
+        //targY -= Time.deltaTime * 200;    // changes the y-position of the score text
+        PlayerPosX = player.transform.position.x;
         countTimer += Time.deltaTime;
         if (countTimer >= countMaxTime)
         {
+            ScoreBoost = 20;
+            ScoreEffect = true;
+
             score = score + ScoreIncreasePerTime;
             countTimer = 0f;
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
+        }
+
+
+        //Debug.Log("score effect = " + ScoreEffect);
+
+        if (ScoreEffect == true)
+        {
+            effectTimer = effectTimer + Time.deltaTime;
+
+            if (effectTimer >=1)
+            {
+                ScoreEffect = false;
+                effectTimer = 0;
+                pointScript.GetHitEffect = 0;
+            }
         }
     }
 
@@ -52,6 +82,8 @@ public class PlayerScore : MonoBehaviour {
         if (other.gameObject.tag == "Enemy")     //if player gets in seeing or hearing range of an enemy
         {
             ScoreBoost = -1;
+            ScoreEffect = true;
+
             score = score - ScoreDecreaseBySight;    //decrease score
             scoreScript.UpdateScore01();        // update score
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
@@ -60,6 +92,9 @@ public class PlayerScore : MonoBehaviour {
         if (other.gameObject.tag == "extra")  //if player walks through an item
         {
             ScoreBoost = 2;
+            ScoreEffect = true;
+            //Debug.Log(ScoreEffect);
+
             //Debug.Log("extra found");
             currentExtra = other.name;   //set a string name for the other scripts to work with
             //Debug.Log(currentExtra);
@@ -81,23 +116,11 @@ public class PlayerScore : MonoBehaviour {
         if (other.gameObject.tag == "Enemy")      //if player exits seeing or hearing range of an enemy
         {
             ScoreBoost = 2;
+            ScoreEffect = true;
+
             score = score + 2*ScoreDecreaseBySight;                 //increase score
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score); //set playerPrefs value, to not be deleted by scene changing...
             scoreScript.UpdateScore01();       // update score
         }
     }
-
-    /*void OnGUI()   
-    {
-        if (?????)  //something that does not depend on anything of the extra for it will be set to inactive and be therefore not accessable anymore.
-        {
-            targY = Screen.height / 2;           // y position of the score text
-            Vector3 screenPos2 = camera01.WorldToScreenPoint(PointPosition);
-            GetHitEffect += Time.deltaTime * 30;
-            GUI.color = new Color(1.0f, 1.0f, 1.0f, 1.0f - (GetHitEffect - 50) / 7);
-            GUI.skin = PointSkin;
-            GUI.Label(new Rect(screenPos2.x + 10, targY, 120, 120), ScoreBoost.ToString(), Font);
-        }
-
-    }*/
 }
