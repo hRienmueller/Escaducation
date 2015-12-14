@@ -15,9 +15,12 @@ public class DogScript : MonoBehaviour {
     private float barkTimer;          //Just a timer 
     private PlayerScore playerscore;  //to check the item the player is carrying
 
+    public AudioSource Barking;
+
 
     void Awake()
     {
+        Barking = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerscore = player.GetComponent<PlayerScore>();
         LastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
@@ -25,11 +28,13 @@ public class DogScript : MonoBehaviour {
         nav = GetComponent<NavMeshAgent>();
         playerAnim = player.GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
-        SniffDistance = 2.5f;   //Distance, in which the dog must get to bark
+        SniffDistance = 1.8f;   //Distance, in which the dog must get to bark
+        
     }
 
     void Update()
     {
+        
         distance = Vector3.Distance(player.transform.position, transform.position);   //calculating the distance between the player and the dog
         nav.destination = player.transform.position;    // the target for the dog to get to is always the player -> dog follows player
 
@@ -38,20 +43,27 @@ public class DogScript : MonoBehaviour {
         if (currentAnimatorState == hash.idleState)   //if player is standing, not sneaking or walking
         {
             if (distance <= SniffDistance)         //if the dog is near enough
-            {
-                
-               
+            {  
                 barkTimer += Time.deltaTime;
                     //Debug.Log(barkTimer);
 
-                    if (barkTimer >= barkWaitTime)
+                    if (barkTimer >= barkWaitTime )  //and has waited long enough
                     {
-                        LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
-                                                                                  //Debug.Log(LastPlayerSighting.position);
-                        Debug.Log("BARK!");
-                        barkTimer = 0f;
+                        if(Barking.isPlaying == false) //and is not already barking
+                        {
+                            Barking.Play();   //...bark.
+                        }
+                     LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
+                                                                                //Debug.Log(LastPlayerSighting.position);
+                     //Debug.Log("BARK!");
+                     barkTimer = 0f;  //reset bark timer
                     }
                 
+            }
+            else                    //if the dog is not near enough (anymore)...
+            {
+                Barking.Stop();     //...stop barking
+                Debug.Log("Stopped playing");
             }
         }
     }

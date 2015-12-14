@@ -7,13 +7,13 @@ public class PlayerScore : MonoBehaviour {
     public int score;
 
     public bool GetScoreBoost;         //this indicates if the player had already had his fancy ToiletScoreBoost
-    public int ToiletScoreBoost;     
+    public int ToiletScoreBoost;       //this is the height of the toilet score boost
 
     public int ScoreIncreasePerTime;
     public int ScoreDecreaseBySight;
     public int ScoreIncreaseExtra;
 
-    public string currentExtra;
+    public string currentExtra;       //this names the extra the player is currently holding
     public float countMaxTime;
 
     private Score scoreScript;
@@ -36,7 +36,7 @@ public class PlayerScore : MonoBehaviour {
     private GameObject player;
     public float PlayerPosX;
 
-    public AudioSource ToiletSound;
+    public AudioSource ToiletSound;  //the toilet sound
 
     void Awake()
     {
@@ -59,7 +59,7 @@ public class PlayerScore : MonoBehaviour {
         countTimer += Time.deltaTime;
         if (countTimer >= countMaxTime)
         {
-            ScoreBoost = 20;
+            ScoreBoost = 20;   //the scoreboost you get for surviving a certain amount of time
             Debug.Log("ScoreBost set to 20...");
             ScoreEffect = true;
 
@@ -88,12 +88,12 @@ public class PlayerScore : MonoBehaviour {
     {
         if(other.gameObject.tag == "toilet"  && GetScoreBoost == false)
         {
-            ScoreBoost = 100;
-            ScoreEffect = true;
+            ScoreBoost = 100;  //this is the toilet score boost
+            ScoreEffect = true; //this shows if you 
 
-            ToiletSound.Play();
+            ToiletSound.Play();   //play the fancy toilet sound
 
-            score = score + ToiletScoreBoost;
+            score = score + ToiletScoreBoost;  //get the toilet score boost
             scoreScript.UpdateScore01();
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
             GetScoreBoost = true;
@@ -106,7 +106,7 @@ public class PlayerScore : MonoBehaviour {
             ScoreEffect = true;
 
             score = score - ScoreDecreaseBySight;    //decrease score
-            scoreScript.UpdateScore01();        // update score
+            scoreScript.UpdateScore01();             // update score
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
         }
 
@@ -127,21 +127,21 @@ public class PlayerScore : MonoBehaviour {
 
             other.gameObject.SetActive(false);   //remove exra from the scene
             //Debug.Log("extra inactive");
-            inventory.OnGUI();        //clear inventory field
+            inventory.OnGUI();                   //clear inventory field
         }
     }
 
     public void OnTriggerExit(Collider other)    
     {
        // Debug.Log("Increase Score");
-        if (other.gameObject.tag == "Enemy")      //if player exits seeing or hearing range of an enemy
+        if (other.gameObject.tag == "Enemy")                        //if player exits seeing or hearing range of an enemy
         {
             ScoreBoost = 2;
             ScoreEffect = true;
 
             score = score + 2*ScoreDecreaseBySight;                 //increase score
-            PlayerPrefs.SetInt(scoreScript.NameOfScene, score); //set playerPrefs value, to not be deleted by scene changing...
-            scoreScript.UpdateScore01();       // update score
+            PlayerPrefs.SetInt(scoreScript.NameOfScene, score);     //set playerPrefs value, to not be deleted by scene changing...
+            scoreScript.UpdateScore01();                            // update score
         }
     }
 }

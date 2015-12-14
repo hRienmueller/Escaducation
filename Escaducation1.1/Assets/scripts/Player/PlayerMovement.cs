@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+
         anim = GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>() ;
 
@@ -31,8 +32,7 @@ public class PlayerMovement : MonoBehaviour
     void MovementManagement(float horizontal, float vertical, bool sneaking)
     {
         anim.SetBool(hash.sneakingBool, sneaking);  //set the sneaking parameter to the sneak input
-
-        if (horizontal != 0f || vertical != 0f)  // if there is some axis inut...
+        if (horizontal != 0f || vertical != 0f)  // if there is some axis input...
         {
             Rotating(horizontal, vertical);   //set players rotation
             anim.SetFloat(hash.speedFloat, 1f, speedDampTime, Time.deltaTime);  // set players speed
@@ -45,7 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Rotating(float horizontal, float vertical)  //calculate the players rotation based on the axis input
     {
-        Vector3 targetDirection = new Vector3(horizontal, 0f, vertical); //Creat a new Vector of the orizontal and vertical inputs
+        Vector3 targetDirection = new Vector3(horizontal, 0f, vertical); //Create a new Vector of the orizontal and vertical inputs
         Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);  // create a rotation based on theis Vector assuming that up is the global y axis
         Quaternion newRotation = Quaternion.Lerp(rigidbody.rotation, targetRotation, turnSmoothing*Time.deltaTime);    // Create a rotation that is an increment closer to the target rotation from the player's rotation.
         rigidbody.MoveRotation(newRotation); //change te players rotation to this new rotation vector

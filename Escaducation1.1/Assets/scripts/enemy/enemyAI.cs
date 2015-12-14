@@ -120,9 +120,9 @@ public class enemyAI : MonoBehaviour
 
         if (enemySight.personalLastSighting != lastPlayerSighting.resetPosition && ExtraDurationOn == false)  //when the players last sighting pos is not default
         {
-            if(AlarmSound.isPlaying == false && SoundPlay == false)
+            if(AlarmSound.isPlaying == false && SoundPlay == false)  // if the alarmsound is not already playing
             {
-                AlarmSound.Play();
+                AlarmSound.Play(); //...play the alarm sound
                 SoundPlay = true;
             }
 
@@ -143,7 +143,7 @@ public class enemyAI : MonoBehaviour
     void Chasing()
     {
         Debug.Log("Chasing");
-        Attention.SetActive(true);
+        Attention.SetActive(true); //let the attention mark appear
        
         //Debug.Log("chasing");
         float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
@@ -157,11 +157,11 @@ public class enemyAI : MonoBehaviour
             nav.SetDestination(player.transform.position);
             if(distance < killDistance)                      // if player is in killDistance
             {
-                Debug.Log("player as good as dead");
+                //Debug.Log("player as good as dead");
                 PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
 
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
-                Debug.Log("Scene changed");
+                //Debug.Log("Scene changed");
             }
         }
 
@@ -188,7 +188,7 @@ public class enemyAI : MonoBehaviour
     void Patrolling()
     {
         SoundPlay = false;
-        Attention.SetActive(false);
+        Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
@@ -206,7 +206,7 @@ public class enemyAI : MonoBehaviour
                     wayPointIndex++;  //increase waypoint index
                 }
                 patrolTimer = 0f;  //reset timer
-                nav.SetDestination(patrolWayPoints[wayPointIndex].position);
+                nav.SetDestination(patrolWayPoints[wayPointIndex].position); //set new destination
             }
         }
 
