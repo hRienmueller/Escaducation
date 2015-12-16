@@ -41,7 +41,7 @@ public class InventoryScript : MonoBehaviour {
             //Debug.Log("Drawed icon sponge...");
         }
 
-        if (scoreScript.currentExtra == "chalk")  //if it was the chalk...
+        if (scoreScript.currentExtra == "Paperthingy")  //if it was the chalk...
         {
             //ResetInventory();
             GUI.DrawTexture(slotRect, chalkIcon);   //...draw the chalk Icon

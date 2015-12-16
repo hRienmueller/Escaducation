@@ -226,7 +226,7 @@ public class enemyAI : MonoBehaviour
         {
             IsSponge = true;
         }
-        if (inventory.InventoryContains("chalk")) //if inventory at the current time contains the chalk
+        if (inventory.InventoryContains("Paperthingy")) //if inventory at the current time contains the chalk
         {
             IsChalk = true;
         }
