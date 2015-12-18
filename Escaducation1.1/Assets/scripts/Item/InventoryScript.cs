@@ -4,6 +4,7 @@ using System.Collections;
 public class InventoryScript : MonoBehaviour {
     public Texture2D spongeIcon;
     public Texture2D chalkIcon;
+    public Texture2D sausageIcon;
     public Texture2D emptySlot;
 
     private ItemDatabase database;
@@ -26,11 +27,6 @@ public class InventoryScript : MonoBehaviour {
         //y = 265;
         slotRect = new Rect(x, y, 80, 80);  //the position of the ItemIcon in screen
     }
-
-    /*void Update()
-    {
-        Debug.Log( y);
-    }*/
   
 	public void OnGUI()
     {
@@ -47,6 +43,13 @@ public class InventoryScript : MonoBehaviour {
             GUI.DrawTexture(slotRect, chalkIcon);   //...draw the chalk Icon
             //Debug.Log("Drawed icon chalk...");
         }
+        
+        if(scoreScript.currentExtra == "Sausage")
+        {
+            GUI.DrawTexture(slotRect, sausageIcon);
+            Debug.Log("Drawed icon sausage");
+        }
+
         if (Input.GetButtonUp("Action"))   //if player uses the item
         {
             GUI.DrawTexture(slotRect, emptySlot);  // clear the iventory to not hold any extra

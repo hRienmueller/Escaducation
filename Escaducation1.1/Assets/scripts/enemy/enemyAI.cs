@@ -34,8 +34,8 @@ public class enemyAI : MonoBehaviour
     private int wayPointIndex;     //to identify a certain waypoint in the waypointsArray
     public float stunTimer;      //timer to check the time the enemy is stunned
 
-    public AudioSource AlarmSound;
-    public bool SoundPlay;
+    public AudioSource AlarmSound; //the soundclip
+    public bool SoundPlay;         //to make sure the sound plays only once
 
     void Awake()
     {
@@ -47,7 +47,7 @@ public class enemyAI : MonoBehaviour
         enemySight = GetComponent<EnemySight>();
         //Debug.Log("Got enemy sighting script");
         nav = GetComponent<NavMeshAgent>();
-       // Debug.Log("got navmeshagnet"+ transform.name);
+        // Debug.Log("got navmeshagnet"+ transform.name);
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerScore = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScore>();
         IntScore = playerScore.score;
@@ -226,7 +226,7 @@ public class enemyAI : MonoBehaviour
         {
             IsSponge = true;
         }
-        if (inventory.InventoryContains("Paperthingy")) //if inventory at the current time contains the chalk
+        if (inventory.InventoryContains("Paperthingy")) //if inventory at the current time contains the paperplane
         {
             IsChalk = true;
         }

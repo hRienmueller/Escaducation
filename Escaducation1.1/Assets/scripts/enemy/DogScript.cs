@@ -14,12 +14,21 @@ public class DogScript : MonoBehaviour {
     private LastPlayerSighting LastPlayerSighting;   //reference to the lastPlayerSightingScript
     private float barkTimer;          //Just a timer 
     private PlayerScore playerscore;  //to check the item the player is carrying
+    private InventoryScript inventory;
 
     public AudioSource Barking;
+
+    public bool IsSausage;
+    public float dogAttentionZone = 10f;
+    public bool dogExtraDuration;
+    public int dogStunTime = 3;
+    float dogStunTimer;
 
 
     void Awake()
     {
+        inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
+        dogExtraDuration = false;
         Barking = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerscore = player.GetComponent<PlayerScore>();
@@ -29,6 +38,7 @@ public class DogScript : MonoBehaviour {
         playerAnim = player.GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
         SniffDistance = 1.8f;   //Distance, in which the dog must get to bark
+        IsSausage = false;
         
     }
 
@@ -65,6 +75,47 @@ public class DogScript : MonoBehaviour {
                 Barking.Stop();     //...stop barking
                 Debug.Log("Stopped playing");
             }
+
+            if (Input.GetButtonDown("Action"))
+            {
+                if(distance <= dogAttentionZone)
+                {
+                    dogExtraDuration = true;
+                }
+            }
+
+            if(dogExtraDuration == true)
+            {
+                CheckDogExtra();
+            }
+
+            if(IsSausage == true)
+            {
+                dogStunTimer += Time.deltaTime;     //increase timer
+
+                if (dogStunTimer <= dogStunTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
+                {
+                    nav.Stop();                     //stop navMeshAgent
+                    Debug.Log("DOGstunned");
+                    dogExtraDuration = false;        //set extra duration to false, 
+                }
+                else
+                {
+                    nav.Resume();                    //call navmeshagent back to live, reset every boolean
+                    dogStunTimer = 0f;                  // reset the timer
+                    IsSausage = false;
+                    dogExtraDuration = false;
+                }
+            }
+        }
+    }
+
+    void CheckDogExtra()
+    {
+        if (inventory.InventoryContains("Sausage"))
+        {
+            Debug.Log("Inventory contains Sausage");
+            IsSausage = true;
         }
     }
 }
