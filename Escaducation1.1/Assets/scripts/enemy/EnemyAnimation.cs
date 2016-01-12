@@ -37,6 +37,7 @@ public class EnemyAnimation : MonoBehaviour
 
     void OnAnimatorMove()
     {
+        
         nav.velocity = anim.deltaPosition / Time.deltaTime;  // Set the navMeshs velocity to the change in position since the last frame, by the time it took for the last frame
         transform.rotation = anim.rootRotation;  // gameobject´s rotation is driven by the animations rotation
     }
@@ -76,7 +77,7 @@ public class EnemyAnimation : MonoBehaviour
         float angle = Vector3.Angle(fromVector, toVector);  //this stores the angle between facing of the enemy and the direction of his travelling
         Vector3 normal = Vector3.Cross(fromVector, toVector); //Find the cross product of the two vectors
         angle *= Mathf.Sign(Vector3.Dot(normal, upVector));   //The dot Product
-        angle *= Mathf.Deg2Rad;   //convert the ngle from degrees to radians
+        angle *= Mathf.Deg2Rad;   //convert the angle from degrees to radians
 
         return angle;  //return the angle
     }

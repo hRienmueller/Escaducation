@@ -18,15 +18,31 @@ public class DogScript : MonoBehaviour {
 
     public AudioSource Barking;
 
-    public bool IsSausage;
+    public bool IsSausage;   //check if it is the item is the sausage
     public float dogAttentionZone = 10f;
     public bool dogExtraDuration;
     public int dogStunTime = 3;
     float dogStunTimer;
 
+    public bool IsBarking;
+    private Animator anim;
+    public float waitSpeed = 0f;
+    public float walkSpeed = 5f;
+
+    public float speed;
+
+
+
 
     void Awake()
     {
+        //anim.SetLayerWeight(2, 1f);
+        speed = walkSpeed;
+        IsBarking = false;
+        hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
+
+        anim = GetComponent<Animator>();
+
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
         dogExtraDuration = false;
         Barking = GetComponent<AudioSource>();
@@ -36,44 +52,33 @@ public class DogScript : MonoBehaviour {
         globalLastSighting = LastPlayerSighting.position;                //default position
         nav = GetComponent<NavMeshAgent>();
         playerAnim = player.GetComponent<Animator>();
-        hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
-        SniffDistance = 1.8f;   //Distance, in which the dog must get to bark
-        IsSausage = false;
-        
+        SniffDistance = 2.5f;   //Distance, in which the dog must get to bark
+        IsSausage = false;        
     }
 
     void Update()
     {
-        
+        Debug.Log("speed : " + speed);
+        anim.SetFloat(hash.DogSpeed, speed);
         distance = Vector3.Distance(player.transform.position, transform.position);   //calculating the distance between the player and the dog
         nav.destination = player.transform.position;    // the target for the dog to get to is always the player -> dog follows player
+        //Debug.Log(nav.destination);
 
         int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;  //check state, the player is in
-        //Debug.Log("got current state");
         if (currentAnimatorState == hash.idleState)   //if player is standing, not sneaking or walking
         {
             if (distance <= SniffDistance)         //if the dog is near enough
-            {  
-                barkTimer += Time.deltaTime;
-                    //Debug.Log(barkTimer);
-
-                    if (barkTimer >= barkWaitTime )  //and has waited long enough
-                    {
-                        if(Barking.isPlaying == false) //and is not already barking
-                        {
-                            Barking.Play();   //...bark.
-                        }
-                     LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
-                                                                                //Debug.Log(LastPlayerSighting.position);
-                     //Debug.Log("BARK!");
-                     barkTimer = 0f;  //reset bark timer
-                    }
+            {
                 
+                Wait();
             }
+
             else                    //if the dog is not near enough (anymore)...
             {
                 Barking.Stop();     //...stop barking
+                anim.SetBool(hash.barkingBool, false);
                 Debug.Log("Stopped playing");
+                speed = walkSpeed;
             }
 
             if (Input.GetButtonDown("Action"))
@@ -116,6 +121,47 @@ public class DogScript : MonoBehaviour {
         {
             Debug.Log("Inventory contains Sausage");
             IsSausage = true;
+        }
+    }
+
+    /*void followPlayer()
+    {
+        nav.speed = walkSpeed;
+    }*/
+
+    void Bark()
+    {
+        
+        Barking.Play();   //...bark.
+    }
+
+    void Wait()
+    {
+        speed = waitSpeed;
+        barkTimer += Time.deltaTime;
+        //Debug.Log(barkTimer);
+
+        if (barkTimer >= barkWaitTime)  //and has waited long enough
+        {
+            IsBarking = true;
+
+          
+
+            if (Barking.isPlaying == false) //and is not already barking
+            {
+                anim.SetBool(hash.barkingBool, true);
+                Bark();
+                
+            }
+
+            else
+            {
+                IsBarking = false;
+            }
+            LastPlayerSighting.position = player.transform.position;  //alarm the other enemies
+                                                                      //Debug.Log(LastPlayerSighting.position);
+                                                                      //Debug.Log("BARK!");
+            barkTimer = 0f;  //reset bark timer
         }
     }
 }

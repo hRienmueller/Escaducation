@@ -13,6 +13,14 @@ public class HashIDs : MonoBehaviour
     public int locomotionState;
     public int aimweightFloat;
     public int walkState;
+
+    //for dog
+    public int barkingBool;
+    public int DogSpeed;
+    public int DogAngularSpeed;
+
+    public int DogLocomotion;
+    public int barkState;
     
     void Awake()
     {
@@ -26,5 +34,11 @@ public class HashIDs : MonoBehaviour
         locomotionState = Animator.StringToHash("Base Layer.Locomotion");
         aimweightFloat = Animator.StringToHash("Aimweight");
         walkState = Animator.StringToHash("Base Layer.Walk");
+
+        barkingBool = Animator.StringToHash("IsBarking");
+        DogSpeed = Animator.StringToHash("DogSpeed");
+        DogAngularSpeed = Animator.StringToHash("DogAngularSpeed");
+        DogLocomotion = Animator.StringToHash("Base Layer.DogLocomotion");
+        barkState = Animator.StringToHash("Barking.DogBark");
     }
 }

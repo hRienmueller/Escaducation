@@ -5,7 +5,7 @@ public class enemyAI : MonoBehaviour
 {
     public float stunnedSpeed = 0f;   //speed of enemy in stunned state
     public float patrolSpeed = 2f;    //speed of enemy in the patrolling state
-    public float chaseSpeed = 5f;     //speed of the enemy in the chasing state
+    public float chaseSpeed = 9f;     //speed of the enemy in the chasing state
     public float chaseWaitTime = 2f;   //time the enemy will wait at the last sighting position of the player
     public float patrolWaitTime = 1f;   //time the enemy will wait on each wayPoint
     public float attentionZone = 10f;    
@@ -37,8 +37,12 @@ public class enemyAI : MonoBehaviour
     public AudioSource AlarmSound; //the soundclip
     public bool SoundPlay;         //to make sure the sound plays only once
 
+
+
     void Awake()
     {
+      
+
         SoundPlay = false;
         Attention.SetActive(false);
         ExtraDurationOn = false;
@@ -65,6 +69,7 @@ public class enemyAI : MonoBehaviour
 
     void Update()
     {
+
         //Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
 
         float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player

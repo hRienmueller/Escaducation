@@ -1,0 +1,943 @@
+fileFormatVersion: 2
+guid: 8d1d4e650a9153c4d8d53ce1bec418a5
+timeCreated: 1452528463
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Dog_FinalTest:back1
+    100002: Dog_FinalTest:Ctrl_Head
+    100004: Dog_FinalTest:Ctrl_Hip
+    100006: Dog_FinalTest:Ctrl_Hip 1
+    100008: Dog_FinalTest:Ctrl_L_BackFoot
+    100010: Dog_FinalTest:Ctrl_L_FrontFoot
+    100012: Dog_FinalTest:Ctrl_Main
+    100014: Dog_FinalTest:Ctrl_Mouth
+    100016: Dog_FinalTest:Ctrl_Neck
+    100018: Dog_FinalTest:Ctrl_R_BackFoot
+    100020: Dog_FinalTest:Ctrl_R_FrontFoot
+    100022: Dog_FinalTest:Ctrl_Root
+    100024: Dog_FinalTest:Ctrl_Stomach
+    100026: Dog_FinalTest:Ctrl_TailEnd
+    100028: Dog_FinalTest:Ctrl_TailMiddle
+    100030: Dog_FinalTest:Ctrl_TailStart
+    100032: Dog_FinalTest:Grp_Ctrl_Head
+    100034: Dog_FinalTest:Grp_Ctrl_Hip
+    100036: Dog_FinalTest:Grp_Ctrl_Hip 1
+    100038: Dog_FinalTest:Grp_Ctrl_L_BackFoot
+    100040: Dog_FinalTest:Grp_Ctrl_L_FrontFoot
+    100042: Dog_FinalTest:Grp_Ctrl_Main
+    100044: Dog_FinalTest:Grp_Ctrl_Mouth
+    100046: Dog_FinalTest:Grp_Ctrl_Neck
+    100048: Dog_FinalTest:Grp_Ctrl_R_BackFoot
+    100050: Dog_FinalTest:Grp_Ctrl_R_FrontFoot
+    100052: Dog_FinalTest:Grp_Ctrl_Root
+    100054: Dog_FinalTest:Grp_Ctrl_Stomach
+    100056: Dog_FinalTest:Grp_Ctrl_TailEnd
+    100058: Dog_FinalTest:Grp_Ctrl_TailMiddle
+    100060: Dog_FinalTest:Grp_Ctrl_TailStart
+    100062: Dog_FinalTest:Grp_IK_L_BackFoot
+    100064: Dog_FinalTest:Grp_IK_L_FrontFoot
+    100066: Dog_FinalTest:Grp_IK_R_BackFoot
+    100068: Dog_FinalTest:Grp_IK_R_FrontFoot
+    100070: Dog_FinalTest:Grp_PV_L_BackFoot
+    100072: Dog_FinalTest:Grp_PV_L_FrontFoot
+    100074: Dog_FinalTest:Grp_PV_R_BackFoot
+    100076: Dog_FinalTest:Grp_PV_R_FrontFoot
+    100078: Dog_FinalTest:IK_L_BackFoot
+    100080: Dog_FinalTest:IK_L_FrontFoot
+    100082: Dog_FinalTest:IK_R_BackFoot
+    100084: Dog_FinalTest:IK_R_FrontFoot
+    100086: Dog_FinalTest:ikHandle1
+    100088: Dog_FinalTest:ikHandle2
+    100090: Dog_FinalTest:ikHandle3
+    100092: Dog_FinalTest:ikHandle4
+    100094: Dog_FinalTest:L_Foot
+    100096: Dog_FinalTest:L_FrontFoot
+    100098: Dog_FinalTest:L_FrontKnee
+    100100: Dog_FinalTest:L_FrontShoulder
+    100102: Dog_FinalTest:L_FrontThigh
+    100104: Dog_FinalTest:L_FrontToe
+    100106: Dog_FinalTest:L_FrontToe_END
+    100108: Dog_FinalTest:L_Hip
+    100110: Dog_FinalTest:L_Knee
+    100112: Dog_FinalTest:L_Thigh
+    100114: Dog_FinalTest:L_Toe
+    100116: Dog_FinalTest:L_Toe_END
+    100118: Dog_FinalTest:M_Chest
+    100120: Dog_FinalTest:M_Head
+    100122: Dog_FinalTest:M_Head_END
+    100124: Dog_FinalTest:M_Jaw
+    100126: Dog_FinalTest:M_LowerLip
+    100128: Dog_FinalTest:M_Mouth
+    100130: Dog_FinalTest:M_Neck
+    100132: Dog_FinalTest:M_Rear
+    100134: Dog_FinalTest:M_Root
+    100136: Dog_FinalTest:M_Stomach
+    100138: Dog_FinalTest:M_Tail_END
+    100140: Dog_FinalTest:M_Tail_Middle
+    100142: Dog_FinalTest:M_Tail_Start
+    100144: Dog_FinalTest:M_TailEnd
+    100146: Dog_FinalTest:M_Taille
+    100148: Dog_FinalTest:M_Upperlip
+    100150: Dog_FinalTest:pCube2
+    100152: Dog_FinalTest:persp1
+    100154: Dog_FinalTest:PV_L_BackFoot
+    100156: Dog_FinalTest:PV_L_FrontFoot
+    100158: Dog_FinalTest:PV_R_BackFoot
+    100160: Dog_FinalTest:PV_R_FrontFoot
+    100162: Dog_FinalTest:R_Foot
+    100164: Dog_FinalTest:R_FrontFoot
+    100166: Dog_FinalTest:R_FrontKnee
+    100168: Dog_FinalTest:R_FrontShoulder
+    100170: Dog_FinalTest:R_FrontThigh
+    100172: Dog_FinalTest:R_FrontToe
+    100174: Dog_FinalTest:R_FrontToe_END
+    100176: Dog_FinalTest:R_Hip
+    100178: Dog_FinalTest:R_Knee
+    100180: Dog_FinalTest:R_Thigh
+    100182: Dog_FinalTest:R_Toe
+    100184: Dog_FinalTest:R_Toe_END
+    100186: //RootNode
+    400000: Dog_FinalTest:back1
+    400002: Dog_FinalTest:Ctrl_Head
+    400004: Dog_FinalTest:Ctrl_Hip
+    400006: Dog_FinalTest:Ctrl_Hip 1
+    400008: Dog_FinalTest:Ctrl_L_BackFoot
+    400010: Dog_FinalTest:Ctrl_L_FrontFoot
+    400012: Dog_FinalTest:Ctrl_Main
+    400014: Dog_FinalTest:Ctrl_Mouth
+    400016: Dog_FinalTest:Ctrl_Neck
+    400018: Dog_FinalTest:Ctrl_R_BackFoot
+    400020: Dog_FinalTest:Ctrl_R_FrontFoot
+    400022: Dog_FinalTest:Ctrl_Root
+    400024: Dog_FinalTest:Ctrl_Stomach
+    400026: Dog_FinalTest:Ctrl_TailEnd
+    400028: Dog_FinalTest:Ctrl_TailMiddle
+    400030: Dog_FinalTest:Ctrl_TailStart
+    400032: Dog_FinalTest:Grp_Ctrl_Head
+    400034: Dog_FinalTest:Grp_Ctrl_Hip
+    400036: Dog_FinalTest:Grp_Ctrl_Hip 1
+    400038: Dog_FinalTest:Grp_Ctrl_L_BackFoot
+    400040: Dog_FinalTest:Grp_Ctrl_L_FrontFoot
+    400042: Dog_FinalTest:Grp_Ctrl_Main
+    400044: Dog_FinalTest:Grp_Ctrl_Mouth
+    400046: Dog_FinalTest:Grp_Ctrl_Neck
+    400048: Dog_FinalTest:Grp_Ctrl_R_BackFoot
+    400050: Dog_FinalTest:Grp_Ctrl_R_FrontFoot
+    400052: Dog_FinalTest:Grp_Ctrl_Root
+    400054: Dog_FinalTest:Grp_Ctrl_Stomach
+    400056: Dog_FinalTest:Grp_Ctrl_TailEnd
+    400058: Dog_FinalTest:Grp_Ctrl_TailMiddle
+    400060: Dog_FinalTest:Grp_Ctrl_TailStart
+    400062: Dog_FinalTest:Grp_IK_L_BackFoot
+    400064: Dog_FinalTest:Grp_IK_L_FrontFoot
+    400066: Dog_FinalTest:Grp_IK_R_BackFoot
+    400068: Dog_FinalTest:Grp_IK_R_FrontFoot
+    400070: Dog_FinalTest:Grp_PV_L_BackFoot
+    400072: Dog_FinalTest:Grp_PV_L_FrontFoot
+    400074: Dog_FinalTest:Grp_PV_R_BackFoot
+    400076: Dog_FinalTest:Grp_PV_R_FrontFoot
+    400078: Dog_FinalTest:IK_L_BackFoot
+    400080: Dog_FinalTest:IK_L_FrontFoot
+    400082: Dog_FinalTest:IK_R_BackFoot
+    400084: Dog_FinalTest:IK_R_FrontFoot
+    400086: Dog_FinalTest:ikHandle1
+    400088: Dog_FinalTest:ikHandle2
+    400090: Dog_FinalTest:ikHandle3
+    400092: Dog_FinalTest:ikHandle4
+    400094: Dog_FinalTest:L_Foot
+    400096: Dog_FinalTest:L_FrontFoot
+    400098: Dog_FinalTest:L_FrontKnee
+    400100: Dog_FinalTest:L_FrontShoulder
+    400102: Dog_FinalTest:L_FrontThigh
+    400104: Dog_FinalTest:L_FrontToe
+    400106: Dog_FinalTest:L_FrontToe_END
+    400108: Dog_FinalTest:L_Hip
+    400110: Dog_FinalTest:L_Knee
+    400112: Dog_FinalTest:L_Thigh
+    400114: Dog_FinalTest:L_Toe
+    400116: Dog_FinalTest:L_Toe_END
+    400118: Dog_FinalTest:M_Chest
+    400120: Dog_FinalTest:M_Head
+    400122: Dog_FinalTest:M_Head_END
+    400124: Dog_FinalTest:M_Jaw
+    400126: Dog_FinalTest:M_LowerLip
+    400128: Dog_FinalTest:M_Mouth
+    400130: Dog_FinalTest:M_Neck
+    400132: Dog_FinalTest:M_Rear
+    400134: Dog_FinalTest:M_Root
+    400136: Dog_FinalTest:M_Stomach
+    400138: Dog_FinalTest:M_Tail_END
+    400140: Dog_FinalTest:M_Tail_Middle
+    400142: Dog_FinalTest:M_Tail_Start
+    400144: Dog_FinalTest:M_TailEnd
+    400146: Dog_FinalTest:M_Taille
+    400148: Dog_FinalTest:M_Upperlip
+    400150: Dog_FinalTest:pCube2
+    400152: Dog_FinalTest:persp1
+    400154: Dog_FinalTest:PV_L_BackFoot
+    400156: Dog_FinalTest:PV_L_FrontFoot
+    400158: Dog_FinalTest:PV_R_BackFoot
+    400160: Dog_FinalTest:PV_R_FrontFoot
+    400162: Dog_FinalTest:R_Foot
+    400164: Dog_FinalTest:R_FrontFoot
+    400166: Dog_FinalTest:R_FrontKnee
+    400168: Dog_FinalTest:R_FrontShoulder
+    400170: Dog_FinalTest:R_FrontThigh
+    400172: Dog_FinalTest:R_FrontToe
+    400174: Dog_FinalTest:R_FrontToe_END
+    400176: Dog_FinalTest:R_Hip
+    400178: Dog_FinalTest:R_Knee
+    400180: Dog_FinalTest:R_Thigh
+    400182: Dog_FinalTest:R_Toe
+    400184: Dog_FinalTest:R_Toe_END
+    400186: //RootNode
+    4300000: Dog_FinalTest:pCube2
+    7400000: DogWalk
+    7400002: DogIdle
+    7400004: DogBark
+    9500000: //RootNode
+    13700000: Dog_FinalTest:pCube2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: DogWalk
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dog_FinalTest:back1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle/Dog_FinalTest:Grp_Ctrl_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle/Dog_FinalTest:Grp_Ctrl_TailEnd/Dog_FinalTest:Ctrl_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot/Dog_FinalTest:Grp_Ctrl_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot/Dog_FinalTest:Grp_Ctrl_L_BackFoot/Dog_FinalTest:Ctrl_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot/Dog_FinalTest:Grp_Ctrl_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot/Dog_FinalTest:Grp_Ctrl_R_BackFoot/Dog_FinalTest:Ctrl_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head/Dog_FinalTest:Grp_Ctrl_Mouth
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head/Dog_FinalTest:Grp_Ctrl_Mouth/Dog_FinalTest:Ctrl_Mouth
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot/Dog_FinalTest:Grp_Ctrl_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot/Dog_FinalTest:Grp_Ctrl_L_FrontFoot/Dog_FinalTest:Ctrl_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot/Dog_FinalTest:Grp_Ctrl_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot/Dog_FinalTest:Grp_Ctrl_R_FrontFoot/Dog_FinalTest:Ctrl_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_BackFoot/Dog_FinalTest:PV_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_FrontFoot/Dog_FinalTest:PV_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_BackFoot/Dog_FinalTest:PV_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_FrontFoot/Dog_FinalTest:PV_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:ikHandle1
+        weight: 1
+      - path: Dog_FinalTest:ikHandle2
+        weight: 1
+      - path: Dog_FinalTest:ikHandle3
+        weight: 1
+      - path: Dog_FinalTest:ikHandle4
+        weight: 1
+      - path: Dog_FinalTest:M_Root
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot/Dog_FinalTest:L_Toe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot/Dog_FinalTest:L_Toe/Dog_FinalTest:L_Toe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle/Dog_FinalTest:M_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle/Dog_FinalTest:M_TailEnd/Dog_FinalTest:M_Tail_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot/Dog_FinalTest:R_Toe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot/Dog_FinalTest:R_Toe/Dog_FinalTest:R_Toe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot/Dog_FinalTest:L_FrontToe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot/Dog_FinalTest:L_FrontToe/Dog_FinalTest:L_FrontToe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Head_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Jaw
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Jaw/Dog_FinalTest:M_LowerLip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Upperlip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot/Dog_FinalTest:R_FrontToe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot/Dog_FinalTest:R_FrontToe/Dog_FinalTest:R_FrontToe_END
+        weight: 1
+      - path: Dog_FinalTest:pCube2
+        weight: 1
+      - path: Dog_FinalTest:persp1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: DogIdle
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dog_FinalTest:back1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle/Dog_FinalTest:Grp_Ctrl_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle/Dog_FinalTest:Grp_Ctrl_TailEnd/Dog_FinalTest:Ctrl_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot/Dog_FinalTest:Grp_Ctrl_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot/Dog_FinalTest:Grp_Ctrl_L_BackFoot/Dog_FinalTest:Ctrl_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot/Dog_FinalTest:Grp_Ctrl_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot/Dog_FinalTest:Grp_Ctrl_R_BackFoot/Dog_FinalTest:Ctrl_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head/Dog_FinalTest:Grp_Ctrl_Mouth
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head/Dog_FinalTest:Grp_Ctrl_Mouth/Dog_FinalTest:Ctrl_Mouth
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot/Dog_FinalTest:Grp_Ctrl_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot/Dog_FinalTest:Grp_Ctrl_L_FrontFoot/Dog_FinalTest:Ctrl_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot/Dog_FinalTest:Grp_Ctrl_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot/Dog_FinalTest:Grp_Ctrl_R_FrontFoot/Dog_FinalTest:Ctrl_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_BackFoot/Dog_FinalTest:PV_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_FrontFoot/Dog_FinalTest:PV_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_BackFoot/Dog_FinalTest:PV_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_FrontFoot/Dog_FinalTest:PV_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:ikHandle1
+        weight: 1
+      - path: Dog_FinalTest:ikHandle2
+        weight: 1
+      - path: Dog_FinalTest:ikHandle3
+        weight: 1
+      - path: Dog_FinalTest:ikHandle4
+        weight: 1
+      - path: Dog_FinalTest:M_Root
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot/Dog_FinalTest:L_Toe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot/Dog_FinalTest:L_Toe/Dog_FinalTest:L_Toe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle/Dog_FinalTest:M_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle/Dog_FinalTest:M_TailEnd/Dog_FinalTest:M_Tail_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot/Dog_FinalTest:R_Toe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot/Dog_FinalTest:R_Toe/Dog_FinalTest:R_Toe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot/Dog_FinalTest:L_FrontToe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot/Dog_FinalTest:L_FrontToe/Dog_FinalTest:L_FrontToe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Head_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Jaw
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Jaw/Dog_FinalTest:M_LowerLip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Upperlip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot/Dog_FinalTest:R_FrontToe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot/Dog_FinalTest:R_FrontToe/Dog_FinalTest:R_FrontToe_END
+        weight: 1
+      - path: Dog_FinalTest:pCube2
+        weight: 1
+      - path: Dog_FinalTest:persp1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    - serializedVersion: 16
+      name: DogBark
+      takeName: Take 001
+      firstFrame: 47
+      lastFrame: 61
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Dog_FinalTest:back1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle/Dog_FinalTest:Grp_Ctrl_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Ctrl_Hip/Dog_FinalTest:Grp_Ctrl_TailStart/Dog_FinalTest:Ctrl_TailStart/Dog_FinalTest:Grp_Ctrl_TailMiddle/Dog_FinalTest:Ctrl_TailMiddle/Dog_FinalTest:Grp_Ctrl_TailEnd/Dog_FinalTest:Ctrl_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot/Dog_FinalTest:Grp_Ctrl_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_L_BackFoot/Dog_FinalTest:IK_L_BackFoot/Dog_FinalTest:Grp_Ctrl_L_BackFoot/Dog_FinalTest:Ctrl_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot/Dog_FinalTest:Grp_Ctrl_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Hip/Dog_FinalTest:Grp_IK_R_BackFoot/Dog_FinalTest:IK_R_BackFoot/Dog_FinalTest:Grp_Ctrl_R_BackFoot/Dog_FinalTest:Ctrl_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head/Dog_FinalTest:Grp_Ctrl_Mouth
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Ctrl_Main/Dog_FinalTest:Grp_Ctrl_Root/Dog_FinalTest:Ctrl_Root/Dog_FinalTest:Grp_Ctrl_Hip
+          1/Dog_FinalTest:Ctrl_Hip 1/Dog_FinalTest:Grp_Ctrl_Stomach/Dog_FinalTest:Ctrl_Stomach/Dog_FinalTest:Grp_Ctrl_Neck/Dog_FinalTest:Ctrl_Neck/Dog_FinalTest:Grp_Ctrl_Head/Dog_FinalTest:Ctrl_Head/Dog_FinalTest:Grp_Ctrl_Mouth/Dog_FinalTest:Ctrl_Mouth
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot/Dog_FinalTest:Grp_Ctrl_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_L_FrontFoot/Dog_FinalTest:IK_L_FrontFoot/Dog_FinalTest:Grp_Ctrl_L_FrontFoot/Dog_FinalTest:Ctrl_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot/Dog_FinalTest:Grp_Ctrl_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_IK_R_FrontFoot/Dog_FinalTest:IK_R_FrontFoot/Dog_FinalTest:Grp_Ctrl_R_FrontFoot/Dog_FinalTest:Ctrl_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_BackFoot/Dog_FinalTest:PV_L_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_L_FrontFoot/Dog_FinalTest:PV_L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_BackFoot/Dog_FinalTest:PV_R_BackFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:Grp_Ctrl_Main/Dog_FinalTest:Grp_PV_R_FrontFoot/Dog_FinalTest:PV_R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:ikHandle1
+        weight: 1
+      - path: Dog_FinalTest:ikHandle2
+        weight: 1
+      - path: Dog_FinalTest:ikHandle3
+        weight: 1
+      - path: Dog_FinalTest:ikHandle4
+        weight: 1
+      - path: Dog_FinalTest:M_Root
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot/Dog_FinalTest:L_Toe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:L_Hip/Dog_FinalTest:L_Thigh/Dog_FinalTest:L_Knee/Dog_FinalTest:L_Foot/Dog_FinalTest:L_Toe/Dog_FinalTest:L_Toe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle/Dog_FinalTest:M_TailEnd
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:M_Tail_Start/Dog_FinalTest:M_Tail_Middle/Dog_FinalTest:M_TailEnd/Dog_FinalTest:M_Tail_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot/Dog_FinalTest:R_Toe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Rear/Dog_FinalTest:R_Hip/Dog_FinalTest:R_Thigh/Dog_FinalTest:R_Knee/Dog_FinalTest:R_Foot/Dog_FinalTest:R_Toe/Dog_FinalTest:R_Toe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot/Dog_FinalTest:L_FrontToe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:L_FrontShoulder/Dog_FinalTest:L_FrontThigh/Dog_FinalTest:L_FrontKnee/Dog_FinalTest:L_FrontFoot/Dog_FinalTest:L_FrontToe/Dog_FinalTest:L_FrontToe_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Head_END
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Jaw
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Jaw/Dog_FinalTest:M_LowerLip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:M_Neck/Dog_FinalTest:M_Head/Dog_FinalTest:M_Mouth/Dog_FinalTest:M_Upperlip
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot/Dog_FinalTest:R_FrontToe
+        weight: 1
+      - path: Dog_FinalTest:M_Root/Dog_FinalTest:M_Taille/Dog_FinalTest:M_Stomach/Dog_FinalTest:M_Chest/Dog_FinalTest:R_FrontShoulder/Dog_FinalTest:R_FrontThigh/Dog_FinalTest:R_FrontKnee/Dog_FinalTest:R_FrontFoot/Dog_FinalTest:R_FrontToe/Dog_FinalTest:R_FrontToe_END
+        weight: 1
+      - path: Dog_FinalTest:pCube2
+        weight: 1
+      - path: Dog_FinalTest:persp1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
