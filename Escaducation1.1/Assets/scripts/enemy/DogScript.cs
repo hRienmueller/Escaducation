@@ -18,33 +18,31 @@ public class DogScript : MonoBehaviour {
 
     public AudioSource Barking;
 
-    public bool IsSausage;   //check if it is the item is the sausage
-    public float dogAttentionZone = 10f;
-    public bool dogExtraDuration;
-    public int dogStunTime = 3;
-    float dogStunTimer;
+    public bool IsSausage;                 //check if it is the item is the sausage
+    public float dogAttentionZone = 10f;   //for the extra action
+    public bool dogExtraDuration;          // how long the extra is active
+    public int dogStunTime = 3;            // how long the dog is stunned from the sausage extra
+    float dogStunTimer;                    // controls how long the dog is already stunned
 
-    public bool IsBarking;
+    public bool IsBarking;                 // checks if the dog is currently barking
     private Animator anim;
-    public float waitSpeed = 0f;
-    public float walkSpeed = 5f;
+    public float waitSpeed = 0f;           // just fo the animation
+    public float walkSpeed = 5f;           // just for te animation
 
-    public float speed;
+    public float speed;                    // the dog speed
 
 
 
 
     void Awake()
     {
-        //anim.SetLayerWeight(2, 1f);
-        speed = walkSpeed;
-        IsBarking = false;
+        speed = walkSpeed;    // sets the walkingspeed of the animator    
+        IsBarking = false;    // dog is not barking
+
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
-
         anim = GetComponent<Animator>();
-
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
-        dogExtraDuration = false;
+        dogExtraDuration = false;                      //currently no extra effect is working
         Barking = GetComponent<AudioSource>();
         player = GameObject.FindGameObjectWithTag("Player");
         playerscore = player.GetComponent<PlayerScore>();
@@ -52,82 +50,78 @@ public class DogScript : MonoBehaviour {
         globalLastSighting = LastPlayerSighting.position;                //default position
         nav = GetComponent<NavMeshAgent>();
         playerAnim = player.GetComponent<Animator>();
-        SniffDistance = 2.5f;   //Distance, in which the dog must get to bark
-        IsSausage = false;        
+        SniffDistance = 2.5f;   // Distance, in which the dog must get to bark
+        IsSausage = false;      // is a sausage in the inventory?  
     }
 
     void Update()
     {
-        Debug.Log("speed : " + speed);
-        anim.SetFloat(hash.DogSpeed, speed);
-        distance = Vector3.Distance(player.transform.position, transform.position);   //calculating the distance between the player and the dog
-        nav.destination = player.transform.position;    // the target for the dog to get to is always the player -> dog follows player
-        //Debug.Log(nav.destination);
+        //Debug.Log("speed: " + speed);
+        anim.SetFloat(hash.DogSpeed, speed);     // set the speed of the navmeshAgent
+        distance = Vector3.Distance(player.transform.position, transform.position);   // calculating the distance between the player and the dog
+        nav.destination = player.transform.position;       // the target for the dog to get to is always the player -> dog follows player
 
         int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;  //check state, the player is in
         if (currentAnimatorState == hash.idleState)   //if player is standing, not sneaking or walking
         {
             if (distance <= SniffDistance)         //if the dog is near enough
             {
-                
-                Wait();
+                Wait();    // call waitfunction
             }
 
             else                    //if the dog is not near enough (anymore)...
             {
-                Barking.Stop();     //...stop barking
-                anim.SetBool(hash.barkingBool, false);
-                Debug.Log("Stopped playing");
-                speed = walkSpeed;
+                Barking.Stop();                           //...stop barking
+                anim.SetBool(hash.barkingBool, false);    // sets the IsBarkingBool in the animatorcontroller
+                //Debug.Log("Stopped playing");
+                speed = walkSpeed;                        // sets  the speed variable in the animator
             }
 
-            if (Input.GetButtonDown("Action"))
+            if (Input.GetButtonDown("Action"))            // if the action key is pressed...
             {
-                if(distance <= dogAttentionZone)
+                if(distance <= dogAttentionZone)          // ...and the player is near enough...
                 {
-                    dogExtraDuration = true;
+                    dogExtraDuration = true;              // ... activate extra effect
                 }
             }
 
-            if(dogExtraDuration == true)
+            if(dogExtraDuration == true)                  //if extra effect is activated...
             {
-                CheckDogExtra();
+                CheckDogExtra();                          // ... check which extra is currently in the inventory
             }
 
-            if(IsSausage == true)
+            if(IsSausage == true)                         // if the extra is the sausage
             {
                 dogStunTimer += Time.deltaTime;     //increase timer
 
                 if (dogStunTimer <= dogStunTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
                 {
                     nav.Stop();                     //stop navMeshAgent
-                    Debug.Log("DOGstunned");
+                    speed = waitSpeed;              // set speed to 0, to have the idle animation playing.
+                    //Debug.Log("DOGstunned");
                     dogExtraDuration = false;        //set extra duration to false, 
                 }
                 else
                 {
                     nav.Resume();                    //call navmeshagent back to live, reset every boolean
+                    speed = walkSpeed;                 // set speed to walkingspeed. for animation
                     dogStunTimer = 0f;                  // reset the timer
-                    IsSausage = false;
-                    dogExtraDuration = false;
+                    IsSausage = false;                  //sausage is not longer in inventory
+                    dogExtraDuration = false;            //extra is no longer active
                 }
             }
         }
     }
 
-    void CheckDogExtra()
+    void CheckDogExtra()            // this function checks which extra is currently in the inventory
     {
-        if (inventory.InventoryContains("Sausage"))
+        if (inventory.InventoryContains("Sausage"))     // if the inventory contains a sausage
         {
             Debug.Log("Inventory contains Sausage");
-            IsSausage = true;
+            IsSausage = true;                           //set isSausage to true
         }
     }
 
-    /*void followPlayer()
-    {
-        nav.speed = walkSpeed;
-    }*/
 
     void Bark()
     {
@@ -137,8 +131,8 @@ public class DogScript : MonoBehaviour {
 
     void Wait()
     {
-        speed = waitSpeed;
-        barkTimer += Time.deltaTime;
+        speed = waitSpeed;        // sets the speed in the animator
+        barkTimer += Time.deltaTime;   // increase barktimer
         //Debug.Log(barkTimer);
 
         if (barkTimer >= barkWaitTime)  //and has waited long enough
@@ -149,8 +143,8 @@ public class DogScript : MonoBehaviour {
 
             if (Barking.isPlaying == false) //and is not already barking
             {
-                anim.SetBool(hash.barkingBool, true);
-                Bark();
+                anim.SetBool(hash.barkingBool, true);     //sets the isBarking boolean variable in the animator
+                Bark();                                  // play sound 
                 
             }
 

@@ -23,9 +23,9 @@ public class EnemyAnimation : MonoBehaviour
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
         EnemyAI = GetComponent<enemyAI>();
 
-        nav.updateRotation = false; //make sure the rotation is controlled by mecanim
+        nav.updateRotation = false;                //make sure the rotation is controlled by mecanim
         animSetup = new AnimatorSetup(anim, hash); //creating an instance of the AnimatorSetu class and calling it´s constructor
-        deadZone += Mathf.Deg2Rad;   //convert the angle for the deadzone from degrees to radiants
+        deadZone += Mathf.Deg2Rad;                 //convert the angle for the deadzone from degrees to radiants
     }
 
 

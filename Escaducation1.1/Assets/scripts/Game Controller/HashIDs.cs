@@ -3,24 +3,24 @@ using System.Collections;
 
 public class HashIDs : MonoBehaviour
 {
-    public int speedFloat;
-    public int sneakingBool;
-    public int playerInSightBool;
-    public int sneakState;
-    public int idleState;
+    public int speedFloat;                  // from enemyAnimator and playerAnimator
+    public int sneakingBool;                // from playerAnimator
+    public int playerInSightBool;           // from enemyAnimator
+    public int sneakState;                  // from playerAnimator
+    public int idleState;                   // from enemyAnimator and playerAnimator
 
-    public int angularSpeedFloat;
-    public int locomotionState;
-    public int aimweightFloat;
-    public int walkState;
+    public int angularSpeedFloat;           // from enemyAnimator
+    public int locomotionState;             // from enemyAnimator
+    public int aimweightFloat;              // from enemyAnimator
+    public int walkState;                   // from playerAnimator
 
     //for dog
-    public int barkingBool;
-    public int DogSpeed;
-    public int DogAngularSpeed;
+    public int barkingBool;                 // from dogAnimator
+    public int DogSpeed;                    // from dogAnimator
+    public int DogAngularSpeed;             // from dogAnimator
 
-    public int DogLocomotion;
-    public int barkState;
+    public int DogLocomotion;               // from dogAnimator
+    public int barkState;                   // from dogAnimator
     
     void Awake()
     {
