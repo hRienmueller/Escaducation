@@ -45,8 +45,6 @@ public class PlayerMovement : MonoBehaviour
         {
             Rotating(horizontal, vertical);   //set players rotation
             anim.SetFloat(hash.speedFloat, 1f, speedDampTime, Time.deltaTime);  // set players speed
-            //Debug.Log(hash.speedFloat);
-            //Player.transform.position = Player.transform.position + targetDirection;
 
         }
         else
