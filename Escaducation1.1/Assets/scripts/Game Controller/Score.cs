@@ -10,13 +10,13 @@ public class Score : MonoBehaviour {
     public string NameOfScene;
 
     //Test
-    private EnemySight enemySight;  //for the reference of the enemySight script
+   // private EnemySight enemySight;  //for the reference of the enemySight script
     private PlayerScore PlayerScore; // for the reference of the playerscore script
 
     void Awake()
     {
         PlayerScore = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScore>(); //reference to the playerscore script
-        enemySight = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemySight>(); //only works, if there is just one player
+        //enemySight = GameObject.FindGameObjectWithTag("Enemy").GetComponent<EnemySight>(); //only works, if there is just one player
         scoreCounter = GameObject.FindGameObjectWithTag("scoreCounter");   //find the scoreCounter gameObject
         scoreText = scoreCounter.GetComponent<Text>();                     //get the Text compnent of that gameobject
         if (NameOfScene != "StartScreen") //this does not work as I want it to.

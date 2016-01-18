@@ -21,6 +21,8 @@ public class HashIDs : MonoBehaviour
 
     public int DogLocomotion;               // from dogAnimator
     public int barkState;                   // from dogAnimator
+
+    public int enemySpeed;
     
     void Awake()
     {
@@ -40,5 +42,7 @@ public class HashIDs : MonoBehaviour
         DogAngularSpeed = Animator.StringToHash("DogAngularSpeed");
         DogLocomotion = Animator.StringToHash("Base Layer.DogLocomotion");
         barkState = Animator.StringToHash("Barking.DogBark");
+
+        enemySpeed = Animator.StringToHash("enemySpeed");
     }
 }

@@ -37,11 +37,16 @@ public class enemyAI : MonoBehaviour
     public AudioSource AlarmSound; //the soundclip
     public bool SoundPlay;         //to make sure the sound plays only once
 
+    Animator anim;
+    private HashIDs hash;
+
+
 
 
     void Awake()
     {
-      
+        anim = GetComponent<Animator>();
+        hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
 
         SoundPlay = false;
         Attention.SetActive(false);
@@ -64,6 +69,7 @@ public class enemyAI : MonoBehaviour
     void Start()
     {
         nav.destination = patrolWayPoints[0].position;
+       // anim.SetFloat(hash.speedFloat, patrolSpeed);
     }
 
 
@@ -73,7 +79,7 @@ public class enemyAI : MonoBehaviour
         //Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
 
         float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
-
+        //Debug.Log("distance: " + distance);
         if (Input.GetButtonDown("Action"))  //if you press the button which uses an item
         {
             if(distance < attentionZone) //if player uses item near enough to enemy
@@ -171,6 +177,7 @@ public class enemyAI : MonoBehaviour
         }
 
         nav.speed = chaseSpeed;   //set speed to chaseSpeed
+       // anim.SetFloat(hash.speedFloat, chaseSpeed);
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position
         {
@@ -195,6 +202,8 @@ public class enemyAI : MonoBehaviour
         SoundPlay = false;
         Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
+        //anim.SetFloat(hash.speedFloat, patrolSpeed);
+        
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
         {
