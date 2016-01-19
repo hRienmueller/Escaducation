@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class DogScript : MonoBehaviour {
@@ -30,12 +31,16 @@ public class DogScript : MonoBehaviour {
     public float walkSpeed = 5f;           // just for te animation
 
     public float speed;                    // the dog speed
+    Text infoText;
 
 
 
 
     void Awake()
     {
+       /* infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
+        infoText.text = "";*/
+
         speed = walkSpeed;    // sets the walkingspeed of the animator    
         IsBarking = false;    // dog is not barking
 
@@ -97,6 +102,7 @@ public class DogScript : MonoBehaviour {
                 if (dogStunTimer <= dogStunTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
                 {
                     nav.Stop();                     //stop navMeshAgent
+                    infoText.text = "Dog stunned...";
                     speed = waitSpeed;              // set speed to 0, to have the idle animation playing.
                     //Debug.Log("DOGstunned");
                     dogExtraDuration = false;        //set extra duration to false, 
@@ -104,6 +110,7 @@ public class DogScript : MonoBehaviour {
                 else
                 {
                     nav.Resume();                    //call navmeshagent back to live, reset every boolean
+                    infoText.text = "";
                     speed = walkSpeed;                 // set speed to walkingspeed. for animation
                     dogStunTimer = 0f;                  // reset the timer
                     IsSausage = false;                  //sausage is not longer in inventory

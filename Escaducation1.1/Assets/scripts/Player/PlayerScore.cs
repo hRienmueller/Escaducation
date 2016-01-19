@@ -37,9 +37,13 @@ public class PlayerScore : MonoBehaviour {
     public float PlayerPosX;
 
     public AudioSource ToiletSound;  //the toilet sound
+    Text infoText;
+    
 
     void Awake()
     {
+        infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
+        infoText.text = "";
         GetScoreBoost = false;
 
         ScoreEffect = false;

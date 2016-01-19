@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class enemyAI : MonoBehaviour
@@ -39,6 +40,7 @@ public class enemyAI : MonoBehaviour
 
     Animator anim;
     private HashIDs hash;
+    Text infoText;
 
 
 
@@ -68,6 +70,8 @@ public class enemyAI : MonoBehaviour
     }
     void Start()
     {
+       /* infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
+        infoText.text = "";*/
         nav.destination = patrolWayPoints[0].position;
        // anim.SetFloat(hash.speedFloat, patrolSpeed);
     }
@@ -92,7 +96,7 @@ public class enemyAI : MonoBehaviour
         {
             //Debug.Log("stunned");
             stunTimer += Time.deltaTime;     //increase timer
-
+            infoText.text = "Teacher stunned...";
             if (stunTimer <= generalWaitTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
             {
                 nav.Stop();                     //stop navMeshAgent
@@ -102,6 +106,7 @@ public class enemyAI : MonoBehaviour
             else
             {
                 nav.Resume();                    //call navmeshagent back to live, reset every boolean
+                infoText.text = "";
                 Chasing();                       //resume to chase the player
                 stunTimer = 0f;                  // reset the timer
                 IsSponge = false;
@@ -114,12 +119,14 @@ public class enemyAI : MonoBehaviour
             stunTimer += Time.deltaTime;
             nav.destination = startPoint.position;
             Debug.Log("destination Startpoint");
+            infoText.text = "Teacher distracted...";
 
             if (stunTimer >= generalWaitTime)
             {
                 IsChalk = false;
                 stunTimer = 0;
                 ExtraDurationOn = false;
+                infoText.text = "";
                 Chasing();
             }
         }
