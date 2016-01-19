@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 6546ba9f89e207d4b832da9a0a778517
-timeCreated: 1453117918
+guid: 6c8fe0fa3fcc539429d7c61063d78f95
+timeCreated: 1453206824
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -39,63 +39,61 @@ ModelImporter:
     100062: Grp_R_PV_Arm
     100064: Grp_R_PV_Knee
     100066: Grp_Root
-    100068: IK_grp_Left
-    100070: IK_grp_Right
-    100072: ikHandle6
-    100074: ikHandle7
-    100076: L_Ankle
-    100078: L_Ctrl_Shoulder
-    100080: L_Ellbow
-    100082: L_FK_Ellbow
-    100084: L_FK_Finger
-    100086: L_FK_Hand
-    100088: L_FK_Thumb
-    100090: L_Hip
-    100092: L_IK_cFoot
-    100094: L_IK_cHand
-    100096: L_IK_Foot
-    100098: L_Knee
-    100100: L_MF_END
-    100102: L_MiddelFinger
-    100104: L_PV_Knee
-    100106: L_Shoulder
-    100108: L_Thumb
-    100110: L_Thumb_END
-    100112: L_Toe_END
-    100114: L_Toes
-    100116: L_Wrist
-    100118: M_Breast
-    100120: M_Breast1
-    100122: M_Chest
-    100124: M_Head
-    100126: M_Head_END
-    100128: M_Neck
-    100130: M_Root
-    100132: M_Stomach
-    100134: M_Taille
-    100136: polySurface23
-    100138: R_Ankle
-    100140: R_Ctrl_Shoulder
-    100142: R_Ellbow
-    100144: R_FK_Ellbow
-    100146: R_FK_Finger
-    100148: R_FK_Hand
-    100150: R_FK_Thumb
-    100152: R_Hip
-    100154: R_IK_cFoot
-    100156: R_IK_cHand
-    100158: R_IK_Foot
-    100160: R_Knee
-    100162: R_MF_END
-    100164: R_MiddelFinger
-    100166: R_PV_Knee
-    100168: R_Shoulder
-    100170: R_Thumb
-    100172: R_Thumb_END
-    100174: R_Toe_END
-    100176: R_Toes
-    100178: R_Wrist
-    100180: //RootNode
+    100068: ikHandle6
+    100070: ikHandle7
+    100072: L_Ankle
+    100074: L_Ctrl_Shoulder
+    100076: L_Ellbow
+    100078: L_FK_Ellbow
+    100080: L_FK_Finger
+    100082: L_FK_Hand
+    100084: L_FK_Thumb
+    100086: L_Hip
+    100088: L_IK_cFoot
+    100090: L_IK_cHand
+    100092: L_IK_Foot
+    100094: L_Knee
+    100096: L_MF_END
+    100098: L_MiddelFinger
+    100100: L_PV_Knee
+    100102: L_Shoulder
+    100104: L_Thumb
+    100106: L_Thumb_END
+    100108: L_Toe_END
+    100110: L_Toes
+    100112: L_Wrist
+    100114: M_Breast
+    100116: M_Breast1
+    100118: M_Chest
+    100120: M_Head
+    100122: M_Head_END
+    100124: M_Neck
+    100126: M_Root
+    100128: M_Stomach
+    100130: M_Taille
+    100132: polySurface23
+    100134: R_Ankle
+    100136: R_Ctrl_Shoulder
+    100138: R_Ellbow
+    100140: R_FK_Ellbow
+    100142: R_FK_Finger
+    100144: R_FK_Hand
+    100146: R_FK_Thumb
+    100148: R_Hip
+    100150: R_IK_cFoot
+    100152: R_IK_cHand
+    100154: R_IK_Foot
+    100156: R_Knee
+    100158: R_MF_END
+    100160: R_MiddelFinger
+    100162: R_PV_Knee
+    100164: R_Shoulder
+    100166: R_Thumb
+    100168: R_Thumb_END
+    100170: R_Toe_END
+    100172: R_Toes
+    100174: R_Wrist
+    100176: //RootNode
     400000: Ctrl_Chest
     400002: Ctrl_Head
     400004: Ctrl_Main
@@ -130,67 +128,65 @@ ModelImporter:
     400062: Grp_R_PV_Arm
     400064: Grp_R_PV_Knee
     400066: Grp_Root
-    400068: IK_grp_Left
-    400070: IK_grp_Right
-    400072: ikHandle6
-    400074: ikHandle7
-    400076: L_Ankle
-    400078: L_Ctrl_Shoulder
-    400080: L_Ellbow
-    400082: L_FK_Ellbow
-    400084: L_FK_Finger
-    400086: L_FK_Hand
-    400088: L_FK_Thumb
-    400090: L_Hip
-    400092: L_IK_cFoot
-    400094: L_IK_cHand
-    400096: L_IK_Foot
-    400098: L_Knee
-    400100: L_MF_END
-    400102: L_MiddelFinger
-    400104: L_PV_Knee
-    400106: L_Shoulder
-    400108: L_Thumb
-    400110: L_Thumb_END
-    400112: L_Toe_END
-    400114: L_Toes
-    400116: L_Wrist
-    400118: M_Breast
-    400120: M_Breast1
-    400122: M_Chest
-    400124: M_Head
-    400126: M_Head_END
-    400128: M_Neck
-    400130: M_Root
-    400132: M_Stomach
-    400134: M_Taille
-    400136: polySurface23
-    400138: R_Ankle
-    400140: R_Ctrl_Shoulder
-    400142: R_Ellbow
-    400144: R_FK_Ellbow
-    400146: R_FK_Finger
-    400148: R_FK_Hand
-    400150: R_FK_Thumb
-    400152: R_Hip
-    400154: R_IK_cFoot
-    400156: R_IK_cHand
-    400158: R_IK_Foot
-    400160: R_Knee
-    400162: R_MF_END
-    400164: R_MiddelFinger
-    400166: R_PV_Knee
-    400168: R_Shoulder
-    400170: R_Thumb
-    400172: R_Thumb_END
-    400174: R_Toe_END
-    400176: R_Toes
-    400178: R_Wrist
-    400180: //RootNode
+    400068: ikHandle6
+    400070: ikHandle7
+    400072: L_Ankle
+    400074: L_Ctrl_Shoulder
+    400076: L_Ellbow
+    400078: L_FK_Ellbow
+    400080: L_FK_Finger
+    400082: L_FK_Hand
+    400084: L_FK_Thumb
+    400086: L_Hip
+    400088: L_IK_cFoot
+    400090: L_IK_cHand
+    400092: L_IK_Foot
+    400094: L_Knee
+    400096: L_MF_END
+    400098: L_MiddelFinger
+    400100: L_PV_Knee
+    400102: L_Shoulder
+    400104: L_Thumb
+    400106: L_Thumb_END
+    400108: L_Toe_END
+    400110: L_Toes
+    400112: L_Wrist
+    400114: M_Breast
+    400116: M_Breast1
+    400118: M_Chest
+    400120: M_Head
+    400122: M_Head_END
+    400124: M_Neck
+    400126: M_Root
+    400128: M_Stomach
+    400130: M_Taille
+    400132: polySurface23
+    400134: R_Ankle
+    400136: R_Ctrl_Shoulder
+    400138: R_Ellbow
+    400140: R_FK_Ellbow
+    400142: R_FK_Finger
+    400144: R_FK_Hand
+    400146: R_FK_Thumb
+    400148: R_Hip
+    400150: R_IK_cFoot
+    400152: R_IK_cHand
+    400154: R_IK_Foot
+    400156: R_Knee
+    400158: R_MF_END
+    400160: R_MiddelFinger
+    400162: R_PV_Knee
+    400164: R_Shoulder
+    400166: R_Thumb
+    400168: R_Thumb_END
+    400170: R_Toe_END
+    400172: R_Toes
+    400174: R_Wrist
+    400176: //RootNode
     4300000: polySurface23
-    7400000: FemTeachIdle
-    7400002: FemTeachWalk
-    7400004: FemTeachRun
+    7400000: FemTeachWalk
+    7400002: FemTeachRun
+    7400004: FemteachIdle
     9500000: //RootNode
     13700000: polySurface23
   materials:
@@ -220,216 +216,6 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: FemTeachIdle
-      takeName: Take 001
-      firstFrame: 151
-      lastFrame: 178
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: Grp_Ctrl_Main
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot/L_IK_Foot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand/L_IK_cHand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Arm
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee/L_PV_Knee
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot/R_IK_Foot
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand/R_IK_cHand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Arm
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee/R_PV_Knee
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head/Ctrl_Head
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger/L_FK_Finger
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb/L_FK_Thumb
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger/R_FK_Finger
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb
-        weight: 1
-      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb/R_FK_Thumb
-        weight: 1
-      - path: IK_grp_Left
-        weight: 1
-      - path: IK_grp_Left/ikHandle7
-        weight: 1
-      - path: IK_grp_Right
-        weight: 1
-      - path: IK_grp_Right/ikHandle6
-        weight: 1
-      - path: M_Root
-        weight: 1
-      - path: M_Root/L_Hip
-        weight: 1
-      - path: M_Root/L_Hip/L_Knee
-        weight: 1
-      - path: M_Root/L_Hip/L_Knee/L_Ankle
-        weight: 1
-      - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes
-        weight: 1
-      - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes/L_Toe_END
-        weight: 1
-      - path: M_Root/M_Taille
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger/L_MF_END
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb/L_Thumb_END
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger/R_MF_END
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb/R_Thumb_END
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head
-        weight: 1
-      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head/M_Head_END
-        weight: 1
-      - path: M_Root/R_Hip
-        weight: 1
-      - path: M_Root/R_Hip/R_Knee
-        weight: 1
-      - path: M_Root/R_Hip/R_Knee/R_Ankle
-        weight: 1
-      - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes
-        weight: 1
-      - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes/R_Toe_END
-        weight: 1
-      - path: polySurface23
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
       name: FemTeachWalk
       takeName: Take 001
       firstFrame: 40
@@ -445,7 +231,7 @@ ModelImporter:
       loopBlendOrientation: 0
       loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
       heightFromFeet: 1
@@ -457,117 +243,113 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Grp_Ctrl_Main
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot/L_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand/L_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Arm
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee/L_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot/R_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand/R_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Arm
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee/R_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head/Ctrl_Head
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger/L_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb/L_FK_Thumb
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger/R_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb/R_FK_Thumb
-        weight: 1
-      - path: IK_grp_Left
-        weight: 1
-      - path: IK_grp_Left/ikHandle7
-        weight: 1
-      - path: IK_grp_Right
-        weight: 1
-      - path: IK_grp_Right/ikHandle6
-        weight: 1
+        weight: 0
+      - path: ikHandle6
+        weight: 0
+      - path: ikHandle7
+        weight: 0
       - path: M_Root
         weight: 1
       - path: M_Root/L_Hip
@@ -579,7 +361,7 @@ ModelImporter:
       - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes
         weight: 1
       - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes/L_Toe_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille
         weight: 1
       - path: M_Root/M_Taille/M_Stomach
@@ -595,13 +377,13 @@ ModelImporter:
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger/L_MF_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb/L_Thumb_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder
@@ -611,19 +393,19 @@ ModelImporter:
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger/R_MF_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb/R_Thumb_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head/M_Head_END
-        weight: 1
+        weight: 0
       - path: M_Root/R_Hip
         weight: 1
       - path: M_Root/R_Hip/R_Knee
@@ -633,9 +415,9 @@ ModelImporter:
       - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes
         weight: 1
       - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes/R_Toe_END
-        weight: 1
+        weight: 0
       - path: polySurface23
-        weight: 1
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -653,12 +435,12 @@ ModelImporter:
       loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
-      loopBlendPositionY: 0
+      loopBlendPositionY: 1
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
       keepOriginalPositionXZ: 0
-      heightFromFeet: 0
+      heightFromFeet: 1
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
@@ -667,117 +449,113 @@ ModelImporter:
       - path: 
         weight: 1
       - path: Grp_Ctrl_Main
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot/L_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand/L_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Arm
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee/L_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot/R_IK_Foot
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand/R_IK_cHand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Arm
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee/R_PV_Knee
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head/Ctrl_Head
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger/L_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb/L_FK_Thumb
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger/R_FK_Finger
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb
-        weight: 1
+        weight: 0
       - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb/R_FK_Thumb
-        weight: 1
-      - path: IK_grp_Left
-        weight: 1
-      - path: IK_grp_Left/ikHandle7
-        weight: 1
-      - path: IK_grp_Right
-        weight: 1
-      - path: IK_grp_Right/ikHandle6
-        weight: 1
+        weight: 0
+      - path: ikHandle6
+        weight: 0
+      - path: ikHandle7
+        weight: 0
       - path: M_Root
         weight: 1
       - path: M_Root/L_Hip
@@ -789,7 +567,7 @@ ModelImporter:
       - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes
         weight: 1
       - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes/L_Toe_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille
         weight: 1
       - path: M_Root/M_Taille/M_Stomach
@@ -805,13 +583,13 @@ ModelImporter:
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger/L_MF_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb/L_Thumb_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder
@@ -821,19 +599,19 @@ ModelImporter:
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger/R_MF_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb/R_Thumb_END
-        weight: 1
+        weight: 0
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head
         weight: 1
       - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head/M_Head_END
-        weight: 1
+        weight: 0
       - path: M_Root/R_Hip
         weight: 1
       - path: M_Root/R_Hip/R_Knee
@@ -843,9 +621,215 @@ ModelImporter:
       - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes
         weight: 1
       - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes/R_Toe_END
-        weight: 1
+        weight: 0
       - path: polySurface23
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: FemteachIdle
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 1
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
         weight: 1
+      - path: Grp_Ctrl_Main
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cFoot/L_IK_cFoot/Grp_L_IK_Foot/L_IK_Foot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_IK_cHand/L_IK_cHand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Arm
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_L_PV_Knee/L_PV_Knee
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cFoot/R_IK_cFoot/Grp_R_IK_Foot/R_IK_Foot
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_IK_cHand/R_IK_cHand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Arm
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_R_PV_Knee/R_PV_Knee
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_Ctrl_Neck/Ctrl_Neck/Grp_Ctrl_Head/Ctrl_Head
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Finger/L_FK_Finger
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_L_Ctrl_Shoulder/L_Ctrl_Shoulder/Grp_L_FK_Ellbow/L_FK_Ellbow/Grp_L_FK_Hand/L_FK_Hand/Grp_L_FK_Thumb/L_FK_Thumb
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Finger/R_FK_Finger
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb
+        weight: 0
+      - path: Grp_Ctrl_Main/Ctrl_Main/Grp_Root/Ctrl_Root/Grp_Ctrl_Taille/Ctrl_Taille/Grp_Ctrl_Stomach/Ctrl_Stomach/Grp_Ctrl_Chest/Ctrl_Chest/Grp_R_Ctrl_Shoulder/R_Ctrl_Shoulder/Grp_R_FK_Ellbow/R_FK_Ellbow/Grp_R_FK_Hand/R_FK_Hand/Grp_R_FK_Thumb/R_FK_Thumb
+        weight: 0
+      - path: ikHandle6
+        weight: 0
+      - path: ikHandle7
+        weight: 0
+      - path: M_Root
+        weight: 1
+      - path: M_Root/L_Hip
+        weight: 1
+      - path: M_Root/L_Hip/L_Knee
+        weight: 1
+      - path: M_Root/L_Hip/L_Knee/L_Ankle
+        weight: 1
+      - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes
+        weight: 1
+      - path: M_Root/L_Hip/L_Knee/L_Ankle/L_Toes/L_Toe_END
+        weight: 0
+      - path: M_Root/M_Taille
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_MiddelFinger/L_MF_END
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast/L_Shoulder/L_Ellbow/L_Wrist/L_Thumb/L_Thumb_END
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_MiddelFinger/R_MF_END
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Breast1/R_Shoulder/R_Ellbow/R_Wrist/R_Thumb/R_Thumb_END
+        weight: 0
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head
+        weight: 1
+      - path: M_Root/M_Taille/M_Stomach/M_Chest/M_Neck/M_Head/M_Head_END
+        weight: 0
+      - path: M_Root/R_Hip
+        weight: 1
+      - path: M_Root/R_Hip/R_Knee
+        weight: 1
+      - path: M_Root/R_Hip/R_Knee/R_Ankle
+        weight: 1
+      - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes
+        weight: 1
+      - path: M_Root/R_Hip/R_Knee/R_Ankle/R_Toes/R_Toe_END
+        weight: 0
+      - path: polySurface23
+        weight: 0
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
@@ -874,8 +858,621 @@ ModelImporter:
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
-    human: []
-    skeleton: []
+    human:
+    - boneName: M_Root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Hip
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Hip
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Knee
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Knee
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ankle
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ankle
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: M_Taille
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: M_Stomach
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: M_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: M_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: M_Breast
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: M_Breast1
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Shoulder
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Shoulder
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Ellbow
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Ellbow
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Wrist
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Wrist
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: L_Toes
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: R_Toes
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: TeacherFemaleV02(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Ctrl_Main
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Main
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_IK_cFoot
+      position: {x: -0.0067267725, y: 0.0033765573, z: 0.006054585}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.83215874, y: 0.7242401, z: 1.9246244}
+      transformModified: 1
+    - name: L_IK_cFoot
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_IK_Foot
+      position: {x: 0.00076693296, y: 0.0023976255, z: -0.0031458526}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.2016938, y: 1.3807576, z: 0.51958185}
+      transformModified: 1
+    - name: L_IK_Foot
+      position: {x: -0, y: -1.110223e-18, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_IK_cHand
+      position: {x: -0.051369973, y: 0.06497692, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_IK_cHand
+      position: {x: -0, y: 9.992007e-18, z: 2.4424906e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_PV_Arm
+      position: {x: -0.03110826, y: 0.06472451, z: -0.019753283}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_PV_Knee
+      position: {x: -0.006121016, y: 0.023897562, z: 0.0332587}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_PV_Knee
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_IK_cFoot
+      position: {x: 0.0066819047, y: 0.0033765573, z: 0.006054585}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.83215874, y: 0.7242401, z: 1.9246244}
+      transformModified: 1
+    - name: R_IK_cFoot
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_IK_Foot
+      position: {x: -0.00048955437, y: 0.0023976462, z: -0.0031458526}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.2016938, y: 1.3807576, z: 0.51958185}
+      transformModified: 1
+    - name: R_IK_Foot
+      position: {x: 9.992007e-18, y: -1.11022296e-17, z: 4.005934e-34}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_IK_cHand
+      position: {x: 0.051555894, y: 0.0649769, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_IK_cHand
+      position: {x: -1.7763568e-17, y: -7.771561e-18, z: -7.5495166e-17}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_PV_Arm
+      position: {x: 0.03111, y: 0.06472451, z: -0.019753283}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_PV_Knee
+      position: {x: 0.006072632, y: 0.023404563, z: 0.03206225}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_PV_Knee
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Root
+      position: {x: 0.00009297686, y: 0.048360694, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Root
+      position: {x: -6.071532e-19, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Ctrl_Taille
+      position: {x: -5.0827395e-18, y: 0.0077094403, z: 3.2061706e-35}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Taille
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Ctrl_Stomach
+      position: {x: -3.5214886e-18, y: 0.007869352, z: 9.870485e-37}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Stomach
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Ctrl_Chest
+      position: {x: -0, y: 0.00987687, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Chest
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Ctrl_Neck
+      position: {x: -0.000003534272, y: 0.008983162, z: -2.014694e-20}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Neck
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_Ctrl_Head
+      position: {x: 6.0073476e-17, y: 0.005199103, z: 2.896744e-20}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Ctrl_Head
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_Ctrl_Shoulder
+      position: {x: -0.014496419, y: 0.005743693, z: 0.0017273033}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Ctrl_Shoulder
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_FK_Ellbow
+      position: {x: -0.016738065, y: -0.001012166, z: -0.0024149488}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_FK_Ellbow
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_FK_Hand
+      position: {x: -0.020228464, y: -0.00096808054, z: 0.0006876456}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_FK_Hand
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_FK_Finger
+      position: {x: -0.005902548, y: 0.0002164173, z: -0.0012635781}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.34951153, z: 0.34951153}
+      transformModified: 1
+    - name: L_FK_Finger
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_L_FK_Thumb
+      position: {x: -0.0046214676, y: -0.0015343904, z: 0.00094442925}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.34951153, z: 0.34951153}
+      transformModified: 1
+    - name: L_FK_Thumb
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_Ctrl_Shoulder
+      position: {x: 0.014307023, y: 0.005743693, z: 0.0017273033}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Ctrl_Shoulder
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_FK_Ellbow
+      position: {x: 0.016927416, y: -0.0010128901, z: -0.0024149334}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_FK_Ellbow
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_FK_Hand
+      position: {x: 0.020042583, y: -0.00096414814, z: 0.0006876302}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_FK_Hand
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_FK_Finger
+      position: {x: 0.006088404, y: 0.00021272659, z: -0.0012638033}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.34951153, z: 0.34951153}
+      transformModified: 1
+    - name: R_FK_Finger
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: Grp_R_FK_Thumb
+      position: {x: 0.004501678, y: -0.0018897485, z: 0.00070898916}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.34951153, z: 0.34951153}
+      transformModified: 1
+    - name: R_FK_Thumb
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ikHandle6
+      position: {x: 0.00627452, y: 0.005113028, z: -3.330669e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: ikHandle7
+      position: {x: -0.0060885698, y: 0.00511303, z: 1.110223e-18}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: polySurface23
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Root
+      position: {x: 0.00009297686, y: 0.048360694, z: 0}
+      rotation: {x: -0.7071068, y: 0.7071068, z: 4.3297813e-17, w: -4.3297803e-17}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Taille
+      position: {x: -0.0077094403, y: -1.7173762e-18, z: -2.0992637e-34}
+      rotation: {x: 0, y: 6.617444e-24, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Stomach
+      position: {x: -0.007869352, y: -1.7520707e-18, z: -2.1570415e-34}
+      rotation: {x: 3.308722e-24, y: -3.308722e-24, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Chest
+      position: {x: -0.00987687, y: -6.7133797e-18, z: -8.127424e-34}
+      rotation: {x: -3.4807756e-21, y: -2.6469776e-23, z: 0.005318939, w: 0.9999859}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Breast
+      position: {x: -0.0057102297, y: 0.005967608, z: -0.00574528}
+      rotation: {x: 0.05497755, y: 0.00033221763, z: 0.016248314, w: -0.9983554}
+      scale: {x: 1, y: 0.9999999, z: 0.99999976}
+      transformModified: 1
+    - name: L_Shoulder
+      position: {x: -0.0001654864, y: 0.008588349, z: 0.0040179766}
+      rotation: {x: -0.7075416, y: 0.69794816, z: -0.08514624, w: 0.07073526}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000002}
+      transformModified: 1
+    - name: L_Ellbow
+      position: {x: -0.016692096, y: -0.0014085261, z: -0.0025316437}
+      rotation: {x: -0.009588643, y: -0.025723279, z: 0.030305523, w: 0.9991637}
+      scale: {x: 0.9999998, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: L_Wrist
+      position: {x: -0.020250838, y: 0.00071011804, z: -6.661338e-18}
+      rotation: {x: 0.001382891, y: -0.12806332, z: -0.033111762, w: 0.9912122}
+      scale: {x: 1.0000002, y: 1, z: 1}
+      transformModified: 1
+    - name: L_MiddelFinger
+      position: {x: -0.0060401666, y: 2.6645352e-17, z: -4.440892e-18}
+      rotation: {x: 0.075155385, y: 0.15654762, z: 0.5057469, w: 0.84502345}
+      scale: {x: 0.9999998, y: 1.0000002, z: 0.9999998}
+      transformModified: 1
+    - name: L_MF_END
+      position: {x: -0.0046934327, y: 0.001990916, z: -6.591949e-18}
+      rotation: {x: 0.0010905293, y: 0.010541899, z: -0.07416997, w: 0.9971893}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Thumb
+      position: {x: -0.0042636315, y: -0.0012578823, z: 0.0022007837}
+      rotation: {x: -0.045232404, y: 0.4357327, z: 0.5386128, w: 0.71971333}
+      scale: {x: 0.9999997, y: 1.0000002, z: 0.9999997}
+      transformModified: 1
+    - name: L_Thumb_END
+      position: {x: -0.0035167905, y: 0.0017813407, z: -0.0015747319}
+      rotation: {x: -0.031727366, y: -0.18091127, z: -0.2138429, w: 0.95944554}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Neck
+      position: {x: -0.0089826165, y: 0.00009909422, z: 2.0579763e-20}
+      rotation: {x: 3.4675407e-21, y: 1.3234888e-23, z: -0.005318939, w: 0.9999859}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+      transformModified: 1
+    - name: M_Head
+      position: {x: -0.005199103, y: -3.5544484e-17, z: -2.896744e-20}
+      rotation: {x: 0.9999607, y: -0.008869112, z: -5.430937e-19, w: 6.1229934e-17}
+      scale: {x: 0.9999998, y: 0.9999994, z: 0.9999995}
+      transformModified: 1
+    - name: M_Head_END
+      position: {x: -0.016918827, y: 8.3266725e-19, z: -3.675124e-20}
+      rotation: {x: 0, y: 0, z: 0.7008076, w: 0.71335036}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: M_Breast1
+      position: {x: -0.0058359304, y: -0.005844773, z: -0.0057452796}
+      rotation: {x: 0.005627155, y: -0.99847174, z: -0.054970868, w: -0.0009170341}
+      scale: {x: 1, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: R_Shoulder
+      position: {x: 0.00016548227, y: -0.008588357, z: -0.00401798}
+      rotation: {x: 0.7036384, y: -0.70217514, z: 0.065817915, w: -0.08666765}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999996}
+      transformModified: 1
+    - name: R_Ellbow
+      position: {x: 0.016816324, y: 0.0011165931, z: 0.0017273012}
+      rotation: {x: -0.006990662, y: -0.0015554348, z: 0.022027789, w: 0.9997318}
+      scale: {x: 1.0000001, y: 0.9999997, z: 0.99999964}
+      transformModified: 1
+    - name: R_Wrist
+      position: {x: 0.020250821, y: -0.00071013515, z: -3.792661e-10}
+      rotation: {x: 0.0013829222, y: -0.12806329, z: -0.033111736, w: 0.9912122}
+      scale: {x: 1, y: 1.0000006, z: 1.0000006}
+      transformModified: 1
+    - name: R_MiddelFinger
+      position: {x: 0.006040152, y: 0.0000000180971, z: 0.0000000017099192}
+      rotation: {x: 0.075086795, y: 0.15646075, z: 0.5057595, w: 0.8450382}
+      scale: {x: 0.99999946, y: 0.99999994, z: 0.99999976}
+      transformModified: 1
+    - name: R_MF_END
+      position: {x: 0.004971872, y: -0.0025487707, z: -0.0000000017017822}
+      rotation: {x: 0.0010905293, y: 0.010541899, z: -0.07416997, w: 0.9971893}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Thumb
+      position: {x: 0.004001635, y: 0.0016550883, z: -0.0019837334}
+      rotation: {x: -0.04533069, y: 0.4356542, z: 0.5386831, w: 0.7197021}
+      scale: {x: 0.9999998, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: R_Thumb_END
+      position: {x: 0.0027234813, y: -0.0021327506, z: 0.0012363568}
+      rotation: {x: -0.031727366, y: -0.18091127, z: -0.2138429, w: 0.95944554}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: R_Hip
+      position: {x: 0.003059445, y: -0.006261223, z: -7.6220366e-19}
+      rotation: {x: -0.053271417, y: 0.00013405085, z: 0.004704803, w: 0.998569}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999997}
+      transformModified: 1
+    - name: R_Knee
+      position: {x: 0.021898322, y: 0.00007525226, z: -0.0020801092}
+      rotation: {x: -0.0000000074505797, y: 0, z: 0.006799965, w: -0.9999769}
+      scale: {x: 1.0000002, y: 0.9999998, z: 1.0000004}
+      transformModified: 1
+    - name: R_Ankle
+      position: {x: 0.018292263, y: -0.00012546188, z: 0.002079201}
+      rotation: {x: -0.01332386, y: 0.555252, z: -0.016475556, w: 0.83141226}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999976}
+      transformModified: 1
+    - name: R_Toes
+      position: {x: 0.007842202, y: -4.715165e-10, z: 0.000000043500183}
+      rotation: {x: -0.009870496, y: 0.45058367, z: 0.019550465, w: 0.89246553}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: R_Toe_END
+      position: {x: 0.008747965, y: -1.9984014e-17, z: -0.000000065667884}
+      rotation: {x: 0.8705891, y: -4.7448393e-15, z: -0.49201083, w: -2.6452498e-15}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: L_Hip
+      position: {x: 0.0025466434, y: 0.006261227, z: 7.635537e-19}
+      rotation: {x: -0.00470978, y: -0.99969846, z: -0.024102218, w: 0.000052628107}
+      scale: {x: 0.99999964, y: 0.99999964, z: 0.99999976}
+      transformModified: 1
+    - name: L_Knee
+      position: {x: -0.021916637, y: 0.000060876137, z: 0.002123683}
+      rotation: {x: 0.0000000037252894, y: 0, z: -0.006799862, w: 0.9999769}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+      transformModified: 1
+    - name: L_Ankle
+      position: {x: -0.018784894, y: -0.000012554935, z: -0.0021225652}
+      rotation: {x: -0.013323812, y: 0.555252, z: -0.016475586, w: 0.8314122}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: L_Toes
+      position: {x: -0.007842202, y: 4.715165e-10, z: -0.000000043500183}
+      rotation: {x: 0.009870526, y: -0.45058373, z: -0.019550452, w: -0.8924655}
+      scale: {x: 0.99999976, y: 1, z: 0.99999994}
+      transformModified: 1
+    - name: L_Toe_END
+      position: {x: -0.008747965, y: 9.992007e-18, z: 0.000000065667884}
+      rotation: {x: 0.8705891, y: 4.8771094e-15, z: -0.49201083, w: 2.792566e-15}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -886,7 +1483,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
