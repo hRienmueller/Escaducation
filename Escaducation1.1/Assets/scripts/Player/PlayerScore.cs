@@ -42,8 +42,8 @@ public class PlayerScore : MonoBehaviour {
 
     void Awake()
     {
-        infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
-        infoText.text = "";
+       // infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
+       // infoText.text = "";
         GetScoreBoost = false;
 
         ScoreEffect = false;
@@ -120,7 +120,7 @@ public class PlayerScore : MonoBehaviour {
             ScoreEffect = true;
             //Debug.Log(ScoreEffect);
 
-            //Debug.Log("extra found");
+            Debug.Log("extra found");
             currentExtra = other.name;   //set a string name for the other scripts to work with
             //Debug.Log(currentExtra);
             score = score + ScoreIncreaseExtra;               //increase score
@@ -130,7 +130,7 @@ public class PlayerScore : MonoBehaviour {
 
 
             other.gameObject.SetActive(false);   //remove exra from the scene
-            //Debug.Log("extra inactive");
+            Debug.Log("extra inactive");
             inventory.OnGUI();                   //clear inventory field
         }
     }
