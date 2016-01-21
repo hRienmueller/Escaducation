@@ -11,7 +11,7 @@ public class enemyAI : MonoBehaviour
     public float patrolWaitTime = 1f;   //time the enemy will wait on each wayPoint
     public float attentionZone = 10f;    
     public Transform[] patrolWayPoints;   //array to store the waypoints
-    public float killDistance = 0.5f;     //Distance in which the player is considered as catched
+    public float killDistance = 4f;     //Distance in which the player is considered as catched
     public Transform startPoint;
     public float generalWaitTime = 3f;       //Timer for extra stunned time
     public bool ExtraDurationOn;            //checks if duration of an extra is true at the current time
