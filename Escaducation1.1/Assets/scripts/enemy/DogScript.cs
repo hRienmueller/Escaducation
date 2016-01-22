@@ -56,13 +56,16 @@ public class DogScript : MonoBehaviour {
         nav = GetComponent<NavMeshAgent>();
         playerAnim = player.GetComponent<Animator>();
         SniffDistance = 2.5f;   // Distance, in which the dog must get to bark
-        IsSausage = false;      // is a sausage in the inventory?  
+        IsSausage = false;      // is a sausage in the inventory? 
+
+        anim.SetLayerWeight(1, 1);
+        anim.SetLayerWeight(2, 1); 
     }
 
     void Update()
     {
         //Debug.Log("speed: " + speed);
-        anim.SetFloat(hash.DogSpeed, speed);     // set the speed of the navmeshAgent
+        anim.SetFloat(hash.DogSpeed, nav.speed);     // set the speed of the navmeshAgent
         distance = Vector3.Distance(player.transform.position, transform.position);   // calculating the distance between the player and the dog
         nav.destination = player.transform.position;       // the target for the dog to get to is always the player -> dog follows player
 
@@ -80,6 +83,7 @@ public class DogScript : MonoBehaviour {
                 anim.SetBool(hash.barkingBool, false);    // sets the IsBarkingBool in the animatorcontroller
                 //Debug.Log("Stopped playing");
                 speed = walkSpeed;                        // sets  the speed variable in the animator
+                anim.SetFloat(hash.DogSpeed, speed);
             }
 
             if (Input.GetButtonDown("Action"))            // if the action key is pressed...
@@ -102,8 +106,9 @@ public class DogScript : MonoBehaviour {
                 if (dogStunTimer <= dogStunTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
                 {
                     nav.Stop();                     //stop navMeshAgent
-                    infoText.text = "Dog stunned...";
+                   // infoText.text = "Dog stunned...";
                     speed = waitSpeed;              // set speed to 0, to have the idle animation playing.
+                    anim.SetFloat(hash.DogSpeed, speed);
                     //Debug.Log("DOGstunned");
                     dogExtraDuration = false;        //set extra duration to false, 
                 }
@@ -112,6 +117,7 @@ public class DogScript : MonoBehaviour {
                     nav.Resume();                    //call navmeshagent back to live, reset every boolean
                     infoText.text = "";
                     speed = walkSpeed;                 // set speed to walkingspeed. for animation
+                    anim.SetFloat(hash.DogSpeed, speed);
                     dogStunTimer = 0f;                  // reset the timer
                     IsSausage = false;                  //sausage is not longer in inventory
                     dogExtraDuration = false;            //extra is no longer active
@@ -139,6 +145,7 @@ public class DogScript : MonoBehaviour {
     void Wait()
     {
         speed = waitSpeed;        // sets the speed in the animator
+        anim.SetFloat(hash.DogSpeed, speed);
         barkTimer += Time.deltaTime;   // increase barktimer
         //Debug.Log(barkTimer);
 
