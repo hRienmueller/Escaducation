@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: f4a71234189def64caffa8742cbcfb55
+timeCreated: 1453738014
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Glass_Wall
+    100002: group1
+    100004: group2
+    100006: left
+    100008: //RootNode
+    100010: Level_2_Layout:Doors_1
+    100012: Level_2_Layout:Doors_2
+    100014: Level_2_Layout:Groundplane_inside
+    100016: Level_2_Layout:Groundplane_outside
+    100018: Level_2_Layout:polySurface320
+    100020: Level_2_Layout:polySurface321
+    100022: Level_2_Layout:transform1
+    100024: Level_2_Layout:transform2
+    100026: Level_2_Layout:Walls
+    100028: Level_2_Layout:Windowed_Wall_1
+    100030: Level_2_Layout:Windowed_Wall_2
+    100032: polySurface261
+    100034: polySurface261 1
+    100036: polySurface262
+    100038: polySurface263
+    100040: polySurface264
+    100042: polySurface265
+    100044: transform1
+    100046: transform2
+    100048: transform3
+    100050: Window1
+    100052: Window10
+    100054: Window11
+    100056: Window12
+    100058: Window13
+    100060: Window2
+    100062: Window3
+    100064: Window4
+    100066: Window5
+    100068: Window6
+    100070: Window7
+    100072: Window8
+    100074: Window9
+    400000: Glass_Wall
+    400002: group1
+    400004: group2
+    400006: left
+    400008: //RootNode
+    400010: Level_2_Layout:Doors_1
+    400012: Level_2_Layout:Doors_2
+    400014: Level_2_Layout:Groundplane_inside
+    400016: Level_2_Layout:Groundplane_outside
+    400018: Level_2_Layout:polySurface320
+    400020: Level_2_Layout:polySurface321
+    400022: Level_2_Layout:transform1
+    400024: Level_2_Layout:transform2
+    400026: Level_2_Layout:Walls
+    400028: Level_2_Layout:Windowed_Wall_1
+    400030: Level_2_Layout:Windowed_Wall_2
+    400032: polySurface261
+    400034: polySurface261 1
+    400036: polySurface262
+    400038: polySurface263
+    400040: polySurface264
+    400042: polySurface265
+    400044: transform1
+    400046: transform2
+    400048: transform3
+    400050: Window1
+    400052: Window10
+    400054: Window11
+    400056: Window12
+    400058: Window13
+    400060: Window2
+    400062: Window3
+    400064: Window4
+    400066: Window5
+    400068: Window6
+    400070: Window7
+    400072: Window8
+    400074: Window9
+    2300000: Glass_Wall
+    2300002: Level_2_Layout:Doors_1
+    2300004: Level_2_Layout:Doors_2
+    2300006: Level_2_Layout:Groundplane_inside
+    2300008: Level_2_Layout:Groundplane_outside
+    2300010: Level_2_Layout:Walls
+    2300012: Level_2_Layout:Windowed_Wall_1
+    2300014: polySurface261
+    2300016: polySurface263
+    2300018: polySurface264
+    2300020: polySurface265
+    2300022: Window1
+    2300024: Window10
+    2300026: Window11
+    2300028: Window12
+    2300030: Window13
+    2300032: Window2
+    2300034: Window3
+    2300036: Window4
+    2300038: Window5
+    2300040: Window6
+    2300042: Window7
+    2300044: Window8
+    2300046: Window9
+    3300000: Glass_Wall
+    3300002: Level_2_Layout:Doors_1
+    3300004: Level_2_Layout:Doors_2
+    3300006: Level_2_Layout:Groundplane_inside
+    3300008: Level_2_Layout:Groundplane_outside
+    3300010: Level_2_Layout:Walls
+    3300012: Level_2_Layout:Windowed_Wall_1
+    3300014: polySurface261
+    3300016: polySurface263
+    3300018: polySurface264
+    3300020: polySurface265
+    3300022: Window1
+    3300024: Window10
+    3300026: Window11
+    3300028: Window12
+    3300030: Window13
+    3300032: Window2
+    3300034: Window3
+    3300036: Window4
+    3300038: Window5
+    3300040: Window6
+    3300042: Window7
+    3300044: Window8
+    3300046: Window9
+    4300000: Level_2_Layout:Groundplane_inside
+    4300002: Level_2_Layout:Walls
+    4300004: Level_2_Layout:Doors_2
+    4300006: polySurface263
+    4300008: Level_2_Layout:Windowed_Wall_1
+    4300010: Level_2_Layout:Doors_1
+    4300012: Level_2_Layout:Groundplane_outside
+    4300014: Window1
+    4300016: Window2
+    4300018: Window3
+    4300020: Window4
+    4300022: Window5
+    4300024: Window6
+    4300026: Window7
+    4300028: Window8
+    4300030: Window9
+    4300032: Window10
+    4300034: Window11
+    4300036: Window12
+    4300038: Window13
+    4300040: Glass_Wall
+    4300042: polySurface261
+    4300044: polySurface264
+    4300046: polySurface265
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
