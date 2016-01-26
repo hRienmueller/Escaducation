@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 62889a8113eb90047ac09c58e408dd84
+timeCreated: 1453723016
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Glass_Wall
+    100002: group2
+    100004: left
+    100006: //RootNode
+    100008: Level02final
+    100010: Level_2_Layout:Doors_1
+    100012: Level_2_Layout:Doors_2
+    100014: Level_2_Layout:Groundplane_inside
+    100016: Level_2_Layout:Groundplane_outside
+    100018: Level_2_Layout:polySurface320
+    100020: Level_2_Layout:polySurface321
+    100022: Level_2_Layout:transform1
+    100024: Level_2_Layout:transform2
+    100026: Level_2_Layout:Walls
+    100028: Level_2_Layout:Windowed_Wall_1
+    100030: Level_2_Layout:Windowed_Wall_2
+    100032: Window1
+    100034: Window10
+    100036: Window11
+    100038: Window12
+    100040: Window13
+    100042: Window2
+    100044: Window3
+    100046: Window4
+    100048: Window5
+    100050: Window6
+    100052: Window7
+    100054: Window8
+    100056: Window9
+    400000: Glass_Wall
+    400002: group2
+    400004: left
+    400006: //RootNode
+    400008: Level02final
+    400010: Level_2_Layout:Doors_1
+    400012: Level_2_Layout:Doors_2
+    400014: Level_2_Layout:Groundplane_inside
+    400016: Level_2_Layout:Groundplane_outside
+    400018: Level_2_Layout:polySurface320
+    400020: Level_2_Layout:polySurface321
+    400022: Level_2_Layout:transform1
+    400024: Level_2_Layout:transform2
+    400026: Level_2_Layout:Walls
+    400028: Level_2_Layout:Windowed_Wall_1
+    400030: Level_2_Layout:Windowed_Wall_2
+    400032: Window1
+    400034: Window10
+    400036: Window11
+    400038: Window12
+    400040: Window13
+    400042: Window2
+    400044: Window3
+    400046: Window4
+    400048: Window5
+    400050: Window6
+    400052: Window7
+    400054: Window8
+    400056: Window9
+    2300000: Glass_Wall
+    2300002: Level_2_Layout:Doors_1
+    2300004: Level_2_Layout:Doors_2
+    2300006: Level_2_Layout:Groundplane_inside
+    2300008: Level_2_Layout:Groundplane_outside
+    2300010: Level_2_Layout:Walls
+    2300012: Level_2_Layout:Windowed_Wall_1
+    2300014: Level_2_Layout:Windowed_Wall_2
+    2300016: Window1
+    2300018: Window10
+    2300020: Window11
+    2300022: Window12
+    2300024: Window13
+    2300026: Window2
+    2300028: Window3
+    2300030: Window4
+    2300032: Window5
+    2300034: Window6
+    2300036: Window7
+    2300038: Window8
+    2300040: Window9
+    3300000: Glass_Wall
+    3300002: Level_2_Layout:Doors_1
+    3300004: Level_2_Layout:Doors_2
+    3300006: Level_2_Layout:Groundplane_inside
+    3300008: Level_2_Layout:Groundplane_outside
+    3300010: Level_2_Layout:Walls
+    3300012: Level_2_Layout:Windowed_Wall_1
+    3300014: Level_2_Layout:Windowed_Wall_2
+    3300016: Window1
+    3300018: Window10
+    3300020: Window11
+    3300022: Window12
+    3300024: Window13
+    3300026: Window2
+    3300028: Window3
+    3300030: Window4
+    3300032: Window5
+    3300034: Window6
+    3300036: Window7
+    3300038: Window8
+    3300040: Window9
+    4300000: Glass_Wall
+    4300002: Level_2_Layout:Groundplane_inside
+    4300004: Level_2_Layout:Walls
+    4300006: Level_2_Layout:Doors_2
+    4300008: Level_2_Layout:Windowed_Wall_2
+    4300010: Level_2_Layout:Windowed_Wall_1
+    4300012: Level_2_Layout:Doors_1
+    4300014: Level_2_Layout:Groundplane_outside
+    4300016: Window1
+    4300018: Window2
+    4300020: Window3
+    4300022: Window4
+    4300024: Window5
+    4300026: Window6
+    4300028: Window7
+    4300030: Window8
+    4300032: Window9
+    4300034: Window10
+    4300036: Window11
+    4300038: Window12
+    4300040: Window13
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
