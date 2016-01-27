@@ -51,7 +51,6 @@ public class EnemyAnimation : MonoBehaviour
         if (enemySight.playerInSight)  //if player is in sight
         {
             speed = EnemyAI.chaseSpeed;   //start running
-            //anim.SetFloat(hash.enemySpeed, speed);
             angle = FindAngle(transform.forward, player.position - transform.position, transform.up); //look at player
         }
         else

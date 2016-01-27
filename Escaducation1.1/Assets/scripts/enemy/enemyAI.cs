@@ -56,34 +56,29 @@ public class enemyAI : MonoBehaviour
         changeScenes = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
         inventory = GameObject.FindGameObjectWithTag("gameController").GetComponent<InventoryScript>();
         enemySight = GetComponent<EnemySight>();
-        //Debug.Log("Got enemy sighting script");
+
         nav = GetComponent<NavMeshAgent>();
-        // Debug.Log("got navmeshagnet"+ transform.name);
+
         player = GameObject.FindGameObjectWithTag("Player").transform;
         playerScore = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScore>();
         IntScore = playerScore.score;
         lastPlayerSighting = GameObject.FindGameObjectWithTag("gameController").GetComponent<LastPlayerSighting>();
-        //Debug.Log("got lastPlayerSighting script");
-        //Debug.Log(patrolWayPoints[0]);
+
         IsSponge = false;
         IsChalk = false;
     }
     void Start()
     {
-       /* infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
-        infoText.text = "";*/
+
         nav.destination = patrolWayPoints[0].position;
-       // anim.SetFloat(hash.speedFloat, patrolSpeed);
+
     }
 
 
     void Update()
     {
-
-        //Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
-
         float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
-        //Debug.Log("distance: " + distance);
+
         if (Input.GetButtonDown("Action"))  //if you press the button which uses an item
         {
             if(distance < attentionZone) //if player uses item near enough to enemy
@@ -96,7 +91,7 @@ public class enemyAI : MonoBehaviour
         {
             //Debug.Log("stunned");
             stunTimer += Time.deltaTime;     //increase timer
-            infoText.text = "Teacher stunned...";
+
             if (stunTimer <= generalWaitTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
             {
                 nav.Stop();                     //stop navMeshAgent
@@ -106,7 +101,6 @@ public class enemyAI : MonoBehaviour
             else
             {
                 nav.Resume();                    //call navmeshagent back to live, reset every boolean
-                infoText.text = "";
                 Chasing();                       //resume to chase the player
                 stunTimer = 0f;                  // reset the timer
                 IsSponge = false;
@@ -119,14 +113,12 @@ public class enemyAI : MonoBehaviour
             stunTimer += Time.deltaTime;
             nav.destination = startPoint.position;
             Debug.Log("destination Startpoint");
-            infoText.text = "Teacher distracted...";
 
             if (stunTimer >= generalWaitTime)
             {
                 IsChalk = false;
                 stunTimer = 0;
                 ExtraDurationOn = false;
-                infoText.text = "";
                 Chasing();
             }
         }
@@ -143,8 +135,6 @@ public class enemyAI : MonoBehaviour
                 AlarmSound.Play(); //...play the alarm sound
                 SoundPlay = true;
             }
-
-            //Debug.Log("AttentionSoundPlayed");
             Chasing();   //hunt the player
         }
 
@@ -160,10 +150,9 @@ public class enemyAI : MonoBehaviour
 
     void Chasing()
     {
-        Debug.Log("Chasing");
         Attention.SetActive(true); //let the attention mark appear
        
-        //Debug.Log("chasing");
+
         float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
         if(enemySight.playerInSight == false)  //if player is not in sight
         {
@@ -175,16 +164,15 @@ public class enemyAI : MonoBehaviour
             nav.SetDestination(player.transform.position);
             if(distance < killDistance)                      // if player is in killDistance
             {
-                //Debug.Log("player as good as dead");
                 PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
 
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
-                //Debug.Log("Scene changed");
+
             }
         }
 
         nav.speed = chaseSpeed;   //set speed to chaseSpeed
-       // anim.SetFloat(hash.speedFloat, chaseSpeed);
+
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position
         {
@@ -209,7 +197,6 @@ public class enemyAI : MonoBehaviour
         SoundPlay = false;
         Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
-        //anim.SetFloat(hash.speedFloat, patrolSpeed);
         
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
@@ -235,9 +222,6 @@ public class enemyAI : MonoBehaviour
         {
             patrolTimer = 0f; //reset timer
         }
-        //Debug.Log("position patrolpoint: " + patrolWayPoints[wayPointIndex].position);
-       // Debug.Log("set destination: =" + nav.SetDestination(patrolWayPoints[wayPointIndex].position));
-       // Debug.Log("navmeshAgent destination: " + nav.destination);
         
     }
 

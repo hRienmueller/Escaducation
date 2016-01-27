@@ -78,10 +78,8 @@ public class EnemySight : MonoBehaviour
 
             if (canHear == true) {
                 int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
-                //Debug.Log("got current state");
                 if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking
                 {
-                    //Debug.Log("WalkingState detected");
                     if (CalculatePathLenght(player.transform.position) <= col.radius)  //if player is not behind a wall
                     {
                         personalLastSighting = player.transform.position;  //go find player without setting the playerInSight boolean to true
