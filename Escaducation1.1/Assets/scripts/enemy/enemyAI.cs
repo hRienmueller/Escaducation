@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
+<<<<<<< HEAD
 using UnityEngine.UI;
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
 using System.Collections;
 
 public class enemyAI : MonoBehaviour
@@ -11,7 +14,11 @@ public class enemyAI : MonoBehaviour
     public float patrolWaitTime = 1f;   //time the enemy will wait on each wayPoint
     public float attentionZone = 10f;    
     public Transform[] patrolWayPoints;   //array to store the waypoints
+<<<<<<< HEAD
     public float killDistance = 4f;     //Distance in which the player is considered as catched
+=======
+    public float killDistance = 0.5f;     //Distance in which the player is considered as catched
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
     public Transform startPoint;
     public float generalWaitTime = 3f;       //Timer for extra stunned time
     public bool ExtraDurationOn;            //checks if duration of an extra is true at the current time
@@ -38,17 +45,24 @@ public class enemyAI : MonoBehaviour
     public AudioSource AlarmSound; //the soundclip
     public bool SoundPlay;         //to make sure the sound plays only once
 
+<<<<<<< HEAD
     Animator anim;
     private HashIDs hash;
     Text infoText;
 
 
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
 
 
     void Awake()
     {
+<<<<<<< HEAD
         anim = GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
+=======
+      
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
 
         SoundPlay = false;
         Attention.SetActive(false);
@@ -70,10 +84,14 @@ public class enemyAI : MonoBehaviour
     }
     void Start()
     {
+<<<<<<< HEAD
        /* infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
         infoText.text = "";*/
         nav.destination = patrolWayPoints[0].position;
        // anim.SetFloat(hash.speedFloat, patrolSpeed);
+=======
+        nav.destination = patrolWayPoints[0].position;
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
     }
 
 
@@ -83,7 +101,11 @@ public class enemyAI : MonoBehaviour
         //Debug.Log("destination:" + nav.destination + ", current position: " + transform.position);
 
         float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
+<<<<<<< HEAD
         //Debug.Log("distance: " + distance);
+=======
+
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
         if (Input.GetButtonDown("Action"))  //if you press the button which uses an item
         {
             if(distance < attentionZone) //if player uses item near enough to enemy
@@ -96,7 +118,11 @@ public class enemyAI : MonoBehaviour
         {
             //Debug.Log("stunned");
             stunTimer += Time.deltaTime;     //increase timer
+<<<<<<< HEAD
             infoText.text = "Teacher stunned...";
+=======
+
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
             if (stunTimer <= generalWaitTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
             {
                 nav.Stop();                     //stop navMeshAgent
@@ -106,7 +132,10 @@ public class enemyAI : MonoBehaviour
             else
             {
                 nav.Resume();                    //call navmeshagent back to live, reset every boolean
+<<<<<<< HEAD
                 infoText.text = "";
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
                 Chasing();                       //resume to chase the player
                 stunTimer = 0f;                  // reset the timer
                 IsSponge = false;
@@ -119,14 +148,20 @@ public class enemyAI : MonoBehaviour
             stunTimer += Time.deltaTime;
             nav.destination = startPoint.position;
             Debug.Log("destination Startpoint");
+<<<<<<< HEAD
             infoText.text = "Teacher distracted...";
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
 
             if (stunTimer >= generalWaitTime)
             {
                 IsChalk = false;
                 stunTimer = 0;
                 ExtraDurationOn = false;
+<<<<<<< HEAD
                 infoText.text = "";
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
                 Chasing();
             }
         }
@@ -184,7 +219,10 @@ public class enemyAI : MonoBehaviour
         }
 
         nav.speed = chaseSpeed;   //set speed to chaseSpeed
+<<<<<<< HEAD
        // anim.SetFloat(hash.speedFloat, chaseSpeed);
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position
         {
@@ -209,8 +247,11 @@ public class enemyAI : MonoBehaviour
         SoundPlay = false;
         Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
+<<<<<<< HEAD
         //anim.SetFloat(hash.speedFloat, patrolSpeed);
         
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
         {
