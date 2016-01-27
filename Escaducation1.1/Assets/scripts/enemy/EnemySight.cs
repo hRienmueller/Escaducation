@@ -63,7 +63,7 @@ public class EnemySight : MonoBehaviour
             {
                 RaycastHit hit;
                 Debug.Log("in view");
-                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius)) //check if enemy is near enough to be seen and nothing is in the way
+                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, 10)) //check if enemy is near enough to be seen and nothing is in the way
                 {
                     Debug.Log("hit");
                     if (hit.collider.gameObject == player)  //check if the detected gameobject is the player
@@ -80,7 +80,7 @@ public class EnemySight : MonoBehaviour
                 int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
                 if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking
                 {
-                    if (CalculatePathLenght(player.transform.position) <= col.radius)  //if player is not behind a wall
+                    if (CalculatePathLenght(player.transform.position) <= 10)  //if player is not behind a wall
                     {
                         personalLastSighting = player.transform.position;  //go find player without setting the playerInSight boolean to true
                     }
