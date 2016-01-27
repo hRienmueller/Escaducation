@@ -41,6 +41,7 @@ public class enemyAI : MonoBehaviour
     Animator anim;
     private HashIDs hash;
 
+    //public float enemySpeed;
 
 
 
@@ -172,6 +173,7 @@ public class enemyAI : MonoBehaviour
         }
 
         nav.speed = chaseSpeed;   //set speed to chaseSpeed
+        //enemySpeed = chaseSpeed;
 
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position
@@ -198,6 +200,7 @@ public class enemyAI : MonoBehaviour
         SoundPlay = false;
         Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
+        //enemySpeed = patrolSpeed;
         
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
