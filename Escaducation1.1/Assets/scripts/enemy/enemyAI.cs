@@ -165,7 +165,7 @@ public class enemyAI : MonoBehaviour
             float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
             if (distance < killDistance)                      // if player is in killDistance
             {
-                PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
+                PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does not work, but it should store the score value so that it is not deleted by changing the scene
                 PlayerPrefs.Save();
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
 
@@ -200,7 +200,6 @@ public class enemyAI : MonoBehaviour
         SoundPlay = false;
         Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
-        //enemySpeed = patrolSpeed;
         
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
@@ -219,7 +218,7 @@ public class enemyAI : MonoBehaviour
                 }
                 patrolTimer = 0f;  //reset timer
                 nav.SetDestination(patrolWayPoints[wayPointIndex].position); //set new destination
-                Debug.Log("Set Destination...");
+                //Debug.Log("Set Destination...");
             }
         }
 

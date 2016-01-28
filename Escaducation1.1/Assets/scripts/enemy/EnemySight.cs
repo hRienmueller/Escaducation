@@ -34,7 +34,7 @@ public class EnemySight : MonoBehaviour
         playerAnim = player.GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
 
-        personalLastSighting = lastPlayerSighting.resetPosition;  //reset positions, so that the enems does not start with chasing the player
+        personalLastSighting = lastPlayerSighting.resetPosition;  //reset positions, so that the enemies does not start with chasing the player
         previousSighting = lastPlayerSighting.resetPosition;
     }
 
@@ -81,7 +81,7 @@ public class EnemySight : MonoBehaviour
             }
 
             if (canHear == true) {
-                int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
+                int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;  //check players current state
                 float distance = Vector3.Distance(player.transform.position, transform.position);  //distance between enemy and player
                 if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking     
                 {
@@ -93,7 +93,7 @@ public class EnemySight : MonoBehaviour
                     }
                     else
                     {
-                        playerInSight = false;
+                        playerInSight = false;                             //go on patrol
                         anim.SetBool(hash.playerInSightBool, playerInSight);
                     }
                 }
