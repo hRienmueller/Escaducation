@@ -37,13 +37,10 @@ public class PlayerScore : MonoBehaviour {
     public float PlayerPosX;
 
     public AudioSource ToiletSound;  //the toilet sound
-    Text infoText;
     
 
     void Awake()
     {
-       // infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
-       // infoText.text = "";
         GetScoreBoost = false;
 
         ScoreEffect = false;
@@ -71,10 +68,6 @@ public class PlayerScore : MonoBehaviour {
             countTimer = 0f;
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
         }
-
-
-        //Debug.Log("score effect = " + ScoreEffect);
-
         if (ScoreEffect == true)
         {
             effectTimer = effectTimer + Time.deltaTime;
@@ -103,7 +96,6 @@ public class PlayerScore : MonoBehaviour {
             GetScoreBoost = true;
         }
 
-        //Debug.Log("decrease score");
         if (other.gameObject.tag == "Enemy")     //if player gets in seeing or hearing range of an enemy
         {
             ScoreBoost = -1;
@@ -118,11 +110,9 @@ public class PlayerScore : MonoBehaviour {
         {
             ScoreBoost = 2;
             ScoreEffect = true;
-            //Debug.Log(ScoreEffect);
 
             Debug.Log("extra found");
             currentExtra = other.name;   //set a string name for the other scripts to work with
-            //Debug.Log(currentExtra);
             score = score + ScoreIncreaseExtra;               //increase score
             scoreScript.UpdateScore01();       //update score
             PlayerPrefs.SetInt(scoreScript.NameOfScene, score);
@@ -137,7 +127,6 @@ public class PlayerScore : MonoBehaviour {
 
     public void OnTriggerExit(Collider other)    
     {
-       // Debug.Log("Increase Score");
         if (other.gameObject.tag == "Enemy")                        //if player exits seeing or hearing range of an enemy
         {
             ScoreBoost = 2;

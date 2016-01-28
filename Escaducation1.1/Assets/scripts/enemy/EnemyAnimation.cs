@@ -51,11 +51,11 @@ public class EnemyAnimation : MonoBehaviour
         if (enemySight.playerInSight)  //if player is in sight
         {
             speed = EnemyAI.chaseSpeed;   //start running
-            //anim.SetFloat(hash.enemySpeed, speed);
             angle = FindAngle(transform.forward, player.position - transform.position, transform.up); //look at player
         }
         else
         {
+            //speed = EnemyAI.enemySpeed;
             speed = Vector3.Project(nav.desiredVelocity, transform.forward).magnitude;  //set speed based on te velocity of the navmesh
             angle = FindAngle(transform.forward, nav.desiredVelocity, transform.up);   //set angle based on the velocity of the navmesh
 
