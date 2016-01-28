@@ -18,9 +18,9 @@ public class DisplayScore : MonoBehaviour
 
     void Start()
     {
-        score00 = PlayerPrefs.GetInt("IntScore");
+        /*score00 = PlayerPrefs.GetInt("IntScore");
         scoreText00 = GameObject.FindGameObjectWithTag("scoreCounter").GetComponent<Text>();
-        scoreText00.text = "Try Score: " + score00;
+        scoreText00.text = "Try Score: " + score00;*/
 
         score01 = PlayerPrefs.GetInt("Level01");
         scoreText01 = GameObject.FindGameObjectWithTag("scoreCounter01").GetComponent<Text>();

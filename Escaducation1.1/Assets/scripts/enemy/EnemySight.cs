@@ -21,8 +21,11 @@ public class EnemySight : MonoBehaviour
     private Vector3 previousSighting; // has player changed his position?
     private LastPlayerSighting lastPlayerSighting; //reference to the LastPlayerSighting script
 
+    float Seeing;
+
     void Awake()
     {
+        Seeing = 10f;
         nav = GetComponent<NavMeshAgent>();
         col = GetComponent<SphereCollider>();
         anim = GetComponent<Animator>();
@@ -57,13 +60,14 @@ public class EnemySight : MonoBehaviour
             playerInSight = false;       // player is not automatically seen
             anim.SetBool(hash.playerInSightBool, playerInSight);
             Debug.Log("player in trigger");
+            
             Vector3 direction = other.transform.position - transform.position; //Vector between the player and the enemy
             float angle = Vector3.Angle(direction, transform.forward); //angle between the direction vector and the forward vector of the enemy
             if (angle < fieldOfViewAngle*0.5)       //check if player is inside of fieldofview
             {
                 RaycastHit hit;
                 Debug.Log("in view");
-                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius)) //check if enemy is near enough to be seen and nothing is in the way
+                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, Seeing)) //check if enemy is near enough to be seen and nothing is in the way
                 {
                     Debug.Log("hit");
                     if (hit.collider.gameObject == player)  //check if the detected gameobject is the player
@@ -78,11 +82,19 @@ public class EnemySight : MonoBehaviour
 
             if (canHear == true) {
                 int currentAnimatorState = playerAnim.GetCurrentAnimatorStateInfo(0).fullPathHash;
-                if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking
+                float distance = Vector3.Distance(player.transform.position, transform.position);  //distance between enemy and player
+                if (currentAnimatorState == hash.walkState)   //if player is walking, not sneaking     
                 {
-                    if (CalculatePathLenght(player.transform.position) <= col.radius)  //if player is not behind a wall
+                    if (distance < 5)  //if player is to near
                     {
-                        personalLastSighting = player.transform.position;  //go find player without setting the playerInSight boolean to true
+                        personalLastSighting = player.transform.position;  //go find player
+                        playerInSight = true;
+                        anim.SetBool(hash.playerInSightBool, playerInSight);
+                    }
+                    else
+                    {
+                        playerInSight = false;
+                        anim.SetBool(hash.playerInSightBool, playerInSight);
                     }
                 }
             }
@@ -95,28 +107,5 @@ public class EnemySight : MonoBehaviour
         {
             playerInSight = false;    // the enemy cannot see him anymore
         }
-    }
-
-    float CalculatePathLenght(Vector3 targetPosition)  //to make sure the enemy cannot hear through walls
-    {
-        NavMeshPath path = new NavMeshPath();   //calculate the length of the path the sound must travel from the player to the enemy
-        if (nav.enabled)        //if the navMesh is enabled
-        {
-            nav.CalculatePath(targetPosition, path);   //calculate the path between the enemy and the player
-        }
-
-        Vector3[] allWayPoints = new Vector3[path.corners.Length + 2];   //all edges of the way, plus the position of the enmy and the player
-        allWayPoints[0] = transform.position;                     //first edgepoint is the enemy himself
-        allWayPoints[allWayPoints.Length - 1] = targetPosition;   //last edgepoint is the player
-        for (int i = 0; i< path.corners.Length; i++)    //iterate through the array
-        {
-            allWayPoints[i + 1] = path.corners[i];     //fill the array with the edgepoints
-        }
-        float pathLength = 0f;   //cannot be incremented if it is not initialized
-        for (int i =0; i<allWayPoints.Length-1; i++)    //iterate through the array
-        {
-            pathLength += Vector3.Distance(allWayPoints[i], allWayPoints[i + 1]);   //calculate the pathlength between the edgepoints
-        }
-        return pathLength;     //return the lenght of the path as float
     }
 }

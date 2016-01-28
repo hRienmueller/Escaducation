@@ -55,6 +55,7 @@ public class EnemyAnimation : MonoBehaviour
         }
         else
         {
+            //speed = EnemyAI.enemySpeed;
             speed = Vector3.Project(nav.desiredVelocity, transform.forward).magnitude;  //set speed based on te velocity of the navmesh
             angle = FindAngle(transform.forward, nav.desiredVelocity, transform.up);   //set angle based on the velocity of the navmesh
 

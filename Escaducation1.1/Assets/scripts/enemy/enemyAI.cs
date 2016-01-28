@@ -25,7 +25,7 @@ public class enemyAI : MonoBehaviour
     public bool IsSponge;
     public bool IsChalk;
 
-    public GameObject Attention;  //the attentionMark above the enemies head
+    public GameObject Attention;   //the attentionMark above the enemies head
 
     private PlayerScore playerScore;
     private LastPlayerSighting lastPlayerSighting;
@@ -33,14 +33,15 @@ public class enemyAI : MonoBehaviour
     private float chaseTimer;      //timer to check the time the enemy is already waiting at the players last sighting position
     private float patrolTimer;     //timer to check the time the enemy is already waiting at the current waypoint
     private int wayPointIndex;     //to identify a certain waypoint in the waypointsArray
-    public float stunTimer;      //timer to check the time the enemy is stunned
+    public float stunTimer;        //timer to check the time the enemy is stunned
 
     public AudioSource AlarmSound; //the soundclip
     public bool SoundPlay;         //to make sure the sound plays only once
 
     Animator anim;
     private HashIDs hash;
-    Text infoText;
+
+    //public float enemySpeed;
 
 
 
@@ -66,22 +67,19 @@ public class enemyAI : MonoBehaviour
 
         IsSponge = false;
         IsChalk = false;
-    }
-    void Start()
-    {
 
         nav.destination = patrolWayPoints[0].position;
-
     }
 
 
     void Update()
     {
-        float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
+        
 
         if (Input.GetButtonDown("Action"))  //if you press the button which uses an item
         {
-            if(distance < attentionZone) //if player uses item near enough to enemy
+            float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
+            if (distance < attentionZone) //if player uses item near enough to enemy
             {
                 ExtraDurationOn = true;  //activate extra
             }
@@ -89,7 +87,6 @@ public class enemyAI : MonoBehaviour
 
         if(IsSponge == true)
         {
-            //Debug.Log("stunned");
             stunTimer += Time.deltaTime;     //increase timer
 
             if (stunTimer <= generalWaitTime)   //if timer equals or is higher as the generalWaittime ->this does not work, even without the .setactive before.
@@ -101,10 +98,10 @@ public class enemyAI : MonoBehaviour
             else
             {
                 nav.Resume();                    //call navmeshagent back to live, reset every boolean
-                Chasing();                       //resume to chase the player
                 stunTimer = 0f;                  // reset the timer
                 IsSponge = false;
                 ExtraDurationOn = false;
+                Chasing();                       //resume to chase the player
             }
         }
 
@@ -112,13 +109,13 @@ public class enemyAI : MonoBehaviour
         {
             stunTimer += Time.deltaTime;
             nav.destination = startPoint.position;
-            Debug.Log("destination Startpoint");
 
             if (stunTimer >= generalWaitTime)
             {
                 IsChalk = false;
                 stunTimer = 0;
                 ExtraDurationOn = false;
+
                 Chasing();
             }
         }
@@ -135,6 +132,7 @@ public class enemyAI : MonoBehaviour
                 AlarmSound.Play(); //...play the alarm sound
                 SoundPlay = true;
             }
+
             Chasing();   //hunt the player
         }
 
@@ -151,27 +149,31 @@ public class enemyAI : MonoBehaviour
     void Chasing()
     {
         Attention.SetActive(true); //let the attention mark appear
-       
+        bool LastSight = false;
 
-        float distance  = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
-        if(enemySight.playerInSight == false)  //if player is not in sight
+       
+        if(enemySight.playerInSight == false && LastSight == false)  //if player is not in sight
         {
             nav.SetDestination(enemySight.personalLastSighting);
+            LastSight = true;
         }
         else if(enemySight.playerInSight == true) //if player is near
         {
+            LastSight = false;
             // set destination to players position
             nav.SetDestination(player.transform.position);
-            if(distance < killDistance)                      // if player is in killDistance
+            float distance = Vector3.Distance(player.position, transform.position);  //distance between enemy and player
+            if (distance < killDistance)                      // if player is in killDistance
             {
                 PlayerPrefs.SetInt("ScoreInt", IntScore);  //this does nt work, but it should store the score value so that it is not deleted by changing the scene
-
+                PlayerPrefs.Save();
                 changeScenes.changeScenes("StartScreen");  //change the scene to startscene
 
             }
         }
 
         nav.speed = chaseSpeed;   //set speed to chaseSpeed
+        //enemySpeed = chaseSpeed;
 
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position
@@ -180,6 +182,7 @@ public class enemyAI : MonoBehaviour
 
             if (chaseTimer > chaseWaitTime)  //if enemy has waited long enough
             {
+                LastSight = false;
                 lastPlayerSighting.position = lastPlayerSighting.resetPosition;   //reset positions 
                 enemySight.personalLastSighting = lastPlayerSighting.resetPosition;
                 chaseTimer = 0f;  //reset timer
@@ -197,6 +200,7 @@ public class enemyAI : MonoBehaviour
         SoundPlay = false;
         Attention.SetActive(false); //let the attention mark above the head disappear
         nav.speed = patrolSpeed;    //set speed
+        //enemySpeed = patrolSpeed;
         
 
         if (nav.destination == lastPlayerSighting.resetPosition || nav.remainingDistance < nav.stoppingDistance)  //if current waypoint is reached
@@ -215,6 +219,7 @@ public class enemyAI : MonoBehaviour
                 }
                 patrolTimer = 0f;  //reset timer
                 nav.SetDestination(patrolWayPoints[wayPointIndex].position); //set new destination
+                Debug.Log("Set Destination...");
             }
         }
 
