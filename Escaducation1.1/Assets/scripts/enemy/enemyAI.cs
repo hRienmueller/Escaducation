@@ -148,6 +148,7 @@ public class enemyAI : MonoBehaviour
 
     void Chasing()
     {
+		anim.SetFloat (hash.enemySpeed, chaseSpeed);
         Attention.SetActive(true); //let the attention mark appear
         bool LastSight = false;
 
