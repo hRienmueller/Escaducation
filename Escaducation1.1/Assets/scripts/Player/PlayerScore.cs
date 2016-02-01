@@ -37,6 +37,7 @@ public class PlayerScore : MonoBehaviour {
     public float PlayerPosX;
 
     public AudioSource ToiletSound;  //the toilet sound
+<<<<<<< HEAD
     Text infoText;
     
 
@@ -44,6 +45,11 @@ public class PlayerScore : MonoBehaviour {
     {
        // infoText = GameObject.FindGameObjectWithTag("infoText").GetComponent<Text>();
        // infoText.text = "";
+=======
+
+    void Awake()
+    {
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
         GetScoreBoost = false;
 
         ScoreEffect = false;
@@ -120,7 +126,11 @@ public class PlayerScore : MonoBehaviour {
             ScoreEffect = true;
             //Debug.Log(ScoreEffect);
 
+<<<<<<< HEAD
             Debug.Log("extra found");
+=======
+            //Debug.Log("extra found");
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
             currentExtra = other.name;   //set a string name for the other scripts to work with
             //Debug.Log(currentExtra);
             score = score + ScoreIncreaseExtra;               //increase score
@@ -130,7 +140,11 @@ public class PlayerScore : MonoBehaviour {
 
 
             other.gameObject.SetActive(false);   //remove exra from the scene
+<<<<<<< HEAD
             Debug.Log("extra inactive");
+=======
+            //Debug.Log("extra inactive");
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
             inventory.OnGUI();                   //clear inventory field
         }
     }

@@ -37,13 +37,20 @@ public class EnemySight : MonoBehaviour
 
     void Update()
     {
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
         if (globalLastSighting != lastPlayerSighting.resetPosition)   //if the dog had barked
         {
         }
 
+<<<<<<< HEAD
         if (lastPlayerSighting.position != previousSighting)   //if lastSightingPosition is not default
+=======
+        if (lastPlayerSighting.position != previousSighting)   //if lastSightingPosition is ot default
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
         {
             personalLastSighting = lastPlayerSighting.position;  //make it to new position
         }
@@ -55,13 +62,18 @@ public class EnemySight : MonoBehaviour
         if (other.gameObject == player)   //if player enters the trigger area
         {
             playerInSight = false;       // player is not automatically seen
+<<<<<<< HEAD
             anim.SetBool(hash.playerInSightBool, playerInSight);
             Debug.Log("player in trigger");
+=======
+
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
             Vector3 direction = other.transform.position - transform.position; //Vector between the player and the enemy
             float angle = Vector3.Angle(direction, transform.forward); //angle between the direction vector and the forward vector of the enemy
             if (angle < fieldOfViewAngle*0.5)       //check if player is inside of fieldofview
             {
                 RaycastHit hit;
+<<<<<<< HEAD
                 Debug.Log("in view");
                 if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius)) //check if enemy is near enough to be seen and nothing is in the way
                 {
@@ -71,6 +83,16 @@ public class EnemySight : MonoBehaviour
                         Debug.Log("player in sight");
                         playerInSight = true;     //player is in sight
                         anim.SetBool(hash.playerInSightBool, playerInSight);
+=======
+                //Debug.Log("in view");
+                if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, col.radius)) //check if enemy is near enough to be seen and nothing is in the way
+                {
+                    //Debug.Log("hit");
+                    if (hit.collider.gameObject == player)  //check if the detected gameobject is the player
+                    {
+                        //Debug.Log("player in sight");
+                        playerInSight = true;     //player is in sight
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
                         personalLastSighting = player.transform.position;   //set lastsightingposition to th eplayers position
                     }
                 }

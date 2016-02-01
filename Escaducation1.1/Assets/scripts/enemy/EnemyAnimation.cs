@@ -23,9 +23,15 @@ public class EnemyAnimation : MonoBehaviour
         hash = GameObject.FindGameObjectWithTag("gameController").GetComponent<HashIDs>();
         EnemyAI = GetComponent<enemyAI>();
 
+<<<<<<< HEAD
         nav.updateRotation = false;                //make sure the rotation is controlled by mecanim
         animSetup = new AnimatorSetup(anim, hash); //creating an instance of the AnimatorSetu class and calling it´s constructor
         deadZone += Mathf.Deg2Rad;                 //convert the angle for the deadzone from degrees to radiants
+=======
+        nav.updateRotation = false; //make sure the rotation is controlled by mecanim
+        animSetup = new AnimatorSetup(anim, hash); //creating an instance of the AnimatorSetu class and calling it´s constructor
+        deadZone += Mathf.Deg2Rad;   //convert the angle for the deadzone from degrees to radiants
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
     }
 
 
@@ -51,7 +57,10 @@ public class EnemyAnimation : MonoBehaviour
         if (enemySight.playerInSight)  //if player is in sight
         {
             speed = EnemyAI.chaseSpeed;   //start running
+<<<<<<< HEAD
             //anim.SetFloat(hash.enemySpeed, speed);
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
             angle = FindAngle(transform.forward, player.position - transform.position, transform.up); //look at player
         }
         else

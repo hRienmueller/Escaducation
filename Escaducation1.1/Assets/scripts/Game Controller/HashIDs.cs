@@ -3,6 +3,7 @@ using System.Collections;
 
 public class HashIDs : MonoBehaviour
 {
+<<<<<<< HEAD
     public int speedFloat;                  // from enemyAnimator and playerAnimator
     public int sneakingBool;                // from playerAnimator
     public int playerInSightBool;           // from enemyAnimator
@@ -23,13 +24,37 @@ public class HashIDs : MonoBehaviour
     public int barkState;                   // from dogAnimator
 
     public int enemySpeed;
+=======
+    public int speedFloat;
+    public int sneakingBool;
+    public int playerInSightBool;
+    public int sneakState;
+    public int idleState;
+
+    public int angularSpeedFloat;
+    public int locomotionState;
+    public int aimweightFloat;
+    public int walkState;
+
+    //for dog
+    public int barkingBool;
+    public int DogSpeed;
+    public int DogAngularSpeed;
+
+    public int DogLocomotion;
+    public int barkState;
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
     
     void Awake()
     {
         speedFloat = Animator.StringToHash("Speed");
         sneakingBool = Animator.StringToHash("Sneaking");
         playerInSightBool = Animator.StringToHash("PlayerInSight");
+<<<<<<< HEAD
         sneakState = Animator.StringToHash("Base Layer.MainCharSneak");
+=======
+        sneakState = Animator.StringToHash("Base Layer.Sneak");
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
         idleState = Animator.StringToHash("Base Layer.Idle");
 
         angularSpeedFloat = Animator.StringToHash("AngularSpeed");
@@ -42,7 +67,10 @@ public class HashIDs : MonoBehaviour
         DogAngularSpeed = Animator.StringToHash("DogAngularSpeed");
         DogLocomotion = Animator.StringToHash("Base Layer.DogLocomotion");
         barkState = Animator.StringToHash("Barking.DogBark");
+<<<<<<< HEAD
 
         enemySpeed = Animator.StringToHash("enemySpeed");
+=======
+>>>>>>> dd5711ced731f99b586cb33f83b71c58174c8409
     }
 }
