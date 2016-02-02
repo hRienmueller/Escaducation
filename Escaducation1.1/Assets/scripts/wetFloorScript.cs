@@ -8,7 +8,7 @@ public class wetFloorScript : MonoBehaviour
 
     private NavMeshAgent nav;            // reference to the navMeshAgent of the player
     private GameObject player;           // reference to the playerGameObject
-    private Rigidbody rigidbody;         // reference to the Players rigidbody
+    new private Rigidbody rigidbody;         // reference to the Players rigidbody
 
     void Awake()
     {

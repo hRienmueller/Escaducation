@@ -59,7 +59,7 @@ public class EnemySight : MonoBehaviour
         {
             playerInSight = false;       // player is not automatically seen
             anim.SetBool(hash.playerInSightBool, playerInSight);
-            Debug.Log("player in trigger");
+            //Debug.Log("player in trigger");
             
             Vector3 direction = other.transform.position - transform.position; //Vector between the player and the enemy
             float angle = Vector3.Angle(direction, transform.forward); //angle between the direction vector and the forward vector of the enemy
@@ -75,7 +75,7 @@ public class EnemySight : MonoBehaviour
                         Debug.Log("player in sight");
                         playerInSight = true;     //player is in sight
                         anim.SetBool(hash.playerInSightBool, playerInSight);
-                        personalLastSighting = player.transform.position;   //set lastsightingposition to th eplayers position
+                        personalLastSighting = player.transform.position;   //set lastsightingposition to the players position
                     }
                 }
             }
@@ -106,6 +106,7 @@ public class EnemySight : MonoBehaviour
         if(other.gameObject == player)   //if player leaves the trigger area
         {
             playerInSight = false;    // the enemy cannot see him anymore
+            //anim.SetBool(hash.playerInSightBool, playerInSight);
         }
     }
 }

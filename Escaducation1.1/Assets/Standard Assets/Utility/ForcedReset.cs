@@ -11,7 +11,9 @@ public class ForcedReset : MonoBehaviour
         if (CrossPlatformInputManager.GetButtonDown("ResetObject"))
         {
             //... reload the scene
+            #pragma warning disable 612, 618
             Application.LoadLevelAsync(Application.loadedLevelName);
+            #pragma warning restore 612, 618
         }
     }
 }
