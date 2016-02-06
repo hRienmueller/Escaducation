@@ -61,7 +61,7 @@ public class PlayerScore : MonoBehaviour {
         if (countTimer >= countMaxTime)
         {
             ScoreBoost = 20;   //the scoreboost you get for surviving a certain amount of time
-            Debug.Log("ScoreBost set to 20...");
+            //Debug.Log("ScoreBost set to 20...");
             ScoreEffect = true;
 
             score = score + ScoreIncreasePerTime;

@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator anim;         //referencing the Player animator
     private HashIDs hash;          //referencing the HashIds script
-    private Rigidbody rigidbody;   //referencing the rigidboy
+    new private Rigidbody rigidbody;   //referencing the rigidboy
 
     public GameObject Player;
     private Vector3 targetDirection;

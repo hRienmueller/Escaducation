@@ -23,7 +23,7 @@ public class HashIDs : MonoBehaviour
     public int barkState;                   // from dogAnimator
 
     public int enemySpeed;
-    
+
     void Awake()
     {
         speedFloat = Animator.StringToHash("Speed");

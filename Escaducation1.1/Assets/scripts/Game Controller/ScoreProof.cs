@@ -32,13 +32,13 @@ public class ScoreProof : MonoBehaviour
         if (ScoreOfLevel1 >= Level01Requiered)
         {
             Level01scoreCheck = true;
-            Debug.Log("enough score in level 01");
+            //Debug.Log("enough score in level 01");
         }
 
         if (ScoreOfLevel2 >= Level02Requiered)
         {
             Level02ScoreCheck = true;
-            Debug.Log("enough score in level 02");
+            //Debug.Log("enough score in level 02");
         }
         if (Level01scoreCheck == true)
         {

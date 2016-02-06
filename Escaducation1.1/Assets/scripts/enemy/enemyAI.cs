@@ -41,7 +41,7 @@ public class enemyAI : MonoBehaviour
     Animator anim;
     private HashIDs hash;
 
-    //public float enemySpeed;
+   // public float EnemySpeed;
 
 
 
@@ -173,8 +173,8 @@ public class enemyAI : MonoBehaviour
             }
         }
 
-        nav.speed = chaseSpeed;   //set speed to chaseSpeed
-        //enemySpeed = chaseSpeed;
+        //nav.speed = chaseSpeed;   //set speed to chaseSpeed
+        //EnemySpeed = chaseSpeed;
 
 
         if (nav.remainingDistance < nav.stoppingDistance) //if enemy has reached the last player sighting position

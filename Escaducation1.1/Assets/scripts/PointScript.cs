@@ -31,7 +31,7 @@ void Start()
         if (playerScore.ScoreEffect == true)
         {
             //Debug.Log("targY = " + targY);
-            Debug.Log("OnGUI called");
+            //Debug.Log("OnGUI called");
             targY = Screen.height / 2;           // y position of the score text
             Vector3 screenPos2 = camera01.WorldToScreenPoint(PointPosition);
             GetHitEffect += Time.deltaTime * 30;

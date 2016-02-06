@@ -8,6 +8,7 @@ public class EnemySight : MonoBehaviour
     public bool playerInSight;              //check if the player is in sight
     public Vector3 personalLastSighting;     // position of the last sighting of the player
     public Vector3 globalLastSighting;      //position, from which the dog last barked at the player
+    public float LostWaitTime = 2f;
     public bool canHear;
 
     private NavMeshAgent nav;
@@ -38,7 +39,7 @@ public class EnemySight : MonoBehaviour
         previousSighting = lastPlayerSighting.resetPosition;
     }
 
-    void Update()
+    void OnGUI()
     {
 
 
@@ -59,23 +60,23 @@ public class EnemySight : MonoBehaviour
         {
             playerInSight = false;       // player is not automatically seen
             anim.SetBool(hash.playerInSightBool, playerInSight);
-            Debug.Log("player in trigger");
+            //Debug.Log("player in trigger");
             
             Vector3 direction = other.transform.position - transform.position; //Vector between the player and the enemy
-            float angle = Vector3.Angle(direction, transform.forward); //angle between the direction vector and the forward vector of the enemy
+            float angle = Vector3.Angle(direction.normalized, transform.forward); //angle between the direction vector and the forward vector of the enemy
             if (angle < fieldOfViewAngle*0.5)       //check if player is inside of fieldofview
             {
                 RaycastHit hit;
-                Debug.Log("in view");
+                //Debug.Log("in view");
                 if (Physics.Raycast(transform.position + transform.up, direction.normalized, out hit, Seeing)) //check if enemy is near enough to be seen and nothing is in the way
                 {
-                    Debug.Log("hit");
+                    //Debug.Log("hit");
                     if (hit.collider.gameObject == player)  //check if the detected gameobject is the player
                     {
-                        Debug.Log("player in sight");
+                        //Debug.Log("player in sight");
                         playerInSight = true;     //player is in sight
                         anim.SetBool(hash.playerInSightBool, playerInSight);
-                        personalLastSighting = player.transform.position;   //set lastsightingposition to th eplayers position
+                        personalLastSighting = player.transform.position;   //set lastsightingposition to the players position
                     }
                 }
             }
@@ -94,7 +95,11 @@ public class EnemySight : MonoBehaviour
                     else
                     {
                         playerInSight = false;                             //go on patrol
-                        anim.SetBool(hash.playerInSightBool, playerInSight);
+                        if (Time.deltaTime >= 1.2) //(LostWaitTime >= 3)
+                        {
+                            anim.SetBool(hash.playerInSightBool, playerInSight);
+                        }
+                        //anim.SetBool(hash.playerInSightBool, playerInSight);
                     }
                 }
             }
@@ -103,9 +108,16 @@ public class EnemySight : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if(other.gameObject == player)   //if player leaves the trigger area
+       // LostWaitTime += Time.deltaTime;
+
+        if (other.gameObject == player) // && LostWaitTime >= 2)   //if player leaves the trigger area
         {
             playerInSight = false;    // the enemy cannot see him anymore
+            //Debug.Log("player out of sight");
+            if (Time.deltaTime >= 1.2) //(LostWaitTime >= 3)
+            {
+            anim.SetBool(hash.playerInSightBool, playerInSight);
+            }
         }
     }
 }

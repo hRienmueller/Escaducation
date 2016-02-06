@@ -23,11 +23,11 @@ public class TimeBarScript : MonoBehaviour
         BellRinging = GameObject.FindGameObjectWithTag("bell").GetComponent<AudioSource>();
         Endscript = GameObject.FindGameObjectWithTag("gameController").GetComponent<onButtonClick>();
         GameObject TimeSlider = GameObject.FindGameObjectWithTag("TimeBar");
-        Debug.Log("TimeBar found");
+        //Debug.Log("TimeBar found");
         TimeBar = TimeSlider.GetComponent<Image>();
         // set the fillamount of the image to zero to start with a time of zero
         TimeBar.fillAmount = 0f;
-        Debug.Log("FillAmount set");
+        //Debug.Log("FillAmount set");
         playerScore = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerScore>();
         scoreScript = GameObject.FindGameObjectWithTag("gameController").GetComponent<Score>();
         
