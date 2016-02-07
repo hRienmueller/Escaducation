@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 73165d2e79288ad40b988f6f25b160d3
+timeCreated: 1454435242
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Apron_Geo
+    100002: Body_Geo
+    100004: Bristle_Geo
+    100006: Broom_Geo
+    100008: Broom_Geo 1
+    100010: Broomstick_Geo
+    100012: //RootNode
+    100014: CleaningLady_Geo
+    100016: CleaningLady_Joint
+    100018: CleaningLadyBody_Geo
+    100020: Elbow
+    100022: Hair_Geo
+    100024: Hairbun_Geo
+    100026: Hands_Geo
+    100028: Head_Geo
+    100030: Head_Joint
+    100032: HeadTop_Joint
+    100034: Hip
+    100036: Hip 1
+    100038: ikHandle3
+    100040: LeftAnkle_Joint
+    100042: LeftArm_Joint
+    100044: LeftElbow
+    100046: LeftElbow_Joint
+    100048: LeftFIngers_Joint
+    100050: LeftFoot
+    100052: LeftFoot1
+    100054: LeftFoot_Joint
+    100056: LeftHand
+    100058: LeftHand1
+    100060: LeftHip_Joint
+    100062: LeftKnee
+    100064: LeftKnee1
+    100066: LeftKnee_Joint
+    100068: LeftLeg_Joint
+    100070: LeftShoulder
+    100072: LeftShoulder_Joint
+    100074: LeftToe
+    100076: LeftToe1
+    100078: LeftToe_Joint
+    100080: LeftWrist_Joint
+    100082: Legs_Geo
+    100084: LetElbow
+    100086: Neck
+    100088: Neck1
+    100090: Neck2
+    100092: Neck_Joint
+    100094: nurbsCircle2
+    100096: nurbsCircle3
+    100098: nurbsCircle4
+    100100: nurbsCircle5
+    100102: RIghtAnkle_Joint
+    100104: RightArm_Joint
+    100106: RightElbow
+    100108: RightElbow1
+    100110: RightElbow_Joint
+    100112: RightFingers_Joint
+    100114: RightFoot
+    100116: RightFoot_Joint
+    100118: RightHand
+    100120: RightHand 1
+    100122: RightHip_Joint
+    100124: RightKnee
+    100126: RightKnee_Joint
+    100128: RIghtLeg_Joint
+    100130: RightShoulder
+    100132: RightShoulder1
+    100134: RightShoulder_Joint
+    100136: RightToe
+    100138: RightToe_Joint
+    100140: RightWrist_Joint
+    100142: Root_Joint
+    100144: Shoulder
+    100146: Shoulder 1
+    100148: Spine_Joint
+    100150: SpineBottom
+    100152: SpineBottom1
+    100154: SpineBottom_Joint
+    100156: SpineTop
+    100158: SpineTop1
+    100160: SpineTop_Joint
+    100162: SpinTop
+    100164: transform1
+    100166: transform2
+    100168: transform3
+    100170: transform4
+    400000: Apron_Geo
+    400002: Body_Geo
+    400004: Bristle_Geo
+    400006: Broom_Geo
+    400008: Broom_Geo 1
+    400010: Broomstick_Geo
+    400012: //RootNode
+    400014: CleaningLady_Geo
+    400016: CleaningLady_Joint
+    400018: CleaningLadyBody_Geo
+    400020: Elbow
+    400022: Hair_Geo
+    400024: Hairbun_Geo
+    400026: Hands_Geo
+    400028: Head_Geo
+    400030: Head_Joint
+    400032: HeadTop_Joint
+    400034: Hip
+    400036: Hip 1
+    400038: ikHandle3
+    400040: LeftAnkle_Joint
+    400042: LeftArm_Joint
+    400044: LeftElbow
+    400046: LeftElbow_Joint
+    400048: LeftFIngers_Joint
+    400050: LeftFoot
+    400052: LeftFoot1
+    400054: LeftFoot_Joint
+    400056: LeftHand
+    400058: LeftHand1
+    400060: LeftHip_Joint
+    400062: LeftKnee
+    400064: LeftKnee1
+    400066: LeftKnee_Joint
+    400068: LeftLeg_Joint
+    400070: LeftShoulder
+    400072: LeftShoulder_Joint
+    400074: LeftToe
+    400076: LeftToe1
+    400078: LeftToe_Joint
+    400080: LeftWrist_Joint
+    400082: Legs_Geo
+    400084: LetElbow
+    400086: Neck
+    400088: Neck1
+    400090: Neck2
+    400092: Neck_Joint
+    400094: nurbsCircle2
+    400096: nurbsCircle3
+    400098: nurbsCircle4
+    400100: nurbsCircle5
+    400102: RIghtAnkle_Joint
+    400104: RightArm_Joint
+    400106: RightElbow
+    400108: RightElbow1
+    400110: RightElbow_Joint
+    400112: RightFingers_Joint
+    400114: RightFoot
+    400116: RightFoot_Joint
+    400118: RightHand
+    400120: RightHand 1
+    400122: RightHip_Joint
+    400124: RightKnee
+    400126: RightKnee_Joint
+    400128: RIghtLeg_Joint
+    400130: RightShoulder
+    400132: RightShoulder1
+    400134: RightShoulder_Joint
+    400136: RightToe
+    400138: RightToe_Joint
+    400140: RightWrist_Joint
+    400142: Root_Joint
+    400144: Shoulder
+    400146: Shoulder 1
+    400148: Spine_Joint
+    400150: SpineBottom
+    400152: SpineBottom1
+    400154: SpineBottom_Joint
+    400156: SpineTop
+    400158: SpineTop1
+    400160: SpineTop_Joint
+    400162: SpinTop
+    400164: transform1
+    400166: transform2
+    400168: transform3
+    400170: transform4
+    4300000: Broomstick_Geo
+    4300002: Bristle_Geo
+    4300004: Broom_Geo
+    4300006: Head_Geo
+    4300008: Body_Geo
+    4300010: Hands_Geo
+    4300012: Legs_Geo
+    4300014: Hair_Geo
+    4300016: Hairbun_Geo
+    4300018: Apron_Geo
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: Apron_Geo
+    13700002: Body_Geo
+    13700004: Bristle_Geo
+    13700006: Broom_Geo 1
+    13700008: Broomstick_Geo
+    13700010: Hair_Geo
+    13700012: Hairbun_Geo
+    13700014: Hands_Geo
+    13700016: Head_Geo
+    13700018: Legs_Geo
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
